@@ -1,0 +1,2401 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+}
+.floatLeft {
+    float: left;
+}
+.displayInline {
+    display: inline-block;
+}
+.tableOn .displayInline img {
+    margin-bottom: 10px;
+}
+.tableOn {
+    background-color: #ffffff;
+    border-top: 2px solid #6a8cd3;
+    font-weight: bold;
+}
+.tableTop {
+    background-color: #f9f9f9;
+    display: inline-block;
+    height: 42px;
+    text-align: center;
+    width: 100%;
+}
+.tableTop li {
+    border-left: 1px solid #d3d3d3;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 41px;
+    width: 12%;
+}
+.tabSeaHis {
+    border-collapse: collapse;
+}
+.tabSeaHis td {
+    height: 40px;
+}
+.tabSeaHisoederRight {
+    border-right: 1px solid rgb(233, 235, 235);
+}
+.tabSeaHisCheck {
+    background-color: rgb(235, 235, 235);
+}
+.tabNumOdd, .tabNum1 {
+    background-color: #ffffff;
+}
+.tabNumEven, .tabNum0 {
+    background-color: rgb(242, 248, 251);
+}
+.chinaUtlityPatent {
+    height: 32px;
+    width: 129px;
+}
+.patentLib {
+    float: left;
+    height: 32px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width: 129px;
+}
+.LibrarySearchTable td {
+    padding: 5px 0;
+}
+.tabAddCommon td img {
+    margin-left: 10px;
+}
+.tableChoose {
+    background-color: #ffffff;
+    border-collapse: collapse;
+}
+.tableChooseBlue {
+    background-color: rgb(239, 245, 248);
+}
+.tableChoose tr td {
+    border: 1px solid #d3d3d3;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 3px;
+}
+.fieldTableChoose tr td {
+    border: 0 none;
+}
+.paddingLeftN {
+    padding-left: 0;
+}
+.w30H31 {
+    height: 31px;
+    width: 30px;
+}
+.tabelIPC {
+    border-collapse: collapse;
+    width: 100%;
+}
+.tabelIPC tr {
+    background-color: #ededed;
+    height: 35px;
+    width: 100%;
+}
+.tabelIPC tr td {
+    border: 1px solid #d3d3d3;
+    height: 35px;
+}
+.tableIPCcheck {
+    height: 20px;
+    margin-top: 4px;
+    width: 20px;
+}
+.tabelIPC2 {
+    margin-left: 27px;
+}
+.tabelIPC3 {
+    margin-left: 103px;
+}
+.countryCode2 {
+    margin-left: 40px;
+}
+.FirmUl {
+    background-color: #ededed;
+    width: 100%;
+}
+.FirmUl li {
+    border-right: 1px solid #d3d3d3;
+    float: left;
+    height: 15px;
+    margin-top: 7px;
+    text-align: center;
+    width: 120px;
+}
+.filedList {
+    background-color: #ffffff;
+    height: 35px;
+    width: 100%;
+}
+.filedList li {
+    border-right: 1px solid #d3d3d3;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    width: 10.89%;
+}
+#fieldList {
+    height: 35px;
+    line-height: 35px;
+}
+.tabFiledList {
+    border-collapse: collapse;
+    width: 100%;
+}
+.tabFiledList td {
+    border: 1px solid #98aec2;
+    height: 30px;
+    padding-left: 5px;
+    width: 140px;
+}
+.tabFiledList td div {
+    height: 30px;
+    padding-top: 10px;
+    width: 100%;
+}
+#tabOpenDay tr td {
+    padding-top: 10px;
+}
+.mainFieldSpan {
+    display: inline-block;
+    height: 35px;
+    overflow: hidden;
+    width: 100px;
+}
+.tabSaeInput {
+    height: 32px;
+    width: 80%;
+}
+.tabSeaNumTip {
+    color: #3498db;
+    margin-bottom: 5px;
+}
+.checkBoxBg {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/patent_searchPage/check1_1.png") no-repeat scroll 0 0;
+}
+.checkBoxClickBg {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/patent_searchPage/check1_3.png") no-repeat scroll 0 0;
+}
+.radioNormal {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/patent_searchPage/ic0_1.png") no-repeat scroll 0 0;
+}
+.radioChecked {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/patent_searchPage/ic0_2.png") no-repeat scroll 0 0;
+}
+.radioStyle {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+.radioLabel {
+    font-size: 14px;
+    line-height: 22px;
+}
+label.radioLabel {
+    margin: 0 0 0 8px;
+    padding: 0;
+}
+.inputRequestNum {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 4px;
+    width: 98%;
+}
+.inputBgNormal {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #ffffff;
+    border-color: rgb(195, 195, 195) rgb(195, 195, 195) rgb(195, 195, 195) currentcolor;
+    border-image: none;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+}
+.inputBgPress {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #ffffff;
+    border-color: rgb(55, 162, 234) rgb(55, 162, 234) rgb(55, 162, 234) currentcolor;
+    border-image: none;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+}
+.inputRequestNumDiv {
+    position: relative;
+    width: 100%;
+}
+.inputLeftNomal {
+    background-image: url("../../img/patent/table/inputLeftDiv.png");
+    height: 37px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 4px;
+}
+.inputLeft_p {
+    background-image: url("../../img/patent/table/inputLeftDiv_p.png");
+    height: 37px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 4px;
+}
+td.countrySelect {
+    background-color: #ffffff;
+    border: 1px solid rgb(52, 152, 219);
+    border-collapse: separate;
+    border-radius: 0;
+    border-spacing: 0;
+    color: #000000;
+}
+#_UtlityPatentTable tr {
+    border-collapse: separate;
+    border-radius: 0;
+    border-spacing: 0;
+}
+.seaHistoryOperate0 {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/ic6_2.png") no-repeat scroll center center;
+    border: medium none;
+    height: 20px;
+    outline: medium none;
+    width: 20px;
+}
+.seaHistoryOperate1 {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/ic6_2_1.png") no-repeat scroll center center;
+    border: medium none;
+    height: 20px;
+    outline: medium none;
+    width: 20px;
+}
+.seaHistoryOperate2 {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/ic7_2.png") no-repeat scroll center center;
+    border: medium none;
+    height: 20px;
+    outline: medium none;
+    width: 20px;
+}
+.seaHistoryOperateDelete {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/ic8_2.png") no-repeat scroll center center;
+    border: medium none;
+    height: 20px;
+    outline: medium none;
+    width: 20px;
+}
+.RequestNum {
+    background-image: url("../../img/patent/table/btn5.png");
+    height: 35px;
+    line-height: 35px;
+    width: 146px;
+}
+.RequestNum span {
+    margin-left: 10px;
+}
+.RequestNum img {
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.RequestNumNoLine {
+    background-image: url("../../img/patent/table/btn5_noline.png");
+    height: 35px;
+    line-height: 35px;
+    width: 146px;
+}
+.RequestNumNoLine span {
+    margin-left: 10px;
+}
+.RequestNumNoLine img {
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.commonPatentLibDiv {
+    float: left;
+    height: 32px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    min-width: 120px;
+    overflow: hidden;
+}
+.commonPatentLibDiv img {
+    float: right;
+    margin-top: 2px;
+}
+.btnWhite {
+    background-size: cover;
+}
+.tabEditTextList1 {
+    background-color: rgb(244, 245, 245);
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+}
+.tabEditTextList1 li {
+    border-right: 1px solid #d3d3d3;
+    bottom: 5px;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 6px;
+    text-align: center;
+}
+.tabEditTextList2 {
+    background-color: rgb(244, 245, 245);
+    border-collapse: collapse;
+    height: 34px;
+    line-height: 34px;
+    width: 100%;
+}
+.tabEditTextList2 li {
+    display: inline-block;
+    height: 35px;
+    text-align: center;
+}
+.fieldListBgClick {
+    background-image: url("../../img/patent/table/fieldListBg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.titleCheckShow {
+    font-size: 14px;
+    margin-left: 35px;
+    margin-top: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 350px;
+}
+.height53 {
+    height: 53px;
+}
+.height100 {
+    height: 100px;
+}
+.appendExpress {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/sheng.png") no-repeat scroll 0 0;
+    border: medium none;
+    float: right;
+    height: 31px;
+    width: 146px;
+}
+.reSetExpress {
+    border: medium none;
+    float: right;
+    height: 31px;
+    margin-right: 16px;
+    width: 80px;
+}
+.generateExpress1 {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/header.png") no-repeat scroll 0 0;
+    border: medium none;
+    height: 31px;
+    width: 250px;
+}
+#AddCommonFinish {
+    height: 58px;
+    margin-right: 0;
+}
+.addPatentNormal {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/add_1.png") no-repeat scroll 0 0;
+    border: medium none;
+    height: 30px;
+    width: 30px;
+}
+.addPatent_p {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/add_1_p.png") no-repeat scroll 0 0;
+    border: medium none;
+    height: 30px;
+    outline: medium none;
+    width: 30px;
+}
+.clear {
+    bottom: -5px;
+    position: absolute;
+    right: 0;
+}
+.clearEditFieldList {
+    bottom: 1px;
+    position: absolute;
+    right: 1px;
+}
+.copyBtn {
+    background-color: rgb(246, 247, 247);
+    background-image: url("../../img/patent/table/ic1_1.png");
+    background-position: 6px 5px;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(210, 208, 208);
+    border-radius: 2px;
+    height: 25px;
+    margin-left: 12px;
+    margin-top: 7px;
+    width: 77px;
+}
+.addProjectTreeNew {
+    background: rgb(247, 250, 250) url("../../img/projectManagement/ic8.png") no-repeat scroll 6px 5px;
+    border: 1px solid rgb(210, 208, 208);
+    border-radius: 2px;
+    height: 25px;
+    margin-left: 16px;
+    margin-top: 10px;
+    width: 77px;
+}
+.addToEditBtn {
+    background-color: rgb(246, 247, 247);
+    background-image: url("../../img/patent/table/ic6_2.png");
+    background-position: 6px 5px;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(210, 208, 208);
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 7px;
+    width: 118px;
+}
+.deleteSelectAll {
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    height: 23px;
+    line-height: 23px;
+    width: 95px;
+}
+.deleteSelectAll:hover {
+    border: 1px solid #1484e6;
+}
+.searchLibraryBtn {
+    background-color: white;
+    border: 1px solid rgb(210, 208, 208);
+    border-radius: 2px;
+    box-shadow: 0 0 1px 1px rgb(231, 231, 231);
+    cursor: pointer;
+    font-weight: bold;
+    height: 36px;
+    margin-left: 8px;
+    margin-top: 7px;
+    padding-left: 10px;
+    text-align: left;
+    width: 144px;
+}
+.successImg {
+    background-image: url("../../img/patent/table/success.png");
+    height: 71px;
+    width: 71px;
+}
+.failureImg {
+    background-image: url("../../img/patent/table/failure.png");
+    height: 71px;
+    width: 71px;
+}
+.wPercentLargeBeforExpand {
+    cursor: pointer;
+    width: 5.5%;
+}
+.borderRightD3 {
+    border-right: 1px solid #d3d3d3;
+}
+.borderLeftD3 {
+    border-left: 1px solid #d3d3d3;
+}
+.afterExpandArrow {
+    background: rgba(0, 0, 0, 0) url("../../img/public/arrowLeft.png") no-repeat scroll center center;
+}
+.expandBtn {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/arrow1.png") no-repeat scroll center center;
+    border: medium none;
+    height: 20px;
+    outline: medium none;
+    width: 20px;
+}
+.tabCommonCombitions {
+    margin-top: 20px;
+}
+.tabCommonCombitions td {
+    border: medium none;
+}
+.inputRequestArrow {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/searOverview/arrowdown.png") no-repeat scroll center center;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+}
+.codeSetButton {
+    width: 15px;
+}
+.inputRequestplus {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/plus.png") no-repeat scroll center center;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+}
+.fieldMorePageBgGray {
+    color: #999999;
+}
+.keyRadio {
+    vertical-align: -10%;
+}
+.tabSeaHisCkb {
+    display: inline-block;
+    height: 16px;
+    margin-left: 10px;
+    width: 16px;
+}
+.expandEditTextList {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-collapse: collapse;
+    border-color: #d3d3d3 #d3d3d3 currentcolor;
+    border-image: none;
+    border-radius: 0 0 0 2px;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    margin: 0;
+}
+.expandEditTextList td {
+    border-bottom: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+}
+input.generateExpress {
+    border: medium none;
+    height: 31px;
+    width: 146px;
+}
+input.generateExpressQuoteSearch {
+    border: medium none;
+    height: 31px;
+    width: 146px;
+}
+input.bgShengDis {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/sheng.png") no-repeat scroll 0 0;
+}
+.decInfo {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/tableInfo.png") no-repeat scroll 0 0;
+    border: medium none;
+    cursor: pointer;
+    height: 22px;
+    margin-left: 1px;
+    margin-top: 6px;
+    outline: medium none;
+    vertical-align: middle;
+    width: 21px;
+}
+.decInfoSmall {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/tableInfo.png") no-repeat scroll 0 0;
+    border: medium none;
+    cursor: pointer;
+    height: 24px;
+    margin-left: 1px;
+    margin-top: 6px;
+    outline: medium none;
+    width: 24px;
+}
+.deleteSmall {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/tableDel.png") no-repeat scroll 0 0;
+    border: medium none;
+    cursor: pointer;
+    height: 26px;
+    margin-left: 5px;
+    margin-top: 6px;
+    outline: medium none;
+    width: 26px;
+}
+.btn_bg {
+    height: 37px;
+    width: 65px;
+}
+.homePageFloatWnd1 {
+    background-color: #ffffff;
+    border-radius: 4px;
+    height: 309px;
+    margin: 0 auto;
+    width: 341px;
+}
+.floatWndTitle1 {
+    background-color: #3498db;
+    color: white;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 5px;
+}
+.closeBtn {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/close_1.png") no-repeat scroll 0 0;
+    border: medium none;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+#helpTxt p {
+    line-height: 22px;
+    margin: 5px 5px 3px 8px;
+    text-indent: 2em;
+}
+#helpTxt ul {
+}
+#helpTxt li {
+    line-height: 22px;
+    margin: 5px 5px 5px 8px;
+    text-indent: 2em;
+}
+img.inputClear {
+    line-height: 0;
+    padding: 0;
+}
+table.quickSelect {
+    margin-left: 50px;
+}
+.title {
+    color: #8a8a8a;
+    text-align: right;
+}
+.fontWeight {
+    font-weight: bold;
+}
+.chinaUtlityPatent {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+#_fastSelectArea input {
+    font-size: 12px;
+    margin: 0;
+    padding: 0 5px;
+}
+#_fastSelectArea table tr {
+    height: 25px;
+    margin: 5px 0;
+}
+.filedListTdHover {
+    background-color: rgb(36, 144, 216);
+    color: #ffffff;
+}
+.filedListTdClick {
+    background-color: rgb(36, 144, 216);
+    color: #ffffff;
+}
+.fieldMorePagesTdNormal {
+    border: 1px solid #d3d3d3;
+}
+.fieldMorePagesTdSel {
+    background-color: #5882cb;
+    color: #ffffff;
+}
+.marginLR20px {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.typeSelect {
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid #d3d3d3;
+    border-right: medium none;
+    border-top: 1px solid #d3d3d3;
+    color: rgb(59, 149, 242);
+    height: 32px;
+    line-height: 30px;
+    width: 120px;
+}
+.typeSelect:last-child {
+    border-left: 1px solid #d3d3d3;
+}
+.typeNormal {
+    background-color: rgb(252, 251, 251);
+    border: 1px solid #d3d3d3;
+    height: 30px;
+    line-height: 30px;
+    width: 120px;
+}
+.typeNormal:first-child {
+    border-left: 1px solid #d3d3d3;
+}
+.typeNormal:last-child {
+    border-right: 1px solid #d3d3d3;
+}
+.contrastNormal {
+    background-color: rgb(252, 251, 251);
+    border: 1px solid #d3d3d3;
+    height: 30px;
+    line-height: 30px;
+    width: 120px;
+}
+.contrastSelect {
+    background-color: rgb(255, 255, 255);
+    border-right: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    color: rgb(59, 149, 242);
+    height: 31px;
+    line-height: 30px;
+    width: 120px;
+}
+.selectWordTitle {
+    font-size: 13px;
+    font-weight: bold;
+}
+.checkBoxStyle {
+    display: block;
+    height: 16px;
+    margin-left: 10px;
+    width: 16px;
+}
+.synonymDiv table tr td {
+    padding: 10px;
+}
+.CrosslanguageDiv table tr td {
+    padding: 10px;
+}
+.conditionsItem {
+    background-color: rgb(252, 252, 252);
+    border-radius: 10px;
+    color: rgb(152, 153, 153);
+    cursor: pointer;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 12px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    width: 80px;
+}
+.Conditions {
+    background-color: #ffffff;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    overflow: auto;
+}
+.addToWord {
+    background: #5882cb none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 42px;
+    outline: medium none;
+    width: 120px;
+}
+.addToWord2 {
+    background: #5882cb none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 42px;
+    outline: medium none;
+    width: 120px;
+}
+.addToSearch {
+    background: #5882cb none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 42px;
+    outline: medium none;
+    width: 120px;
+}
+.addToSearch1 {
+    background: #5882cb none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 42px;
+    outline: medium none;
+    width: 120px;
+}
+.cancleWord {
+    background: #5882cb none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 42px;
+    outline: medium none;
+    width: 120px;
+}
+.contrastPageLRSty {
+    width: 435px;
+}
+.divSmallItemStyle {
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    width: 106px;
+}
+.divSmallNormal {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: rgb(252, 251, 251);
+    border-color: #d3d3d3 currentcolor currentcolor #d3d3d3;
+    border-image: none;
+    border-style: solid none none solid;
+    border-width: 1px medium medium 1px;
+    height: 31px;
+    line-height: 30px;
+    text-align: center;
+}
+.divSmallNormal:first-child {
+    border-left: 1px solid #d3d3d3;
+    border-right: medium none;
+}
+.divSmallNormal:last-child {
+    border-right: 1px solid #d3d3d3;
+}
+.divSmallSelect {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: rgb(255, 255, 255);
+    border-bottom: medium none;
+    border-image: none;
+    border-left: 1px solid #d3d3d3;
+    border-right: medium none;
+    border-top: 1px solid #d3d3d3;
+    color: rgb(59, 149, 242);
+    height: 31px;
+    line-height: 30px;
+    text-align: center;
+    z-index: 10;
+}
+.divSmallSelect:last-child {
+    border-right: 1px solid #d3d3d3;
+}
+.lrItem {
+    background-color: #ffffff;
+    border: 1px solid #d3d3d3;
+    height: 250px;
+    width: 430px;
+}
+.btnBlueComp {
+    background: #5882cb none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 42px;
+    outline: medium none;
+    width: 120px;
+}
+.addProvinceToSearch {
+    background: #5882cb none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 42px;
+    outline: medium none;
+    width: 120px;
+}
+.addProvinceToSearch1 {
+    background: #5882cb none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 42px;
+    outline: medium none;
+    width: 120px;
+}
+.btnSmallWhite {
+    overflow: hidden;
+}
+.conditionsItempan {
+    background-color: rgb(252, 252, 252);
+    border-radius: 10px;
+    color: rgb(152, 153, 153);
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    width: 130px;
+}
+.tabChinaUtlityPatent {
+    position: relative;
+    width: auto;
+}
+.tabChinaUtlityPatent .BtnLargeBlue {
+    position: absolute;
+    right: 37px;
+    top: 10px;
+}
+.tabCommonCombitions {
+    width: auto;
+}
+.tabCommonCombitions #AddToCommon {
+    position: absolute;
+    right: 17px;
+    top: 30px;
+}
+.tabCommonCombitions #reSet {
+    position: absolute;
+    right: 160px;
+    top: 30px;
+}
+input.patentLibNameInput {
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    width: 80px;
+}
+.fastSelectW {
+    width: 42px;
+}
+.fastSelectF {
+    font-size: 10px;
+}
+.patentLibDivSelect {
+    border: 1px solid #3498db;
+}
+.countryTable {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+.countryTable tr {
+    height: 40px;
+}
+.otherCountryItem {
+    background-color: #ffffff;
+    border: 1px solid #d3d3d3;
+    width: 100%;
+}
+.leibie {
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 500px;
+}
+.leibie li {
+    cursor: pointer;
+    float: left;
+    list-style: outside none none;
+    width: 70px;
+}
+.leibieSelected {
+    color: #000;
+    cursor: none;
+    font-weight: bold;
+}
+.leibieUnSelected {
+    color: rgb(59, 149, 242);
+    font-weight: normal;
+}
+#_fastSelectArea .fontWeight {
+    overflow: hidden;
+    table-layout: fixed;
+    white-space: nowrap;
+    width: 120px;
+    word-break: break-all;
+}
+.bgContentBg1 {
+    background-color: #feffff;
+    box-shadow: 0 0 10px 5px #e1e6ec;
+}
+.bgContentBg {
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px 5px #e1e6ec;
+}
+.BtnexpandMore {
+    background-image: url("../../img/patent/table/btnexpandMore.png");
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    width: 146px;
+}
+.BtnexpandMore span {
+    color: #959796;
+}
+.boxShadow {
+    box-shadow: 0 15px 10px 3px #e1e6ec;
+}
+.tabEditTextList1 {
+    background-color: #8198ba;
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+}
+.tabEditTextList1 td {
+    border-bottom: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    color: #ffffff;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+#ipc_smallcpcTreeDemo a div, #ipc_smallucTreeDemo a div, #ipc_smallfiTreeDemo a div, #ipc_smallgmTreeDemo a div, #cpc_smallIpcTreeDemo a div, #uc_smallIpcTreeDemo a div, #fi_smallcpcTreeDemo a div, #fi_smallftermTreeDemo a div, #ft_smallFiTreeDemo a div {
+    cursor: pointer;
+}
+.quicktit {
+    color: #333;
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+    margin-bottom: 4px;
+    margin-left: 39px;
+    margin-top: 3px;
+}
+.shoufang {
+    color: #bfbbbb;
+    font-family: Microsoft YaHei;
+    font-size: 13px;
+    margin-top: 2px;
+}
+.fastSelectArea table {
+    font-family: Microsoft YaHei;
+    font-size: 13px;
+    margin: 15px 10px 10px 35px;
+    padding: 0;
+}
+.condition .heng {
+    color: #8a8a8a;
+    margin: 0 0 0 15px;
+    padding-left: 10px;
+}
+.condition li {
+    float: left;
+    list-style: outside none none;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+.condition .conditionUnSelect {
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 2px 8px;
+}
+.conditionSelected {
+    background-color: #5882cb;
+    color: #fff;
+    padding: 2px 8px;
+}
+.conditionSelected1 {
+    background-color: #5882cb;
+    color: #fff;
+    padding: 2px 8px;
+}
+.patlist {
+    height: 20px;
+    width: 15px;
+}
+.patlist td {
+}
+.patlist td span {
+    float: left;
+    position: relative;
+}
+.patlist td span b {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/etropatmin.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    right: -18px;
+    width: 12px;
+}
+.patlist td span b.bup {
+    background-position: -1px 1px;
+    top: -11px;
+}
+.patlist td span b.bdown {
+    background-position: -1px -12px;
+    top: 1px;
+}
+.extrcheseaimgnon {
+    padding: 50px 0;
+    position: relative;
+    text-align: center;
+    width: auto;
+}
+.extrcheseaimgnon h2 {
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 40px;
+    width: auto;
+}
+.extrcheseaimgnon h3 {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    width: auto;
+}
+.completeColumnButton {
+    background: #5882cb none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font: 12px/20px "΢���ź�";
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 0 30px;
+}
+.exactSearch1 {
+    background-image: url("../../img/patent/table/exactSearch1.png");
+    background-position: 0 18px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.exactSearch2 {
+    background-image: url("../../img/patent/table/exactSearch2.png");
+    background-position: 0 18px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+/*a3*/
+.ztree * {
+    font-family: Verdana,Arial,Helvetica,AppleGothic,sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.ztree {
+    color: #333;
+    margin: 0;
+}
+.ztree li {
+    line-height: 30px;
+    list-style: outside none none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    text-align: left;
+    white-space: nowrap;
+}
+.ztree li ul {
+    margin: 0;
+}
+.ztree li a.curSelectedNode_Edit {
+    background-color: #ffe6b0;
+    border: 1px solid #ffb951;
+    color: black;
+    height: 16px;
+    opacity: 0.8;
+    padding-top: 0;
+}
+.ztree li a.tmpTargetNode_inner {
+    background-color: #316ac5;
+    border: 1px solid #316ac5;
+    color: white;
+    height: 16px;
+    opacity: 0.8;
+    padding-top: 0;
+}
+.ztree li a.tmpTargetNode_prev {
+}
+.ztree li a.tmpTargetNode_next {
+}
+.ztree li a input.rename {
+    border: 1px solid #7ec4cc;
+    font-size: 12px;
+    height: 14px;
+    margin: 0;
+    padding: 0;
+    width: 80px;
+}
+.ztree li span {
+    line-height: 16px;
+    margin-right: 2px;
+}
+.ztree li span.button {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0 none;
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    line-height: 0;
+    margin: 0;
+    outline: medium none;
+    vertical-align: middle;
+    width: 16px;
+}
+.ztree li span.button.chk {
+    cursor: auto;
+    height: 13px;
+    margin: 0 3px 0 0;
+    width: 13px;
+}
+.ztree li span.button.chk.checkbox_false_full {
+    background-image: url("./img/check1_1.png");
+    height: 16px;
+    width: 16px;
+}
+.ztree li span.button.chk.checkbox_false_full_focus {
+    background-image: url("./img/check1_1.png");
+    height: 16px;
+    width: 16px;
+}
+.ztree li span.button.chk.checkbox_false_part {
+    background-image: url("./img/check1_1.png");
+    height: 16px;
+    width: 16px;
+}
+.ztree li span.button.chk.checkbox_false_part_focus {
+    background-image: url("./img/check1_1.png");
+    height: 16px;
+    width: 16px;
+}
+.ztree li span.button.chk.checkbox_false_disable {
+    background-position: 0 -56px;
+}
+.ztree li span.button.chk.checkbox_true_full {
+    background-image: url("./img/check1_3.png");
+    height: 16px;
+    width: 16px;
+}
+.ztree li span.button.chk.checkbox_true_full_focus {
+    background-image: url("./img/check1_3.png");
+    height: 16px;
+    width: 16px;
+}
+.ztree li span.button.chk.checkbox_true_part {
+    background-image: url("./img/check1_1.png");
+    height: 16px;
+    width: 16px;
+}
+.ztree li span.button.chk.checkbox_true_part_focus {
+    background-image: url("./img/check1_1.png");
+    height: 16px;
+    width: 16px;
+}
+.ztree li span.button.chk.checkbox_true_disable {
+    background-position: -14px -56px;
+}
+.ztree li span.button.chk.radio_false_full {
+    background-position: -28px 0;
+}
+.ztree li span.button.chk.radio_false_full_focus {
+    background-position: -28px -14px;
+}
+.ztree li span.button.chk.radio_false_part {
+    background-position: -28px -28px;
+}
+.ztree li span.button.chk.radio_false_part_focus {
+    background-position: -28px -42px;
+}
+.ztree li span.button.chk.radio_false_disable {
+    background-position: -28px -56px;
+}
+.ztree li span.button.chk.radio_true_full {
+    background-position: -42px 0;
+}
+.ztree li span.button.chk.radio_true_full_focus {
+    background-position: -42px -14px;
+}
+.ztree li span.button.chk.radio_true_part {
+    background-position: -42px -28px;
+}
+.ztree li span.button.chk.radio_true_part_focus {
+    background-position: -42px -42px;
+}
+.ztree li span.button.chk.radio_true_disable {
+    background-position: -42px -56px;
+}
+.ztree li span.button.switch {
+    height: 18px;
+    width: 18px;
+}
+.ztree li span.button.root_open {
+    background-image: url("./img/arrowBlueDown.png");
+    height: 4px;
+    margin-left: 8px;
+    padding-right: 6px;
+    width: 8px;
+}
+.ztree li span.button.root_close {
+    background-image: url("./img/right2_1.png");
+    height: 8px;
+    margin-left: 8px;
+    padding-right: 6px;
+    width: 4px;
+}
+.ztree li span.button.roots_open {
+    background-image: url("./img/arrowBlueDown.png");
+    height: 4px;
+    margin-left: 8px;
+    padding-right: 6px;
+    width: 8px;
+}
+.ztree li span.button.roots_close {
+    background-image: url("./img/right2_1.png");
+    height: 8px;
+    margin-left: 8px;
+    padding-right: 6px;
+    width: 4px;
+}
+.ztree li span.button.center_open {
+    background-image: url("./img/arrowBlueDown.png");
+    height: 4px;
+    margin-left: 8px;
+    padding-right: 6px;
+    width: 8px;
+}
+.ztree li span.button.center_close {
+    background-image: url("./img/right2_1.png");
+    height: 8px;
+    margin-left: 8px;
+    padding-right: 6px;
+    width: 4px;
+}
+.ztree li span.button.bottom_open {
+    background-image: url("./img/arrowBlueDown.png");
+    height: 4px;
+    margin-left: 8px;
+    padding-right: 6px;
+    width: 8px;
+}
+.ztree li span.button.bottom_close {
+    background-image: url("./img/right2_1.png");
+    height: 8px;
+    margin-left: 8px;
+    padding-right: 6px;
+    width: 4px;
+}
+.ztree .everyTreeLine:hover {
+    background-color: rgb(242, 248, 251);
+}
+.ztree .everyTreeLine {
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+.checkBoxIconSet {
+    border-right: 1px solid rgb(228, 228, 228);
+    display: inline-block;
+    height: 30px;
+    text-align: center;
+    width: 38px;
+}
+.everyTreeLineChecked {
+}
+.everyTreeLineNormal {
+    background-color: rgb(243, 243, 243);
+}
+.ztree li span.button.noline_open {
+    background-position: -92px -72px;
+}
+.ztree li span.button.noline_close {
+    background-position: -74px -72px;
+}
+.ztree li span.button.root_docu {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.ztree li span.button.roots_docu {
+    background-position: -56px 0;
+}
+.ztree li span.button.center_docu {
+    background-position: -56px -18px;
+}
+.ztree li span.button.bottom_docu {
+    background-position: -56px -36px;
+}
+.ztree li span.button.noline_docu {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.ztree li span.button.ico_open {
+    background-position: -110px -16px;
+    margin-right: 2px;
+    vertical-align: top;
+}
+.ztree li span.button.ico_close {
+    background-position: -110px 0;
+    margin-right: 2px;
+    vertical-align: top;
+}
+.ztree li span.button.ico_docu {
+    background-position: -110px -32px;
+    margin-right: 2px;
+    vertical-align: top;
+}
+.ztree li span.button.edit {
+    background-position: -110px -48px;
+    margin-right: 2px;
+    vertical-align: top;
+}
+.ztree li span.button.remove {
+    background-position: -110px -64px;
+    margin-right: 2px;
+    vertical-align: top;
+}
+.ztree li span.button.ico_loading {
+    background: transparent url("./img/loading.gif") no-repeat scroll 0 0;
+    margin-right: 2px;
+    vertical-align: top;
+}
+ul.tmpTargetzTree {
+    background-color: #ffe6b0;
+    opacity: 0.8;
+}
+span.tmpzTreeMove_arrow {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("./img/zTreeStandard.png");
+    background-position: -110px -80px;
+    background-repeat: no-repeat;
+    border: 0 none;
+    display: inline-block;
+    height: 16px;
+    margin: 2px 0 0 1px;
+    padding: 0;
+    position: absolute;
+    width: 16px;
+}
+ul.ztree.zTreeDragUL {
+    background-color: #cfcfcf;
+    border: 1px dotted #00b83f;
+    height: auto;
+    margin: 0;
+    opacity: 0.8;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: auto;
+}
+.zTreeMask {
+    background-color: #cfcfcf;
+    opacity: 0;
+    position: absolute;
+    z-index: 10000;
+}
+.ztree div.ztreeNodeName {
+    color: rgb(52, 152, 219);
+}
+.ztree span.buttonIco {
+    display: none;
+}
+#treePage span.button {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("./img/zTreeStandard.png");
+    background-repeat: no-repeat;
+    border: 0 none;
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    line-height: 0;
+    margin: 0;
+    outline: medium none;
+    vertical-align: middle;
+    width: 16px;
+}
+#treePage span.button.firstPage {
+    background-position: -144px -16px;
+    margin-left: 2px;
+    margin-right: 0;
+    vertical-align: top;
+}
+#treePage span.button.prevPage {
+    background-position: -144px -48px;
+    margin-left: 2px;
+    margin-right: 0;
+    vertical-align: top;
+}
+#treePage span.button.nextPage {
+    background-position: -144px -64px;
+    margin-left: 2px;
+    margin-right: 0;
+    vertical-align: top;
+}
+#treePage span.button.lastPage {
+    background-position: -144px -32px;
+    margin-left: 2px;
+    margin-right: 0;
+    vertical-align: top;
+}
+
+/*another css*/
+.colorRed {
+    color: #ff857c;
+}
+.color999 {
+    color: #999999;
+}
+.normalWeight {
+    font-weight: normal;
+}
+.boldWeight {
+    font-weight: bold;
+}
+.fontStyle1 {
+    color: rgb(102, 102, 102);
+    font-family: "SimSun";
+    font-size: 12px;
+}
+.fontStyle2 {
+    color: #3498db;
+    font-family: "SimSun";
+    font-size: 12px;
+}
+.fontStyle3 {
+    color: #323332;
+    font-family: "SimSun";
+    font-size: 12px;
+}
+.fontStyle4 {
+    color: #323332;
+    font-family: "Arial";
+    font-size: 14px;
+}
+.fontStyle5 {
+    color: #666666;
+    font-family: "Arial";
+    font-size: 14px;
+}
+.fontStyle6 {
+    color: white;
+    font-size: 16px;
+}
+.fontStyle7 {
+    color: #444444;
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+}
+.fontStyle8 {
+    color: #333333;
+    font-family: "Microsoft Yahei";
+    font-size: 30px;
+}
+.fontStyle9 {
+    color: #333333;
+    font-family: "SimSun";
+    font-size: 14px;
+}
+.fontStyle10 {
+    color: #ffffff;
+    font-family: "Arial";
+    font-size: 24px;
+}
+.fontStyle11 {
+    color: #333333;
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+}
+.fontStyle12 {
+    color: #666666;
+    font-family: "SimSun";
+    font-size: 14px;
+}
+.fontStyle13 {
+    color: #3498db;
+    font-family: "Arial";
+    font-size: 14px;
+    font-weight: bold;
+}
+.fontStyle14 {
+    color: white;
+    font-family: "SimSun";
+    font-size: 14px;
+}
+.fontStyle15 {
+    color: rgb(102, 102, 102);
+    font-family: "Arial";
+    font-size: 14px;
+    font-weight: bold;
+}
+.fontStyle16 {
+    color: #717171;
+    font-family: "SimSun";
+    font-size: 12px;
+}
+.fontStyle17 {
+    color: #666666;
+    font-family: "SimSun";
+    font-size: 12px;
+}
+.fontStyle18 {
+    color: #333333;
+    font-family: "Microsoft Yahei";
+    font-size: 18px;
+}
+.fontStyle19 {
+    color: rgb(105, 105, 105);
+    font-family: "SimSun";
+    font-size: 12px;
+}
+.fontStyle20 {
+    color: #1086d5;
+    font-family: "SimSun";
+    font-size: 14px;
+}
+.fontStyle21 {
+    color: #363636;
+    font-family: "SimSun";
+    font-size: 14px;
+}
+.fontStyle22 {
+    color: #999999;
+    font-family: "Arial";
+    font-size: 12px;
+}
+.letterSpaceHalfEm {
+    letter-spacing: 0.2em;
+}
+.letterSpace1em {
+    letter-spacing: 1em;
+}
+.letterSpace2em {
+    letter-spacing: 2em;
+}
+.letterSpace3em {
+    letter-spacing: 3em;
+}
+.letterSpace4em {
+    letter-spacing: 4em;
+}
+.letterSpacing5 {
+    letter-spacing: 5px;
+}
+.underline {
+    text-decoration: underline;
+}
+.commonBtn {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/cancel.png") no-repeat scroll 0 0;
+    border: medium none;
+    cursor: pointer;
+    height: 25px;
+    width: 77px;
+}
+.commonBtn:hover {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/confim.png") no-repeat scroll 0 0;
+}
+.filterBtn {
+    background-color: #f5f5f5;
+    border: 1px solid #d2d1d1;
+    border-radius: 2px;
+    color: #2f2f2f;
+    cursor: pointer;
+    height: 25px;
+    width: 85px;
+}
+.filterBtn:hover {
+    background-color: #f5f8f8;
+    border-color: #009de0;
+    color: #009de0;
+}
+.filterBtnChecked {
+    background-color: #f5f8f8;
+    border-color: #009de0;
+    color: #009de0;
+}
+.expendButton {
+    border: medium none;
+    height: 8px;
+    width: 8px;
+}
+.expendButtonNormal {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/right2_1.png") no-repeat scroll 0 0;
+}
+.expendButtonChecked {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/arrowBlueDown.png") no-repeat scroll 0 0;
+}
+.closeButton {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/close.png") no-repeat scroll 0 0;
+    border: medium none;
+    cursor: pointer;
+    height: 9px;
+    width: 10px;
+}
+.searchButton {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/btnSearch.png") no-repeat scroll 0 0;
+    border: medium none;
+    height: 32px;
+    width: 32px;
+}
+.switchBtn {
+    border: medium none;
+    height: 25px;
+    width: 67px;
+}
+.switchBtnUnChecked {
+    background: rgba(0, 0, 0, 0) url("../../img/projectManagement/btn2_1.png") no-repeat scroll 0 0;
+}
+.switchBtnChecked {
+    background: rgba(0, 0, 0, 0) url("../../img/projectManagement/btn2_2.png") no-repeat scroll 0 0;
+}
+.switchIcon {
+    background: rgba(0, 0, 0, 0) url("../../img/projectManagement/btn1_1.png") no-repeat scroll 0 1px;
+    height: 27px;
+    width: 41px;
+}
+.andButton {
+    background-image: url("../../img/patent/table/btn_s35.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 34px;
+    width: 35px;
+}
+.orButton {
+    background-image: url("../../img/patent/table/btn_or.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    height: 34px;
+    width: 35px;
+}
+.searchBtn2 {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/btnSearch.png") no-repeat scroll 0 0 / 25px 25px;
+    height: 32px;
+    margin-top: 5px;
+    width: 32px;
+}
+.inputProject {
+    border: 1px solid rgb(228, 228, 228);
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    height: 23px;
+    padding-left: 13px;
+    width: 200px;
+}
+.logicAndOrNot {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/andOrNot.png") repeat scroll 0 0;
+    height: 116px;
+    width: 47px;
+    z-index: 1;
+}
+.LogicAndButton {
+    height: 34px;
+    line-height: 34px;
+    margin-left: 7px;
+    margin-top: 6px;
+    text-align: center;
+    width: 35px;
+}
+.LogicAndButton:hover {
+    background-image: url("../../img/patent/table/andSelect.png");
+}
+.logicOrNotBtn {
+    height: 34px;
+    line-height: 34px;
+    margin-left: 7px;
+    text-align: center;
+    width: 35px;
+}
+.logicOrNotBtn:hover {
+    background-image: url("../../img/patent/table/andSelect.png");
+}
+.btnWhite {
+    background-image: url("../../img/patent/table/btn6_1.png");
+    height: 35px;
+    line-height: 35px;
+    width: 145px;
+}
+.btnSmallWhite {
+    background-image: url("../../img/patent/table/btn6_1.png");
+    height: 31px;
+    line-height: 31px;
+    overflow: hidden;
+    text-align: center;
+    width: 90px;
+}
+.delete {
+    background: rgba(0, 0, 0, 0) url("../../img/patent/table/btn2_1.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    height: 31px;
+    outline: medium none;
+    width: 32px;
+}
+.searchInput {
+    background-color: #ededed;
+    border: 1px solid #d3d3d3;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    height: 30px;
+    padding-left: 10px;
+    width: 240px;
+}
+.remarkInput {
+    border: 1px solid #009adf;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    height: 30px;
+    padding-left: 10px;
+    width: 240px;
+}
+.projectManagement table {
+    border: medium none;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+.floatTable {
+    border: medium none;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+.floatTable .trNormal {
+    background-color: #f3f3f3;
+}
+.floatTable .trHover {
+    background-color: #ebebeb;
+}
+.floatTable tr td {
+    border: 1px solid #e5e5e5;
+    height: 30px;
+    text-align: left;
+    white-space: nowrap;
+}
+.floatTable tr .tdCheckBox {
+    text-align: center;
+    width: 40px;
+}
+.trChecked {
+    background-color: #ebebeb;
+}
+.menuTable {
+    border: medium none;
+    border-collapse: collapse;
+    table-layout: fixed;
+    vertical-align: middle;
+}
+.menuTable tr td {
+    height: 40px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.rightContentTable tr td, .markingTable tr td {
+    height: 40px;
+    text-align: left;
+}
+.rightContentTable tr th {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #d4d2d1;
+    height: 40px;
+    text-align: left;
+    vertical-align: middle;
+}
+.sampleTable tr td {
+    height: 164px;
+    min-width: 145px;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.sampleTable tr th {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #d4d2d1;
+    height: 40px;
+    text-align: left;
+    vertical-align: middle;
+}
+.warningInfoTable tr td {
+    height: 101px;
+    text-align: left;
+}
+.warningInfoTable tr th, .markingTable tr th {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #d4d2d1;
+    border-top: 1px solid #d4d2d1;
+    height: 40px;
+    text-align: left;
+    vertical-align: middle;
+}
+.commonWidth {
+    border: 1px solid #d2d1d1;
+    border-radius: 2px;
+    margin: 0 auto;
+    width: 89.89%;
+}
+.shielding_layer {
+    background: rgba(0, 0, 0, 0) url("../../img/floatWnd/shield_bg.png") repeat scroll 0 0 / 100% 100%;
+}
+.shielding_layer1 {
+    background: rgba(0, 0, 0, 0) url("../../img/floatWnd/shield_bg.png") repeat scroll 0 0 / 100% 100%;
+}
+.searchZone {
+    height: 32px;
+    margin: 7px auto 10px;
+    width: 284px;
+}
+.floatWnd {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 10px darkgrey;
+    height: 500px;
+    margin: 0 auto;
+    width: 960px;
+}
+.floatWnd2 {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 10px darkgrey;
+    margin: 0 auto;
+}
+.homePageFloatWnd {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 10px darkgrey;
+    height: 309px;
+    margin: 0 auto;
+    width: 341px;
+}
+.wndSize1 {
+    height: 410px;
+    width: 690px;
+}
+.wndSize2 {
+    height: 450px;
+    width: 818px;
+}
+.successWnd, .failureWnd, .addProjectSuccessWnd, .addProjectFailureWnd {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 4px darkgrey;
+    height: 99px;
+    margin: 0 auto;
+    width: 373px;
+}
+.addProjectArea {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 4px darkgrey;
+    height: 445px;
+    margin: 0 auto;
+    width: 454px;
+}
+.shareProjectArea {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 4px darkgrey;
+    height: 418px;
+    margin: 0 auto;
+    width: 342px;
+}
+.commonWind {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 10px darkgrey;
+    height: 159px;
+    margin: 0 auto;
+    width: 344px;
+}
+.expressionWind {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 10px darkgrey;
+    height: 451px;
+    margin: 0 auto;
+    width: 820px;
+}
+.deleteWnd {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 10px darkgrey;
+    height: 168px;
+    margin: 0 auto;
+    width: 341px;
+}
+.floatWndTitle {
+    background-color: #8198ba;
+    color: white;
+    height: 41px;
+    line-height: 41px;
+    padding-left: 5px;
+}
+.floatTableZone {
+    border-bottom: 1px solid #c5c5c5;
+    border-top: 1px solid #c5c5c5;
+    height: 360px;
+}
+.textareaResize {
+    height: 24px;
+    line-height: 24px;
+    resize: none;
+}
+.border-separate {
+    border-left: 1px solid #d2d1d1;
+}
+.border-separateRight {
+    border-right: 1px solid #cee9e9;
+}
+.separate_line {
+    border-top: 1px solid #d2d1d1;
+    height: 1px;
+    width: 100%;
+}
+.separate_line2 {
+    border-right: 1px solid #d2d1d1;
+    height: 10px;
+    width: 1px;
+}
+.separateBottom {
+    border-bottom: 1px solid #d2d1d1;
+}
+.separateTop {
+    border-top: 1px solid #d2d1d1;
+}
+.separateRight {
+    border-right: 1px solid #d2d1d1;
+}
+.separateLeft {
+    border-left: 1px solid #d2d1d1;
+}
+.borderCE {
+    border: 1px solid #cecece;
+}
+.borderCE1 {
+}
+.commonBorder {
+    border: 1px solid #d2d1d1;
+}
+.littleSeparate {
+    color: #d2d1d1;
+    font-size: 10px;
+    height: 10px;
+    margin-left: 10px;
+    width: 1px;
+}
+.toolIcon {
+    background: rgba(0, 0, 0, 0) url("../../../publish/img/public/set.png") repeat scroll 0 0;
+}
+.folderIcon {
+    background: transparent url("../../img/projectManagement/ic9.png") no-repeat scroll 5px center;
+}
+.triangle-bottomRight {
+    border-bottom: 35px solid blue;
+    border-left: 35px solid transparent;
+    height: 0;
+    width: 0;
+}
+label.checkbox {
+    background: transparent url("../../img/patent/patent_searchPage/check1_1.png") no-repeat scroll 2px center;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 24px;
+}
+label.checked {
+    background: transparent url("../../img/patent/patent_searchPage/check1_3.png") no-repeat scroll 2px center;
+}
+label.disabled {
+    background: transparent url("../../img/patent/patent_searchPage/check_4.png") no-repeat scroll 2px center;
+}
+.simpleCheckBox label.checkbox {
+    background: transparent url("../../img/projectManagement/simpleCheckBoxNormal.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 19px;
+    line-height: 19px;
+    padding-left: 24px;
+}
+.simpleCheckBox label.checked {
+    background: transparent url("../../img/projectManagement/simpleCheckBoxChecked.png") no-repeat scroll 0 0;
+}
+.simpleCheckBox label.disabled {
+    background: transparent url("../../img/projectManagement/simpleCheckBoxChecked.png") no-repeat scroll 0 0;
+}
+.FTermSelect {
+    background-color: #3498db;
+    background-image: url("../../img/homePage/Play-Control-Button.png");
+    background-position: 88px 13px;
+    background-repeat: no-repeat;
+    border: 1px solid #087dcc;
+    border-radius: 2px 0 0 2px;
+    color: #dfecf8;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+}
+.FTermSelect_ul {
+    background-color: #fff;
+    border-bottom: 1px solid #087dcc;
+    border-left: 1px solid #087dcc;
+    border-right: 1px solid #087dcc;
+    display: none;
+    margin-top: 32px;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    z-index: 9999;
+}
+.select_item {
+    background: #eaeaea none repeat scroll 0 0;
+}
+.FTermSelect_ul li {
+    border-bottom: 1px solid #e7e7e7;
+    height: 30px;
+    line-height: 30px;
+}
+.FTermSelect_ul li:hover {
+    cursor: pointer;
+}
+.showNumSelect {
+    background-color: rgb(246, 248, 248);
+    background-image: url("../../img/patent/table/arrowBlueDown.png");
+    background-position: 65px 10px;
+    background-repeat: no-repeat;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    height: 25px;
+    line-height: 25px;
+    width: 75px;
+}
+.showNumSelect_ul {
+    background-color: #fff;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    display: none;
+    margin-top: 25px;
+    position: absolute;
+    top: 0;
+    width: 81px;
+}
+.showNumSelect_ul li {
+    border-bottom: 1px solid #e7e7e7;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 6px;
+}
+.showNumSelect_ul li:hover {
+    cursor: pointer;
+}
+.overViewSelect {
+    background-color: rgb(246, 248, 248);
+    background-image: url("../../img/patent/table/arrowBlueDown.png");
+    background-position: 65px 10px;
+    background-repeat: no-repeat;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    height: 23px;
+    line-height: 23px;
+    width: 75px;
+}
+.overViewSelect_ul {
+    background-color: #fff;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    display: none;
+    margin-top: 25px;
+    position: absolute;
+    top: 0;
+    width: 81px;
+    z-index: 100;
+}
+.overViewSelect_ul li {
+    border-bottom: 1px solid #e7e7e7;
+    height: 23px;
+    line-height: 23px;
+    padding-left: 6px;
+}
+.overViewSelect_ul li:hover {
+    cursor: pointer;
+}
+.importNumSelect {
+    background-color: rgb(246, 248, 248);
+    background-position: 103px 10px;
+    background-repeat: no-repeat;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+}
+.importNumSelect_ul {
+    background-color: #fff;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    display: none;
+    margin-top: 25px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 120px;
+}
+.importNumSelect_ul li {
+    border-bottom: 1px solid #e7e7e7;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 6px;
+}
+.importNumSelect li:hover {
+    cursor: pointer;
+}
+.keyWord {
+    background-color: #648bcc;
+    background-image: url("../../img/patent/table/btn_arrow_down.png");
+    background-position: 125px 15px;
+    background-repeat: no-repeat;
+    border: 1px solid #648bcc;
+    border-radius: 2px;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    width: 145px;
+}
+.keyWord_ul {
+    background-color: #fff;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    display: none;
+    margin-top: 25px;
+    position: absolute;
+    top: 6px;
+    width: 150px;
+}
+.keyWord_ul li {
+    border-bottom: 1px solid #e7e7e7;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 6px;
+}
+.keyWord_ul li:hover {
+    cursor: pointer;
+}
+.combinePage_ul {
+    background-color: #fff;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    left: 1em;
+    margin-top: -10px;
+    position: absolute;
+    top: 10px;
+    width: 156px;
+}
+.combinePage_ul li {
+    border-bottom: 1px solid #d3d3d3;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 6px;
+}
+.contactWaySelect {
+    background-color: rgb(246, 248, 248);
+    background-image: url("../../img/patent/table/arrowBlueDown.png");
+    background-position: 50px 10px;
+    background-repeat: no-repeat;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    height: 23px;
+    line-height: 23px;
+    width: 59px;
+}
+.contactWaySelect_ul {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    margin-top: 25px;
+    position: absolute;
+    top: 0;
+    width: 65px;
+    z-index: 22;
+}
+.contactWaySelect_ul li {
+    border-bottom: 1px solid #e7e7e7;
+    height: 23px;
+    line-height: 23px;
+    padding-left: 6px;
+}
+.contactWaySelect_ul li:hover {
+    cursor: pointer;
+}
+.pagination button, .goPage {
+    background-color: #f6f8f8;
+    border: 1px solid #d7d6d6;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 5px;
+    width: 25px;
+}
+.pagination div {
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+.pagination1 div {
+    height: 25px;
+    line-height: 25px;
+}
+.pagination .pageText {
+    border: 1px solid #d7d6d6;
+    height: 25px;
+    width: 40px;
+}
+.cursor {
+    cursor: pointer;
+}
+.marginLeft30 {
+    margin-left: 30px;
+}
+.marginLeft7 {
+    margin-left: 7px;
+}
+.marginLeft19 {
+    margin-left: 19px;
+}
+.marginLeft5 {
+    margin-left: 5px;
+}
+.files {
+    cursor: pointer;
+    left: 202px;
+    opacity: 0;
+    position: absolute;
+    top: 52px;
+}
+#mGrid_gridSqr_paginator_0 ul, #mGrid_gridCoy_paginator_0 ul {
+    float: left;
+}
+.DataSet-Tr-List:hover {
+    background-color: #bfffff;
+}
+.modal {
+    margin-left: -225px;
+    width: 450px;
+}
+.modal-body {
+    padding: 30px 15px;
+}
+.modal-body p {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.modal-footer {
+    border-radius: 0;
+    padding: 8px 10px;
+}
+.modal-header {
+    padding: 10px;
+}
+.modal-header h3 {
+    font-size: 16px;
+    line-height: 20px;
+}
+.modal-header button.close {
+    line-height: 10px;
+}
+.modal-footer .btn {
+    background: #f5f7f7 none repeat scroll 0 0;
+    border: 1px solid #d2d0d0;
+    border-radius: 2px;
+    margin-left: 10px;
+    padding: 2px 20px;
+}
+.modal-footer .btn-danger {
+    background: #c56ab6 none repeat scroll 0 0;
+}
+.modal-footer .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .btn-danger.disabled {
+    background: #c718aa none repeat scroll 0 0;
+}
+.modal-footer .btn {
+    float: right;
+}
+input[disabled], select[disabled], textarea[disabled] {
+    cursor: default;
+}

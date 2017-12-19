@@ -1,0 +1,444 @@
+.nav li a {
+    display: block;
+}
+*{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration:none
+}
+
+.nav{
+	 background: url(../../sucai/head-01.jpg) no-repeat left top;
+	 border-bottom:2px solid #000;
+    clear: both;
+    height: 67px;
+    margin:0;
+    position:relative;
+    z-index:9999}
+.navr{
+	 background: url(../../sucai/electri.png) no-repeat right top;
+     height: 67px;position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     min-width:1220px}
+.navc{
+	 margin:0 auto;
+	 width:1200px}
+#nav1{
+    position: relative;
+	z-index:0;
+	margin:0 auto 0 2%;
+	float:left;}
+.head_logo{
+	float:left;
+	width:16%;
+	min-width:280px
+}
+#nav1 .logo{
+	margin-top:10px;
+	background: url(../../sucai/DIlogopub.png) no-repeat left center;
+	margin-left:3%;
+	padding-top:20px;
+	font-size:15px;
+	font-weight: 600;
+    height:40px;
+    line-height: 40px;
+    padding-right:80px;
+    padding-left:90px;
+    letter-spacing:2px;}
+#nav1 a .logo{
+	color:#fff;
+    line-height: 60px;}
+#nav1 a .logo:hover{
+	border:none;
+    height: 40px;
+    line-height: 60px;
+	color:#fff;
+}
+#nav1 li.login li{
+	margin-top: 0;}
+#nav1 li.login{margin-top:9px; float:right}
+#nav1 li.login a{font-weight:normal}
+#nav1 li{
+	margin-top: 20px;
+	float:left;}
+#headerNav111 ul li{
+	float:left;}
+
+
+ul li.logo{
+	margin-top:4px;}
+.nav ul li.logo a:hover{
+    border:none}
+.nav ul, .index_nav ul{
+	position: relative;}
+.nav ul li a.selected, .index_nav ul li a.selected {
+    border-bottom:2px solid #b5d2f5;
+    color: #d8e7fa;
+    font-weight:bold;
+    height:47px;
+    line-height: 47px;
+}
+.mc{
+	clear:both
+}
+.nav ul li.login li a:hover{
+	border:none;
+	text-decoration:underline
+	}
+.nav ul li a:hover, .index_nav ul li a:hover {
+	border-bottom: 2px solid #b5d2f5;
+    color: #d8e7fa;
+    font-weight: 600;
+    line-height: 47px;;
+	}
+.nav ul li a, .nav ul ul li a{
+    color: #fff;
+    cursor: pointer;
+    font: 14px/47px "microsoft yahei","微软雅黑";
+    padding: 0 10px;
+    font-weight:bold;
+    position: relative;
+    text-decoration: none;
+	white-space:nowrap;
+	float:left
+}
+.nav ul li.login{
+	float:right;
+	line-height:24px;
+	height:24px;
+	margin:8px 0 0;}
+.nav ul li.login ul{
+	width:140px}
+.nav ul li.login li a{
+	color:#b5d2f5;
+	font-size:12px;
+	line-height:24px;
+	height:24px;
+	padding:0 5px}
+.nav ul li.login li{
+	clear:both;
+	color: #b5d2f5;
+    cursor: pointer;
+	text-align:center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 34px;
+    margin-top: 2px;
+	width:140px}
+.footer{
+	background: #f3f3f3 none repeat scroll 0 0;
+    border-top: 1px solid #e6e6e6;
+	clear:both;
+	height:40px;
+	color:rgb(153, 153, 153);
+	line-height:40px;
+	text-align:center;
+	position:relative;
+	bottom:0;
+	left:0;
+	right:0} 
+/*二级下拉*/
+
+.nav > ul > li > ul, .index_nav > ul > li > ul {
+    display: none;
+    width: 1000px;
+    height: 370px;
+    background: #fff;
+    position: absolute;
+    z-index: 10000;
+    left: 25px;
+    top: 55px;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+}.xx_1 {
+    width: 410px;
+    float: left;
+    padding-left: 9px;
+}.ty_title_box_z {
+    width: 100%; 
+    overflow:auto
+}.ty_title_z {
+    padding: 0 15px;
+    float: left;
+    line-height: 26px;
+    font-size: 16px;
+    color: #238919;
+    font-weight: bold;
+    font-family: "微软雅黑";
+}
+.ty_title_z i{
+	width:8px;
+	background:url(../../sucai/li.jpg) no-repeat left center;
+	height:26px;
+	float:left
+}
+.ty_body_z {
+    width: 100%;
+    margin: 8px auto;
+    clear:both
+}.xx_zf {
+    padding-left: 10px;
+}.xx_zf img {
+    padding-right: 11px;
+    padding-bottom: 13px;
+}.xx_2 {
+    width: 360px;
+    float: right;
+}.ty_mk_box_z {
+    width: 100%;
+    padding-left: 9px;
+    margin-top: 10px;
+}.xx_hb {
+    padding-left: 10px;
+}.xx_hb a {
+    display: block;
+    width: 80px;
+    height: 27px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    background: url(/xjepb/resource/cms/2016/07/2016072112344476485.jpg) no-repeat left center;
+    padding-right: 10px;
+    padding-top: 4px;
+}.ty_mk_box_z {
+    width: 100%;
+    padding-left: 9px;
+    margin-top: 10px;
+}
+.nav ul .menu{
+	position:absolute;
+	z-index:100;
+	border:1px solid #dbdbdb;
+	background:#fff;
+	top:66px;
+	left:0;
+	display:none;
+	width:780px;
+	padding:10px;
+}
+ .index_nav ul .menu{
+	position:absolute;
+	z-index:100;
+	border:1px solid #dbdbdb;
+	background:#fafafa;
+	top:66px;
+	left:0;
+	display:none;
+	width:780px;
+	padding:10px;
+}
+table{
+	width:80%
+}
+.check{
+	width:140px;
+	padding:5px;
+	text-align:center;
+	font-size:14px;
+	color:#1a4277;
+	line-height:20px;
+	border:#a9d5e4 1px solid;
+	margin:0 5px 14px 10px;
+	float:left;
+	border-radius:4px;
+	background:#f0f6fc;
+	font-weight:normal
+}
+#nav1 li:hover .menu{
+	display:block
+}
+.menut{
+	margin:13px 0 13px 16px;
+	float:left;
+	height:170px;
+	background:#fff;
+	width:100px;
+	border:1px solid #dbdbdb;
+}
+.menut:hover{
+	background:#fafafa
+}
+.menutl{
+    margin-top:10px;
+    width:60px;
+    margin-left:5px
+}
+.menutr{
+padding: 8px 3px;
+line-height: 20px;
+width: 80px;
+white-space: normal;
+color:#666;
+font-weight:normal
+}
+.nav ul li .menut a:hover{
+    border:none;
+}
+/*办事服务  start*/
+
+.Service{
+	background:#f0f6fc;
+	border-radius:4px;
+	padding:0 0 0 8px;
+	border: #e8f1fa 1px solid;
+	width:225px;
+	float:left;
+	margin:0 10px 16px 15px;
+}
+.Service img{
+	float:left;
+	margin:0;
+	padding:8px 0
+}
+.Servicer{
+	float:right;
+	width:155px;
+	font-size:14px;
+	text-align:left;
+	color:#1a4277;
+	padding:8px 15px 0 12px;
+	font-weight:normal;
+	line-height:28px;
+	white-space:normal
+	}
+.space{
+	float:left;
+	margin:0 2% 16px 0;
+	width:22%;
+	padding:30px 0;
+}
+.space1{
+    background:url(../../sucai/ku1.jpg) no-repeat center center;
+}
+.space2{
+	background:url(../../sucai/trans1.jpg) no-repeat center center;
+}
+.space3{
+	background:url(../../sucai/tuog.jpg) no-repeat center center;
+}
+.space4{
+	background:url(../../sucai/manag.jpg) no-repeat center center;
+}
+.spaceh1{
+    background:url(../../sucai/qbg.png) repeat;
+    height:24px;
+    padding:2% 0;
+    color:#191919;
+    font-size:15px;
+    font-weight:bold;
+    line-height:24px;
+    text-align:center;
+    width:96%;
+    margin:0 2%
+}
+.nav ul li .space a, .index_nav ul li .space a{
+    padding:0 2%;
+    width:96%;
+}
+.nav ul li a.spaceh1:hover, .nav ul li a:hover, .index_nav ul li a.spaceh1:hover, .index_nav ul li a:hover{
+    border:none
+}
+.zhiku{
+	/*background:url(../../sucai/li1.jpg) no-repeat left center;*/
+    padding:0;
+    margin:0 5% 10px 0;
+    color:#0088cc;
+    font-size:14px;
+    font-weight:bold;
+    line-height:40px;
+    text-align:center;
+    float:left
+}
+.zhiku:hover{
+	text-decoration:underline
+}
+.cysever{
+	float:left;
+	color:#0088cc;
+	font-size:14px;
+	line-height:40px;
+	margin-right:80px;
+	margin-bottom:15px
+}
+.cysever:hover{
+	text-decoration:underline
+}
+.serviceh{
+	background:#f0f6fc;
+	padding:10px 0 10px 3px;
+	border: #a9d5e4 1px solid;
+	width:122px;
+	float:left;
+	margin:0 10px 16px 15px;
+	border-radius:4px
+}
+.Service a{
+	width:220px
+}
+.serviceh:hover, .serviceh1:hover, .serviceh2:hover{
+	background:#fff;
+}
+.serviceh1{
+	width:162px;
+}
+.serviceh2{
+	width:210px;
+}
+.serviceh .Servicer {
+	float:left;
+	width:38px;
+	padding:5px 0 0 16px;
+	line-height:18px;
+}
+.serviceh1 .Servicer {
+	float:left;
+	width:70px;
+	padding:5px 0 0 16px;
+	line-height:36px;
+}
+.serviceh2 .Servicer {
+	float:left;
+	width:120px;
+	padding:5px 0 0 16px;
+	line-height:36px;
+}
+.power{
+	background:#64c3e3;
+	padding:8px;
+	float:left
+}
+
+.nav ul li a.menu1:hover, .nav ul ul li a.menu1:hover, .index_nav ul li a.menu1:hover, .index_nav ul ul li a.menu1:hover{
+	border-bottom: 2px solid #b5d2f5;
+}
+.nav ul li .serviceh a:hover, .nav ul li .ty_body_z a:hover{
+	text-decoration:none
+}
+.menu:hover + .menu1{
+	border-bottom: 2px solid #b5d2f5;
+	color: #d8e7fa;
+} 
+.menu:hover + a{
+	border-bottom: 2px solid #b5d2f5;
+	color: #d8e7fa;
+} 
+/*办事服务 end*/
+
+
+/* foot.html */
+.footer_iframe{margin-top:30px;background-color:#edf5fc;}
+.foot{ width:1200px;padding:20px; margin:0 auto;}
+.linka{ padding-top:8px; margin-left:50px; line-height:20px;}
+.linka .linkbg{display:none}
+.linka .linkbg .titlelink{ float:left; font-size:14px; color:#FFF; line-height:42px; padding-left:20px; font-weight:bold; }
+.linka .linkbg .selectlink{ display:inline; line-height:42px; }
+.linka .linkbg .selectlink table{ width:1105px; height:42px;}
+.linkb{font-size:12px;text-align:center;}
+.linkb .linkbtitle{margin-bottom:5px;text-align:center;color:#bbb}
+.linkb .linkbtitle a{padding:0 5px; margin:0 5px;color:#0b7bd1;}
+.linkbcont{color:#666;}

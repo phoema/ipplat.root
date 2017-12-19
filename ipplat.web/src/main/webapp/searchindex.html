@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>在线查找-四川省公共服务信息平台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" rel="stylesheet" href="sucai/styles.css" />
+<link href="sucai/iframe.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="public/js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('.img').css({
+			'height' : ($(window).height() + "px")
+		});
+		$('.container').css({
+			'height' : ($(window).height() * 0.3 + "px")
+		});
+	});
+</script>
+<link href="http://scpub.izhiliao.com.cn/favicon.ico" type="image/x-icon"
+	rel="icon" />
+<link href="http://scpub.izhiliao.com.cn/favicon.ico" type="image/x-icon"
+	rel="shortcut icon" />
+<link href="public/css/bootstrap.css" rel="stylesheet" media="screen" />
+<link href="public/css/common.css" rel="stylesheet" media="screen" />
+<link href="public/beacon/beacon_main.css" rel="stylesheet"
+	media="screen" />
+<script type="text/javascript" src="detail/js/common.js"></script>
+<script type="text/javascript" src="public/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="public/beacon/beacon_jquery_common.js"></script>
+<script type="text/javascript" src="public/beacon/beacon_jquery_main.js"></script>
+<link type="text/css" rel="stylesheet" href="public/css/header1.css" />
+</head>
+<body onkeydown="keySearch(event);">
+	<div class="img">
+		<header> <!-- navbar -->
+		<div id="headerNav1" class="navbar navbar-inverse nav">
+			<div class="navr">
+				<div class="head_logo">
+					<a href="index.html"><img src="sucai/logo-m-01.png"
+						style="padding-left: 20px; float: left"></a>
+				</div>
+				<ul id="nav1">
+					<li><a href="index.html">首页</a></li>
+					<li>
+						<div class="menu">
+							<div class="ty_body_z">
+								<div class="Service">
+									<a href="http://cponline.sipo.gov.cn/" target="_blank"> <img src="../sucai/Service12.png">
+									<div class="Servicer">在线申请</div></a>
+								</div>
+								<div class="Service">
+									<a href="http://cponline.sipo.gov.cn/" target="_blank"> <img src="../sucai/Service4.png">
+									<div class="Servicer">网上缴费</div></a>
+								</div>
+								<div class="Service">
+									<a href="javascript:void(0);"> <img src="../sucai/Service7.png">
+									<div class="Servicer">费减备案</div></a>
+								</div>
+								<div class="Service">
+									<a href="http://fee.sipo.gov.cn/" target="_blank"> <img src="../sucai/Service5.png">
+									<div class="Servicer">缴费信息填报</div></a>
+								</div>
+								<div class="Service">
+									<a href="http://www.scipo.gov.cn:501/" target="_blank"> <img src="../sucai/Service11.png">
+									<div class="Servicer">专利资助</div>
+									</a>
+								</div>
+							</div>
+						</div> <a href="javascript:void(0);" class="menu1">申请服务</a>
+					</li>
+					<li>
+						<div class="menu">
+							<div class="ty_body_z">
+								<div class="serviceh">
+									<a href="http://www.scipo.gov.cn/jlhd/zxzx/" target="_blank">
+										<div class="power">
+											<img src="sucai/power1.png">
+										</div>
+										<div class="Servicer">举报投诉</div>
+									</a>
+								</div>
+								<div class="serviceh">
+									<a href="http://www.scipo.gov.cn/gpjg/yzzx/" target="_blank">
+										<div class="power">
+											<img src="sucai/power5.png">
+										</div>
+										<div class="Servicer">维权援助</div>
+									</a>
+								</div>
+								
+								<div class="serviceh">
+									<a href="javascript:void(0);">
+										<div class="power">
+											<img src="sucai/power3.png">
+										</div>
+										<div class="Servicer">海外维权</div>
+									</a>
+								</div>
+								<div class="serviceh">
+									<a href="javascript:void(0);">
+										<div class="power">
+											<img src="sucai/power4.png">
+										</div>
+										<div class="Servicer">预警雷达</div>
+									</a>
+								</div>
+								<div class="serviceh">
+									<a href="info/infolist2.html?ty=4">
+										<div class="power">
+											<img src="sucai/power2.png">
+										</div>
+										<div class="Servicer">典型判例</div>
+									</a>
+								</div>
+							</div>
+						</div> <a href="javascript:void(0);" name="05" class="menu1">维权保护</a>
+					</li>
+					<li>
+						<div class="menu">
+						<div class="xx_2 column" id="xx_2" runat="server">
+								<div class="mc">
+									<div class="menut">
+										<a href="searchindex.html">
+											<div class="menutl">
+												<img src="sucai/analyz.png">
+											</div>
+											<div class="menutr">西南知识产权大数据中心</div>
+										</a>
+									</div>
+									<div class="menut">
+										<a href="javascript:void(0);">
+											<div class="menutl">
+												<img src="sucai/onlinean.png">
+											</div>
+											<div class="menutr">四川省在线分析系统</div>
+										</a>
+									</div>
+									<div class="menut">
+										<a href="http://221.237.165.4:8081/pmap/map/pat/frame" target="_blank">
+											<div class="menutl">
+												<img src="sucai/hotm.png">
+											</div>
+											<div class="menutr">四川省热点地图</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="xx_1 column" id="xx_1" runat="server">
+								<div class="ty_body_z">
+									<table>
+										<tbody>
+											<tr>
+												<td><a href="javascript:void(0);"><div class="check">统计和监测</div></a></td>
+												<td><a href="zkxx/orglist.html"><div class="check">代理机构</div></a></td>
+											</tr>
+											<tr>
+												<td><a href="zkxx/agentlist.html"><div class="check">代理人</div></a></td>
+												<td><a href="javascript:void(0);"><div class="check">专家库</div></a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							
+						</div> <a name="03"  class="selected" href="searchindex.html">信息查询</a>
+					</li>
+					<li>
+						<div class="menu">
+							<div class="ty_body_z" style="margin-left: 4%">
+								<a href="http://211.149.187.208/ggfwpt/zxzlxx/" target="_blank">
+									<div class="cysever">产业数据库</div>
+								</a> <a href="http://211.149.187.208/zlxxfw/zlxxlycgdt/" target="_blank">
+									<div class="cysever">产业分析报告</div>
+								</a>
+							</div>
+						</div> <a href="javascript:void(0);" class="menu1">产业服务</a>
+					</li>
+					<li>
+						<div class="menu">
+							<div class="ty_body_z">
+								<div class="serviceh serviceh2">
+									<a href="http://www.scptd.com.cn/Showroom.aspx" target="_blank">
+										<div class="power">
+											<img src="sucai/jiaoyi.png">
+										</div>
+										<div class="Servicer">展示交易</div>
+									</a>
+								</div>
+								<div class="serviceh serviceh2">
+									<a href="http://www.scptd.com.cn/Showroom.aspx" target="_blank">
+										<div class="power">
+											<img src="sucai/mall.png">
+										</div>
+										<div class="Servicer">知识产权商城</div>
+									</a>
+								</div>
+								<div class="serviceh serviceh2 ">
+									<a href="javascript:void(0);">
+										<div class="power">
+											<img src="sucai/tuoguan.png">
+										</div>
+										<div class="Servicer">路演厅</div>
+									</a>
+								</div>
+							</div>
+						</div> <a href="javascript:void(0);" class="menu1">运营服务</a>
+					</li>
+					<li>
+						<div class="menu">
+							<div class="ty_body_z" style="margin-left: 4%">
+								<a href="javascript:void(0);">
+									<div class="cysever">质押融资</div>
+								</a> <a href="javascript:void(0);">
+									<div class="cysever">专利保险</div>
+								</a> <a href="javascript:void(0);">
+									<div class="cysever">专利担保</div>
+								</a>
+							</div>
+						</div> <a href="javascript:void(0);" class="menu1">金融服务</a>
+					</li>
+					<li>
+						<div class="menu">
+							<div class="ty_body_z">
+								<div class="serviceh serviceh1">
+									<a href="http://www.ciptc.org.cn/public/index?v=0&amp;r=0" target="_blank">
+										<div class="power">
+											<img src="../sucai/edu3.png">
+										</div>
+										<div class="Servicer">远程教育</div>
+									</a>
+								</div>
+								<div class="serviceh serviceh1">
+									<a href="http://sipo.gensee.com/training/site/login" target="_blank">
+										<div class="power">
+											<img src="../sucai/edu5.png">
+										</div>
+										<div class="Servicer">公益讲座</div>
+									</a>
+								</div>
+								<div class="serviceh serviceh1">
+									<a href="http://www.sipo.gov.cn/wxfw/zlwxxxggfw/gyjz/gyjzkj/" target="_blank">
+										<div class="power">
+											<img src="../sucai/edu1.png">
+										</div>
+										<div class="Servicer">培训课堂</div>
+									</a>
+								</div>
+								<div class="serviceh serviceh1">
+									<a href="https://weidian.com/?userid=892425114&amp;from=singlemessage&amp;isappinstalled=0" target="_blank">
+										<div class="power">
+											<img src="../sucai/edu4.png">
+										</div>
+										<div class="Servicer">智慧书堂</div>
+									</a>
+								</div>
+							</div>
+						</div> <a href="javascript:void(0);" class="menu1">培训教育</a>
+					</li>
+					<li>
+						<div class="menu">
+							<div class="ty_body_z" style="margin-left: 4%">
+								<a href="info/infolist.html?ty=2">
+									<div class="cysever">政策法规</div>
+								</a> <a href="info/infolist.html?ty=3">
+									<div class="cysever">办事指南</div>
+								</a>
+							</div>
+						</div> <a href="javascript:void(0);" name="06" class="menu1">咨询服务</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- end navbar --> </header>
+		<div class="container">
+			<div class="holder">
+				<div class="center" style="display: none">
+					<input id="checkbox-6-1" type="radio" /><label for="checkbox-6-1"></label>
+					<div class="span">专利</div>
+
+					<input id="checkbox-6-2" type="checkbox" /><label
+						for="checkbox-6-2"></label>
+					<div class="span">商标</div>
+
+					<input id="checkbox-6-3" type="checkbox" /><label
+						for="checkbox-6-3"></label>
+					<div class="span">软件著作权</div>
+
+					<input id="checkbox-6-4" checked="checked" type="checkbox" /><label
+						for="checkbox-6-4"></label>
+					<div class="span">作品著作权</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="search">
+			<div style="float: left; line-height: 40px; font-size: 18px;">常用查询&nbsp;&nbsp;
+			</div>
+			<input id="txt_express" autocomplete="off" placeholder="请输入关键词进行检索"
+				type="text" class="inputtext" maxlength="256" /> <input
+				id="btn-search" name="" type="button" value="检索" class="inputbutton" />
+		
+		<div class="searchclass">
+			<div class="searchclassh">
+				<a href="list/patent.html"> 专利</a><a href="list/trademark.html">
+					商标</a><a href="list/crsoft.html"> 版权</a><a href="javascript:void(0);">
+					标准</a><a
+					href="javascript:void(0);"> 集成电路</a><a href="javascript:void(0);">
+					植物新品种</a><a href="javascript:void(0);"> 地理标志 </a>
+			</div>
+		</div></div>
+		<div class="search_index">
+			<div class="search_indexh">
+				<a href="http://www.pss-system.gov.cn/sipopublicsearch/portal/uiIndex.shtml" target="_blank"><div class="search_index1h"></div>
+					<div class="text">新一代地方专利信息服务中心检索及分析系统</div></a>
+			</div>
+			<div class="search_indexh">
+				<a href="javascript:void(0);"><div class="search_index2h"></div>
+					<div class="text">在线专利信息分析系统</div></a>
+			</div>
+			<div class="search_indexh">
+				<a href="http://221.237.165.4:8081/pmap/map/pat/frame" target="_blank"><div class="search_index3h"></div>
+					<div class="text">专利热点地图</div></a>
+			</div>
+		</div>
+		<footer>
+		<div id="footerNew" class="bottom" style="border: 0;">
+			&nbsp;&nbsp;&nbsp;北京中知智慧科技有限公司版权所有 Copyright 2015 All Rights Reserved
+		</div>
+		</footer>
+
+		<script type="text/javascript" src="public/js/searchindex.js"></script>
+</body>
+</html>

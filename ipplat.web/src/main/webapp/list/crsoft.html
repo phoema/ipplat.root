@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html ng-app="patentApp" class="ng-scope">
+<head>
+<style type="text/css">
+@charset "UTF-8";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak,
+	.x-ng-cloak, .ng-hide {
+	display: none !important;
+}
+
+ng\:form {
+	display: block;
+}
+
+.ng-animate-block-transitions {
+	transition: 0s all !important;
+	-webkit-transition: 0s all !important;
+}
+
+.ng-hide-add-active, .ng-hide-remove {
+	display: block !important;
+}
+</style>
+<title>软著检索-在线查找-四川省公共服务信息平台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="renderer" content="webkit">
+<!--[if lt IE 9]>
+<script src="/module/resources/bootstrap2.3.2/js/html5shiv.js"></script>
+<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="edge">
+<link href="css/table.css" rel="stylesheet" media="screen">
+<link href="../public/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="../public/css/public.css" rel="stylesheet" media="screen">
+<link href="../public/css/common.css" rel="stylesheet" media="screen">
+<link href="../public/css/layout.css" rel="stylesheet" media="screen">
+<link href="css/tabelSea.css" rel="stylesheet" media="screen">
+<link href="../public/css/debug.css" rel="stylesheet" media="screen">
+<link href="../public/beacon/beacon_main.css" rel="stylesheet"
+	media="screen">
+<script type="text/javascript" src="../public/js/jquery.js"></script>
+<script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript"
+	src="../public/beacon/beacon_jquery_common.js"></script>
+<script type="text/javascript"
+	src="../public/beacon/beacon_jquery_main.js"></script>
+<script src="../public/js/header.js"></script>
+<script type="text/javascript" src="../public/js/gVerify.js"></script>
+<link type="text/css" rel="stylesheet" href="../public/css/header1.css">
+<link type="text/css" rel="stylesheet" href="../public/css/yzm.css">
+<link href="http://scpub.izhiliao.com.cn/favicon.ico" type="image/x-icon"
+	rel="icon">
+<link href="http://scpub.izhiliao.com.cn/favicon.ico" type="image/x-icon"
+	rel="shortcut icon">
+</head>
+<body class="bodyClass">
+
+	<div class="nav" id="headerNav"></div>
+	<div class="s_content">
+		<div class="con_left">
+			<div class="span">在线查找</div>
+			<div class="con_menu" onclick="locationwin('patent.html');"
+				style="cursor: pointer">专利检索</div>
+			<div class="con_menu" onclick="locationwin( 'trademark.html');"
+				style="cursor: pointer">商标检索</div>
+			<div class="con_menuh">版权检索</div>
+		</div>
+
+		<div id="yzmwrap" style="position: relative; z-index: -1; top: 0;">
+			<div id="yzm"
+				style="z-index: 10; position: absolute; top: 100px; left: 100px; width: 280px;">
+
+
+				<div id="secretkeytips">
+					<div class="pic_select_1">
+						<div class="daochu_top">
+							<div class="daochu_tit">请先完成下方验证</div>
+							<div id="keytipscancel" class="close"></div>
+						</div>
+						<div class="pic_cl1">
+							<div
+								style="padding: 10px 20px 30px 10px; font-size: 14px; font-family: microsoft yahei;">
+
+								<div id="v_container" style="width: 200px; height: 50px;"></div>
+								<div>
+									<input style="width: 186px;" autocomplete="off" type="text"
+										id="code_input" value="" placeholder="请输入验证码" />
+
+								</div>
+
+							</div>
+							<div class="daochu_cancel" style="clear: both;">
+								<div id="my_button" class="daochu_cancel1h">验证</div>
+								<div id="cancle" class="daochu_cancel2h">取消</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="div_float_show"
+				style="position: absolute; z-index: 1; display: none; width: 1000px">
+			</div>
+		</div>
+		<!--main-->
+		<div class="whole">
+			<!--软件著作菜单-->
+			<div style="width: 100%; height: 40px; margin: 0 auto">
+				<ul class="tableTop">
+					<li class="tableOn fontSize16 microSoft"
+						style="border-bottom: none; border-left: none; width: 49.9%"
+						id="copyright_rz">
+						<div class="h4040Center">
+							<div class="displayInline">
+								<img src="images/ic1_2.png">
+							</div>
+							<div class="displayInline">软件著作</div>
+						</div>
+					</li>
+					<li style="width: 49.9%; background-size: 100%;"
+						class=" fontSize16 microSoft nextShadow" id="copyright_zp">
+						<div class="h4040Center">
+							<div class="displayInline">
+								<img src="images/ic2_2.png">
+							</div>
+							<div class="displayInline">作品</div>
+						</div>
+
+					</li>
+
+				</ul>
+			</div>
+			<!-- part start -->
+			<div>
+				<!-- part1 start -->
+				<div id="part1" class="bgContentBg " style="margin: 0 auto;">
+					<div class="marginTop10 Width100P"
+						style="padding: 10px 0; line-height: 22px;">
+						<div class="displayInline quicktit">快速选择区</div>
+						<div class="marginRight20 floatRight displayInline">
+							<div class="floatLeft shoufang">收起</div>
+							<img class="triangleDown cursorPointer"
+								src="images/triangle_up.png" width="30" height="30">
+						</div>
+						<div id="_fastSelectArea" class="fastSelectArea"
+							style="margin-left: 143px;">
+							<table style="margin: 10px; padding: 0px;" cellspacing="0"
+								cellpadding="0">
+								<tbody>
+									<tr>
+										<td field="登记年" valign="top" align="right">登记年：</td>
+										<td style="width: auto; table-layout: fixed;" valign="top"><ul
+												class="condition">
+												<li id="fastSelectInput1" value="0"
+													class="conditionSelected1 conli">不限</li>
+												<li value="y:&gt;2" class="conditionUnSelect conli">近2年</li>
+												<li value="y:&gt;5" class="conditionUnSelect conli">近5年</li>
+												<li value="y:&gt;10" class="conditionUnSelect conli">近10年</li>
+												<li value="y:&gt;20" class="conditionUnSelect conli">近20年</li>
+												<li value="input:y:" class="conditionUnSelect conli1"
+													style="width: 50px; background: none;"><input
+													maxlength="10" style="width: 64px; height: 20px;"
+													sign="&gt;" placeholder="2013"
+													onkeyup="this.value=this.value.replace(/\D/g,'')"
+													onafterpaste="this.value=this.value.replace(/\D/g,'')"
+													type="text"></li>
+												<li class="heng">—</li>
+												<li value="input:y:" class="conditionUnSelect conli1"
+													style="width: 50px; background: none;"><input
+													maxlength="10" style="width: 64px; height: 20px;" sign="<"
+													placeholder="2015"
+													onkeyup="this.value=this.value.replace(/\D/g,'')"
+													onafterpaste="this.value=this.value.replace(/\D/g,'')"
+													type="text"></li>
+												<li
+													style="color: #5882cb; line-height: 22px; margin-left: 10px;">年</li>
+											</ul></td>
+									</tr>
+									<tr>
+										<td field="首次发表年" valign="top" align="right">首次发表年：</td>
+										<td style="width: auto; table-layout: fixed;" valign="top"><ul
+												class="condition">
+												<li id="fastSelectInput1" value="0"
+													class="conditionSelected1 conli">不限</li>
+												<li value="y:&gt;2" class="conditionUnSelect conli">近2年</li>
+												<li value="y:&gt;5" class="conditionUnSelect conli">近5年</li>
+												<li value="y:&gt;10" class="conditionUnSelect conli">近10年</li>
+												<li value="y:&gt;20" class="conditionUnSelect conli">近20年</li>
+												<li value="input:y:" class="conditionUnSelect conli1"
+													style="width: 50px; background: none;"><input
+													maxlength="10" style="width: 64px; height: 20px;"
+													sign="&gt;" placeholder="2013"
+													onkeyup="this.value=this.value.replace(/\D/g,'')"
+													onafterpaste="this.value=this.value.replace(/\D/g,'')"
+													type="text"></li>
+												<li class="heng">—</li>
+												<li value="input:y:" class="conditionUnSelect conli1"
+													style="width: 50px; background: none;"><input
+													maxlength="10" style="width: 64px; height: 20px;"
+													sign="&lt;" placeholder="2015"
+													onkeyup="this.value=this.value.replace(/\D/g,'')"
+													onafterpaste="this.value=this.value.replace(/\D/g,'')"
+													type="text"></li>
+												<li
+													style="color: #5882cb; line-height: 22px; margin-left: 10px;">年</li>
+											</ul></td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!--字段检索-->
+					<div class="marginTop10"
+						style="background-color: #f3f3f3; margin-bottom: 20px; position: relative; width: 100%; padding-top: 10px; padding-bottom: 20px">
+						<table id="tabOpenDay" style="width: 92%; margin: 20px 4%;"
+							cellspadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td style="width: 10%">
+										<div class="queryField">登记号：</div>
+									</td>
+									<td style="width: 40%">
+										<div class="inputRequestNumDiv">
+											<div class="floatLeft inputLeftNomal"></div>
+											<div
+												class="displayInline floatLeft inputRequestNum inputBgNormal w100P">
+												<div class="floatLeft displayInline tabSaeInput">
+													<input maxlength="100" e="exp" field="登记号" title="登记号"
+														class="seaInput2 wFhF buttonNobgBd floatLeft displayInline outLineN paddingLeft20"
+														placeholder=" 2002SR0002" type="text">
+												</div>
+												<div class="floatRight height35">
+													<span class="tabSeaNumTip displayNone">预检索中</span> <img
+														class="inputClear displayNone" src="images/inputClear.png">
+												</div>
+											</div>
+										</div>
+									</td>
+									<td style="width: 10%"><div class="queryField">分类号：</div></td>
+									<td style="width: 40%">
+										<div class="inputRequestNumDiv">
+											<div class="floatLeft inputLeftNomal"></div>
+											<div
+												class="displayInline floatLeft inputRequestNum inputBgNormal w100P">
+												<div class="floatLeft displayInline tabSaeInput">
+													<input maxlength="100" e="exp" field="分类号" title="分类号"
+														class="seaInput wFhF buttonNobgBd floatLeft displayInline outLineN paddingLeft20"
+														placeholder=" 11000-6000" type="text">
+												</div>
+												<div class="floatRight height35">
+													<span class="tabSeaNumTip displayNone">预检索中</span> <img
+														class="inputClear displayNone" src="images/inputClear.png">
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+
+									<td><div class="queryField">软件全称：</div></td>
+									<td><div class="inputRequestNumDiv">
+											<div class="floatLeft inputLeftNomal"></div>
+											<div
+												class="displayInline floatLeft inputRequestNum inputBgNormal w100P">
+												<div class="floatLeft displayInline tabSaeInput">
+													<input maxlength="100" e="exp" field="软件全称" title="软件全称"
+														class="seaInput wFhF buttonNobgBd floatLeft displayInline outLineN paddingLeft20"
+														placeholder=" 语音软件" type="text">
+												</div>
+												<div class="floatRight height35">
+													<span class="tabSeaNumTip displayNone">预检索中</span> <img
+														class="inputClear displayNone" src="images/inputClear.png">
+												</div>
+											</div>
+										</div></td>
+
+									<td><div class="queryField">软件简称：</div></td>
+									<td><div class="inputRequestNumDiv">
+											<div class="floatLeft inputLeftNomal"></div>
+											<div
+												class="displayInline floatLeft inputRequestNum inputBgNormal w100P">
+												<div class="floatLeft displayInline tabSaeInput">
+													<input maxlength="100" e="exp" field="软件简称" title="软件简称"
+														class="seaInput wFhF buttonNobgBd floatLeft displayInline outLineN paddingLeft20"
+														placeholder=" 语音软件" type="text">
+												</div>
+												<div class="floatRight height35">
+													<span class="tabSeaNumTip displayNone">预检索中</span> <img
+														class="inputClear displayNone" src="images/inputClear.png">
+												</div>
+											</div>
+										</div></td>
+								</tr>
+								<tr>
+
+									<td><div class="queryField">登记日期：</div></td>
+									<td><div class="inputRequestNumDiv">
+											<div class="floatLeft inputLeftNomal"></div>
+											<div
+												class="displayInline floatLeft inputRequestNum inputBgNormal w100P">
+												<div class="floatLeft displayInline tabSaeInput">
+													<input maxlength="100" e="exp" field="登记日期" title="登记日期"
+														class="seaInput wFhF buttonNobgBd floatLeft displayInline outLineN paddingLeft20"
+														placeholder=" 20110105" type="text">
+												</div>
+												<div class="floatRight height35">
+													<span class="tabSeaNumTip displayNone">预检索中</span> <img
+														class="inputClear displayNone" src="images/inputClear.png">
+												</div>
+											</div>
+										</div></td>
+
+									<td><div class="queryField">著作权人：</div></td>
+									<td><div class="inputRequestNumDiv">
+											<div class="floatLeft inputLeftNomal"></div>
+											<div
+												class="displayInline floatLeft inputRequestNum inputBgNormal w100P">
+												<div class="floatLeft displayInline tabSaeInput">
+													<input maxlength="100" e="exp" field="著作权人" title="著作权人"
+														class="seaInput2 wFhF buttonNobgBd floatLeft displayInline outLineN paddingLeft20"
+														placeholder=" 张力立" type="text">
+												</div>
+												<div class="floatRight height35">
+													<span class="tabSeaNumTip displayNone">预检索中</span> <img
+														class="inputClear displayNone" src="images/inputClear.png">
+												</div>
+											</div>
+										</div></td>
+								</tr>
+								<tr>
+
+									<td><div class="queryField">首次发表日期：</div></td>
+									<td><div class="inputRequestNumDiv">
+											<div class="floatLeft inputLeftNomal"></div>
+											<div
+												class="displayInline floatLeft inputRequestNum inputBgNormal w100P">
+												<div class="floatLeft displayInline tabSaeInput">
+													<input maxlength="100" e="exp" field="首次发表日期"
+														title="首次发表日期"
+														class="seaInput2 wFhF buttonNobgBd floatLeft displayInline outLineN paddingLeft20"
+														placeholder=" 20110105" type="text">
+												</div>
+												<div class="floatRight height35">
+													<span class="tabSeaNumTip displayNone">预检索中</span> <img
+														class="inputClear displayNone" src="images/inputClear.png">
+												</div>
+											</div>
+										</div></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- part1 end -->
+			</div>
+			<!-- part end -->
+			<!--表达式编辑框-->
+			<div style="width: 100%; display: none"
+				class="positionRelative boxShadow clearBoth">
+
+				<textarea style="border: 1px solid #333333;"
+					class="control-group editFieldList height100 nonResize fontSize12"
+					name="select-key:expressCN" rows="3" id="expressCN"
+					onkeydown="setPosition(this)" onmouseup="setPosition(this)"
+					onfocus="setPosition(this)" placeholder="在这里编辑表达式"></textarea>
+				<input type="hidden" name="select-key:temp" id="expressCNHid">
+				<input type="hidden" id="expressSign" value="0">
+				<!--表达式-->
+				<button type="button" id="doExpress"
+					class="generateExpress buttonNobgBd outLineN colWhite fontWeightBold cursorPointer fontSize14"
+					style="width: 140px; height: 31px; background: url(images/btn4_1.png) no-repeat">表达式</button>
+			</div>
+			<!--检索按钮-->
+			<div
+				style="position: fixed; bottom: 0px; z-index: 1; left: 0px; padding: 15px 0px 15px 0px; width: 100%; text-align: right; background-color: #FFFFFF; border-top: 1px #D3D3D3 solid; box-shadow: 0px -2px 10px 1px #D3D3D3;">
+				<button type="button" id="submitExpress"
+					class="buttonNobgBd outLineN colWhite fontWeightBold cursorPointer fontSize14"
+					style="width: 140px; height: 31px; background: url(images/btn4_1.png) no-repeat">检&nbsp;&nbsp;&nbsp;&nbsp;索</button>
+				<button type="button" id="emptyExpress"
+					class="buttonNobgBd outLineN colWhite fontWeightBold cursorPointer fontSize14"
+					style="width: 140px; margin-right: 100px; height: 31px; background: url(images/btn4_1.png) no-repeat">重&nbsp;&nbsp;&nbsp;&nbsp;置</button>
+			</div>
+
+		</div>
+	</div>
+	<div id="footerNew"
+		style="display: none; text-align: center; margin: 0 auto;"></div>
+
+
+	<script type="text/javascript" src="js/code.js"></script>
+	<script type="text/javascript" src="js/express.js"></script>
+	<script type="text/javascript" src="js/copyright.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			/*作品*/
+			$("#copyright_zp").click(function() {
+				window.location.href = "crwork.html";
+
+			});
+		});
+	</script>
+</body>
+</html>

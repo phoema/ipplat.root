@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html ng-app="patentApp" class="ng-scope">
+<head>
+<style type="text/css">
+@charset "UTF-8";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak,
+	.x-ng-cloak, .ng-hide {
+	display: none !important;
+}
+
+ng\:form {
+	display: block;
+}
+
+.ng-animate-block-transitions {
+	transition: 0s all !important;
+	-webkit-transition: 0s all !important;
+}
+
+.ng-hide-add-active, .ng-hide-remove {
+	display: block !important;
+}
+</style>
+<title>商标检索-知识产权检索-诚知网-做专业的技术专利和科技服务交易平台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="renderer" content="webkit">
+<!--[if lt IE 9]>
+<script src="/module/resources/bootstrap2.3.2/js/html5shiv.js"></script>
+<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="edge">
+
+
+<link href="css/detail.css" rel="stylesheet" media="screen">
+<link href="../public/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="../public/css/public.css" rel="stylesheet" media="screen">
+<link href="../public/css/pub_zz.css" rel="stylesheet" media="screen">
+<link href="../public/css/pub_sear.css" rel="stylesheet" media="screen">
+<link href="../public/css/layout.css" rel="stylesheet" media="screen">
+<link href="../public/css/common.css" rel="stylesheet" media="screen">
+<link href="../public/css/debug.css" rel="stylesheet" media="screen">
+<link href="../public/beacon/beacon_main.css" rel="stylesheet"
+	media="screen">
+<script type="text/javascript" src="../public/js/jquery.js"></script>
+<script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="../public/beacon/beacon_jquery_common.js"></script>
+<script type="text/javascript"
+	src="../public/beacon/beacon_jquery_main.js"></script>
+
+<script type="text/javascript">
+	var rootPath = '';
+</script>
+<script src="../public/js/header.js"></script>
+
+<link href="http://hn.publicdi.com/favicon.ico" type="image/x-icon"
+	rel="icon">
+<link href="http://hn.publicdi.com/favicon.ico" type="image/x-icon"
+	rel="shortcut icon">
+</head>
+<body class="bodyClass">
+
+	<div class="nav" id="headerNav"></div>
+	<div></div>
+	
+	<div class="location">
+		<b style="font-size: 14px; font-weight: normal; font-family: '微软雅黑';">
+			<a href="http://www.czeip.com/">首页</a>
+		</b><b
+			style="color: #0185da; font-size: 12px; font-weight: bold; font-family: '宋体';">&gt;</b><span>
+
+			知识产权检索 </span>
+	</div>
+	<!--main-->
+
+	<div
+		style="width: 89.89%; margin: 0 auto; margin-top: 20px; background-color: #fff; border: 1px solid rgb(225, 225, 225);"
+		class="minWidth1000px" id="theme">
+
+
+		<style type="text/css">
+</style>
+
+		<div id="detailTop"
+			style="background-color: rgb(255, 255, 255); margin-bottom: 115px;">
+			<div class="width100p textAlignCenter fontSize20"
+				style="padding-top: 15px; line-height: 20px; text-align: center; font-family: 微软雅黑; font-weight: bolder;">
+				<span id="tip0"></span> <span id="isChiMing" value="非驰名"></span>
+
+			</div>
+
+			<div class="h25Center margin0Auto"
+				style="width: 500px; text-align: center; padding-bottom: 20px; font-family: 微软雅黑">
+				<span id="tip1"></span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="tip2"></span>
+			</div>
+		</div>
+
+
+		<div class="patentHeadFixed w89Point89P backWhite minWidth1000px"
+			style="position: absolute; top: 245px; z-index: 100;">
+
+
+			<div class="Width100P">
+				<ul class="titleUl width100p textAlignCenter">
+					<li id="tdmarkdtil1"
+						style="width: 33.8%; padding: 0px; margin: 0px; border-left: 0px; border-right: 2px solid rgb(225, 225, 225);"
+						class="selectedli"><span
+						class="docUnselectd_dt displayInline titlemenuImg1"></span>商标详情</li>
+					<li id="tdmarkdtil2"
+						style="width: 32.7%; padding: 0px; margin: 0px;"
+						class="unselectedli decisiondata"><span
+						class="docUnselectd displayInline titlemenuImg2"></span>商标流程</li>
+					<li id="tdmarkdtil3" style="width: 33%; padding: 0px; margin: 0px;"
+						class="unselectedli decisiondata"><span
+						class="patentDataUnselectd displayInline titlemenuImg3"></span>商标相关数据</li>
+				</ul>
+			</div>
+			<script type="text/jscript">
+				
+				 
+	//头部浮层
+	$().ready(function() {
+    	$(".patentHeadFixed").capacityFixed();
+	});
+
+			
+			</script>
+			<!--   
+        <div id="tradehook" class="marginTop10 displayInline borderBottom" style="width: 100%">
+          <ul class="keywordUl displayInline Width100P marginBottom10 detailKeywordUl">
+            <li v="a0">基本信息</li>
+            <li v="a1">申请人信息</li>
+            <li v="a2">代理人信息</li>
+            <li v="a3">商品服务列表</li>
+            <li v="a4">商标注册信息</li>
+            <li v="a5">商标公告状态</li> 
+          </ul>
+        </div>
+        
+         <div id="tradeRlhook" style="display:none" class="displayInline borderBottom w100P">
+                <ul class="keywordUl displayInline Width100P marginTop10 marginBottom10">
+                    <li v="a6" class="similaryTra3">相似商标</li>
+                    <li v="a7" class="similaryPat3">相关专利</li>
+                    <li v="a8" class="similarySta3">相关软著</li>
+                    <li v="a9" class="similarySta3">相关作品</li>
+                </ul>
+            </div>
+        -->
+		</div>
+		<script type="text/javascript">
+			$("#detailTop").css("margin-bottom", "115px");
+		</script>
+		<!-- part start -->
+		<div>
+			<!-- part1 start -->
+			<div id="part1">
+				<div class="detailTopNav Width100P bgFFF displayInline marginTop20"
+					style="padding: 10px 0px 10px 0px;">
+					<table class="floatLeft" style="width: 100%; margin-top: -30px;">
+						<tbody>
+							<tr style="display: none">
+								<td><div class="titleNavsNew" style="width: auto;">
+										<div class="titleGroup">
+											<dl>
+												<dt>相似商标</dt>
+												<dd>
+													&nbsp;&nbsp;&nbsp;&nbsp;<a id="traCount"
+														href="javascript:void(0)">75834</a>&nbsp;&nbsp;&nbsp;&nbsp;条
+												</dd>
+											</dl>
+											<div class="titleSep"></div>
+											<dl>
+												<dt>相关专利</dt>
+												<dd>
+													&nbsp;&nbsp;&nbsp;&nbsp;<a id="patCount"
+														href="javascript:void(0)"> 310 </a>&nbsp;&nbsp;&nbsp;&nbsp;件
+												</dd>
+											</dl>
+											<div class="titleSep"></div>
+										</div>
+										<div class="titleGroup">
+											<dl>
+												<dt>相关软著</dt>
+												<dd>
+													&nbsp;&nbsp;&nbsp;&nbsp;<a id="stdCount"
+														href="javascript:void(0)">1</a>&nbsp;&nbsp;&nbsp;&nbsp;件
+												</dd>
+											</dl>
+											<div class="titleSep"></div>
+											<dl>
+												<dt>相关作品</dt>
+												<dd>
+													&nbsp;&nbsp;&nbsp;&nbsp;<a id="iseCount"
+														href="javascript:void(0)">0</a>&nbsp;&nbsp;&nbsp;&nbsp;件
+												</dd>
+											</dl>
+										</div>
+
+									</div></td>
+							</tr>
+							<tr>
+								<td style="padding-top: 10px;" align="center"><img
+									id="picsrc" src="txnTradeMarkDetail_files/THB.GIF"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="displayInline bgFFF Width100P positionRelative"
+					style="margin-top: 5px; padding-top: 15px;">
+					<div>
+						<div style="margin-left: 20px;">
+							<span style="display: none"
+								class="classificationTextNew cursorPointer"></span> <span
+								class="classificationSep"></span> <span
+								class="anchorEle displayInline catalogue classificationText"
+								id="a0"> 基本信息 </span>
+						</div>
+						<div style="clear: both"></div>
+					</div>
+					<div id="highlightDiv0">
+						<table class="doctable  marginRight15"
+							style="width: 90%; margin-bottom: 25px;" cellspacing="0"
+							cellpadding="0">
+							<tbody>
+								<tr>
+									<td rowspan="12" style="width: 8%; border: none"></td>
+									<td class="trademark-td shuoming">注册号</td>
+									<td class="neirong" id="registno"></td>
+									<td class="trademark-td shuoming">注册日期</td>
+									<td class="neirong filterDayDian" id="registDT"></td>
+								</tr>
+								<tr>
+									<td class="trademark-td shuoming">申请号</td>
+									<td class="neirong" id="applyNO"></td>
+									<td class="trademark-td shuoming">申请日期</td>
+									<td class="neirong filterDayDian" id="applyDT"></td>
+								</tr>
+								<tr>
+									<td class="trademark-td shuoming">尼斯分类</td>
+									<td class="neirong"><a class="href0" id="ncnum"
+										target="_blank" href="http://ww"> </a><span></span></td>
+									<td class="trademark-td shuoming">类似群号</td>
+									<td class="neirong" id="sameNO"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<div style="margin-left: 20px;">
+							<span style="display: none"
+								class="classificationTextNew cursorPointer"></span> <span
+								class="classificationSep"></span> <span
+								class="anchorEle displayInline catalogue classificationText"
+								id="a1"> 申请人信息 </span>
+						</div>
+						<div style="clear: both"></div>
+					</div>
+					<div id="highlightDiv8">
+						<table class="doctable marginRight15"
+							style="width: 90%; margin-bottom: 25px;" cellspacing="0"
+							cellpadding="0">
+							<tbody>
+								<tr>
+									<td rowspan="12" style="width: 8%; border: none"></td>
+									<td class="trademark-td shuoming">申请人名称</td>
+									<td class="neirong"><a class="href0" id="appealTrademark"
+										target="_blank" href="http://www"> </a><span></span></td>
+									<td class="trademark-td shuoming">申请人区域代码</td>
+									<td class="neirong" id="applyareaCode"></td>
+								</tr>
+								<tr>
+									<td class="trademark-td shuoming">申请人地址</td>
+									<td class="neirong" colspan="3" id="applyAddr"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<div style="margin-left: 20px;">
+							<span style="display: none"
+								class="classificationTextNew cursorPointer"></span> <span
+								class="classificationSep"></span> <span
+								class="anchorEle displayInline catalogue classificationText"
+								id="a2"> 代理人信息 </span>
+						</div>
+						<div style="clear: both"></div>
+					</div>
+					<div id="highlightDiv1">
+						<table class="doctable  marginRight15"
+							style="width: 82%; margin-bottom: 25px; margin-left: 8%"
+							cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td class="trademark-td shuoming">代理人名称</td>
+									<td class="neirong" style="width: 85%"><a class="href0"
+										id="dailiTrademark" target="_blank" href="http:"> </a><span></span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<div style="margin-left: 20px;">
+							<span style="display: none"
+								class="classificationTextNew cursorPointer"></span> <span
+								class="classificationSep"></span> <span
+								class="anchorEle displayInline catalogue classificationText"
+								id="a3"> 商品服务列表 </span>
+						</div>
+						<div style="clear: both"></div>
+					</div>
+					<div id="highlightDiv2">
+						<table class="doctable  marginRight15"
+							style="width: 82%; margin-bottom: 25px; margin-left: 8%"
+							cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td class="trademark-td shuoming">商品/服务列表</td>
+									<td class="neirong" id="serve" style="width: 85%"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<div style="margin-left: 20px;">
+							<span style="display: none"
+								class="classificationTextNew cursorPointer"></span> <span
+								class="classificationSep"></span> <span
+								class="anchorEle displayInline catalogue classificationText"
+								id="a4"> 商标注册信息 </span>
+						</div>
+						<div style="clear: both"></div>
+					</div>
+					<div id="highlightDiv3">
+						<table class="doctable  marginRight15"
+							style="width: 90%; margin-bottom: 25px;" cellspacing="0"
+							cellpadding="0">
+							<tbody>
+								<tr>
+									<td rowspan="12" style="width: 8%; border: none"></td>
+									<td class="trademark-td shuoming">初审公告期号</td>
+									<td class="neirong" id="cshhqh"></td>
+									<td class="trademark-td shuoming">初审公告日期</td>
+									<td class="neirong filterDayDian" id="csggrq"></td>
+								</tr>
+								<tr>
+									<td class="trademark-td shuoming">初审公告页码</td>
+									<td class="neirong" id="csggym"></td>
+									<td class="trademark-td shuoming">国际注册日期</td>
+									<td class="neirong filterDayDian" id="gjzcrq"></td>
+								</tr>
+								<tr>
+									<td class="trademark-td shuoming">注册公告期号</td>
+									<td class="neirong" id="zcggqh"></td>
+									<td class="trademark-td shuoming">优先权日期</td>
+									<td class="neirong filterDayDian" id="yxqrq"></td>
+								</tr>
+								<tr>
+									<td class="trademark-td shuoming">专用权期限开始日期</td>
+									<td class="neirong filterDayDian" id="zyqqxstart"></td>
+									<td class="trademark-td shuoming">专用权期限截止日期</td>
+									<td class="neirong filterDayDian" id="zyqqxend"></td>
+								</tr>
+								<tr>
+									<td class="trademark-td shuoming">异议截止日期</td>
+									<td class="neirong filterDayDian" id="yyend"></td>
+									<td class="trademark-td shuoming">后期指定日期</td>
+									<td class="neirong filterDayDian" id="hqzdrq"></td>
+								</tr>
+								<tr>
+									<td class="trademark-td shuoming">指定颜色</td>
+									<td class="neirong" id="color"></td>
+									<td class="trademark-td shuoming">共有商标</td>
+									<td class="neirong" id="sharetrade"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<div style="margin-left: 20px;">
+							<span style="display: none"
+								class="classificationTextNew cursorPointer"></span> <span
+								class="classificationSep"></span> <span
+								class="anchorEle displayInline catalogue classificationText"
+								id="a5"> 商标公告状态 </span>
+						</div>
+						<div style="clear: both"></div>
+					</div>
+					<div id="highlightDiv4">
+						<table class="doctable  marginRight15"
+							style="width: 90%; margin-bottom: 25px;" cellspacing="0"
+							cellpadding="0">
+							<tbody>
+								<tr>
+									<td rowspan="12" style="width: 3.5%; border: none"></td>
+									<td class="neirong" id="nr"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- part1 end -->
+			<!-- part2 start -->
+			<div id="part2" style="display: none">
+				<div class="displayInline bgFFF Width100P positionRelative"
+					style="margin-top: 5px; padding-top: 15px;">
+					<div>
+						<ul class="course_nr2">
+
+							<table class="tableBig"
+								style="width: 77%; margin: 0 auto; margin-top: -10px;"
+								cellspacing="0">
+								<tbody id="overflow">
+									<tr style="height: 40px">
+										<td><div class="lefttop"></div></td>
+										<td style="width: 36.45%" align="center"><span
+											class="title marginLeft15 tdPadding fontWeightBoldLegalStatus ">商标流程日期</span>
+										</td>
+										<td style="width: 36.45%; text-align: center"><span
+											class="title tdPadding fontWeightBoldLegalStatus">商标流程描述</span></td>
+									</tr>
+
+								</tbody>
+							</table>
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<!-- part2 end -->
+			<!-- part3 start -->
+			<div id="part3m" style="display: none">加载中,请稍后...</div>
+			<div id="part3" style="display: none">
+				<div class="displayInline bgFFF Width100P positionRelative"
+					style="margin-top: 5px; padding-top: 15px;">
+
+					<div class="tdmark-OveDt-dtsed">
+						<div class="similaryTra1">
+							<div class="floatLeft displayInline"></div>
+							<div class="displayInline"></div>
+							<div style="margin-left: 20px;">
+								<span style="display: none" class="classificationTextNew"></span>
+								<span class="classificationSep"></span> <span
+									class="anchorEle displayInline catalogue classificationText"
+									id="a6"> 相似商标 </span>
+								<div id="similarTraLink" class="displayInline leftArrow cursor"
+									style="display: none;"></div>
+							</div>
+							<div style="clear: both"></div>
+						</div>
+						<table class="tdmark-Ovedata similaryTra2" id="table_tra"
+							style="margin: 2px auto; margin-bottom: 25px;">
+							<thead>
+								<tr>
+									<td>序号</td>
+									<td>注册号</td>
+									<td>注册日期</td>
+									<td>商标名称</td>
+									<td>申请人名称</td>
+									<td>尼斯分类</td>
+									<td>图形</td>
+								</tr>
+							</thead>
+							<tbody id="table_traTB">
+							</tbody>
+						</table>
+					</div>
+					<div class="clearBoth"></div>
+					<div class="tdmark-OveDt-dtsed">
+						<div class="similaryPat1">
+							<div class="floatLeft displayInline"></div>
+							<div class="displayInline"></div>
+							<div style="margin-left: 20px;">
+								<span style="display: none" class="classificationTextNew"></span>
+								<span class="classificationSep"></span> <span
+									class="anchorEle displayInline catalogue classificationText"
+									id="a7"> 相关专利 </span>
+								<div id="similarPatLink" class="displayInline leftArrow cursor"
+									style="display: none;"></div>
+							</div>
+							<div style="clear: both"></div>
+						</div>
+						<table class="tdmark-Ovedata similaryPat2" id="table_pat"
+							style="margin: 2px auto; margin-bottom: 25px;">
+							<thead>
+								<tr>
+									<td>序号</td>
+									<td>公布号</td>
+									<td>申请日</td>
+									<td>名称</td>
+									<td>申请人</td>
+									<td>IPC</td>
+								</tr>
+							</thead>
+							<tbody id="table_patTB">
+							</tbody>
+						</table>
+					</div>
+					<div class="clearBoth"></div>
+					<div class="tdmark-OveDt-dtsed">
+						<div class="similarySta1">
+							<div class="floatLeft displayInline"></div>
+							<div class="displayInline"></div>
+							<div style="margin-left: 20px;">
+								<span style="display: none" class="classificationTextNew"></span>
+								<span class="classificationSep"></span> <span
+									class="anchorEle displayInline catalogue classificationText"
+									id="a8"> 相关软著 </span>
+								<div id="similarStdLink" class="displayInline leftArrow cursor"
+									style="display: none;"></div>
+							</div>
+							<div style="clear: both"></div>
+						</div>
+						<table class="tdmark-Ovedata similarySta2" id="table_std"
+							style="margin: 2px auto; margin-bottom: 25px;">
+							<thead>
+								<tr>
+									<td>序号</td>
+									<td>登记号</td>
+									<td>软件全称</td>
+									<td>分类号</td>
+									<td>软件简称</td>
+									<td>著作权人</td>
+									<td>登记日期</td>
+								</tr>
+							</thead>
+							<tbody id="similarStdLinkTB">
+
+
+								<tr class="trstd_1 similarySta">
+									<td>1</td>
+									<td class=" ">国家标准</td>
+									<td class="">GB/T 31059-2014</td>
+
+									<td class="filterDay1">2014.12.22</td>
+
+
+									<td><a target="_blank"
+										href="http://www.zldsj.com/txnStandardDetail.do?select-key:ID=SIDCN2014124A796891358D439B4A70FCA10C9NN0105DC&amp;select-key:STN=1096266">裱花蛋糕</a></td>
+									<td class="STDSDCOLink"><a
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E5%85%A8%E5%9B%BD%E7%84%99%E7%83%A4%E5%88%B6%E5%93%81%E6%A0%87%E5%87%86%E5%8C%96%E6%8A%80%E6%9C%AF%E5%A7%94%E5%91%98%E4%BC%9A%E7%B3%95%E7%82%B9%E5%88%86%E6%8A%80%E6%9C%AF%E5%A7%94%E5%91%98%E4%BC%9A%27%20%29"
+										target="_blank">全国焙烤制品标准化技术委员会糕点分技术委员会</a><a
+										style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E5%8C%97%E4%BA%AC%E5%A5%BD%E5%88%A9%E6%9D%A5%E4%BC%81%E4%B8%9A%E6%8A%95%E8%B5%84%E7%AE%A1%E7%90%86%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">北京好利来企业投资管理有限公司</a><a
+										style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E7%9B%90%E5%9F%8E%E9%A1%B6%E7%9B%8A%E9%A3%9F%E5%93%81%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">盐城顶益食品有限公司</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E5%8C%97%E4%BA%AC%E5%91%B3%E5%A4%9A%E7%BE%8E%E9%A3%9F%E5%93%81%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">北京味多美食品有限责任公司</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E4%B8%8A%E6%B5%B7%E5%85%8B%E8%8E%89%E7%B5%B2%E6%B1%80%E9%A3%9F%E5%93%81%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">上海克莉絲汀食品有限公司</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E4%B8%8A%E6%B5%B7%E7%91%9E%E8%8E%B1%E6%96%B0%E4%BE%A8%E9%A3%9F%E5%93%81%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">上海瑞莱新侨食品有限公司</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E4%B8%8A%E6%B5%B7%E5%85%83%E7%A5%96%E6%A2%A6%E6%9E%9C%E5%AD%90%E9%A3%9F%E5%93%81%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">上海元祖梦果子食品有限公司</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E8%A5%BF%E5%AE%89%E7%B1%B3%E6%97%97%E9%A3%9F%E5%93%81%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">西安米旗食品有限公司</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E6%96%B0%E7%96%86%E9%BA%A6%E8%B6%A3%E5%B0%94%E9%A3%9F%E5%93%81%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">新疆麦趣尔食品有限公司</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E9%87%8D%E5%BA%86%E5%8D%8E%E7%94%9F%E5%9B%AD%E9%A3%9F%E5%93%81%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">重庆华生园食品有限公司</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E6%9D%AD%E5%B7%9E%E7%8E%AB%E9%9A%86%E9%A3%9F%E5%93%81%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">杭州玫隆食品有限公司</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E7%BB%B4%E7%9B%8A%E9%A3%9F%E5%93%81%28%E8%8B%8F%E5%B7%9E%29%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">维益食品(苏州)有限公司</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E4%B8%8A%E6%B5%B7%E6%B5%B7%E8%9E%8D%E9%A3%9F%E5%93%81%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">上海海融食品有限公司</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E5%A4%A9%E6%B4%A5%E5%8D%97%E4%BE%A8%E6%B2%B9%E8%84%82%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">天津南侨油脂有限公司</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E4%B8%9C%E8%8E%9E%E5%B8%82%E5%B9%BF%E7%9B%8A%E9%A3%9F%E5%93%81%E6%B7%BB%E5%8A%A0%E5%89%82%E5%AE%9E%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">东莞市广益食品添加剂实业有限公司</a><a
+										style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E6%B7%B1%E5%9C%B3%E5%B8%82%E5%8D%8E%E6%B5%8B%E6%8A%80%E6%9C%AF%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">深圳市华测技术股份有限公司</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E4%B8%AD%E5%9B%BD%E9%A3%9F%E5%93%81%E5%B7%A5%E4%B8%9A%E5%8D%8F%E4%BC%9A%E9%9D%A2%E5%8C%85%E7%B3%95%E9%A5%BC%E4%B8%93%E4%B8%9A%E5%A7%94%E5%91%98%E4%BC%9A%27%20%29"
+										target="_blank">中国食品工业协会面包糕饼专业委员会</a><a
+										style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E4%B8%AD%E5%9B%BD%E7%84%99%E7%83%A4%E9%A3%9F%E5%93%81%E7%B3%96%E5%88%B6%E5%93%81%E5%B7%A5%E4%B8%9A%E5%8D%8F%E4%BC%9A%27%20%29"
+										target="_blank">中国焙烤食品糖制品工业协会</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E5%85%A8%E5%9B%BD%E5%B7%A5%E5%95%86%E8%81%94%E7%83%98%E7%84%99%E4%B8%9A%E5%85%AC%E4%BC%9A%27%20%29"
+										target="_blank">全国工商联烘焙业公会</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E4%B8%AD%E5%8D%8E%E7%B3%95%E9%A5%BC%E6%96%87%E5%8C%96%E4%BF%83%E8%BF%9B%E4%BC%9A%27%20%29"
+										target="_blank">中华糕饼文化促进会</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E5%8C%97%E4%BA%AC%E7%84%99%E7%83%A4%E9%A3%9F%E5%93%81%E7%B3%96%E5%88%B6%E5%93%81%E5%8D%8F%E4%BC%9A%27%20%29"
+										target="_blank">北京焙烤食品糖制品协会</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E4%B8%8A%E6%B5%B7%E5%B8%82%E7%B3%96%E5%88%B6%E9%A3%9F%E5%93%81%E5%8D%8F%E4%BC%9A%27%20%29"
+										target="_blank">上海市糖制食品协会</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E5%A4%A9%E6%B4%A5%E5%B8%82%E7%B3%95%E7%82%B9%E8%A1%8C%E4%B8%9A%E5%8D%8F%E4%BC%9A%27%20%29"
+										target="_blank">天津市糕点行业协会</a></td>
+									<td>现行有效</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+					<div class="clearBoth"></div>
+					<div class="tdmark-OveDt-dtsed">
+						<div class="similaryPat1">
+							<div class="floatLeft displayInline"></div>
+							<div class="displayInline"></div>
+							<div style="margin-left: 20px;">
+								<span style="display: none" class="classificationTextNew"></span>
+								<span class="classificationSep"></span> <span
+									class="anchorEle displayInline catalogue classificationText"
+									id="a9"> 相关作品 </span>
+								<div id="similarPiece" class="displayInline leftArrow cursor"
+									style="display: none"></div>
+							</div>
+							<div style="clear: both"></div>
+						</div>
+						<table class="tdmark-Ovedata similaryPat2" id="table_work"
+							style="margin: 2px auto; margin-bottom: 25px;">
+							<thead>
+								<tr>
+									<td>序号</td>
+									<td>登记号</td>
+									<td>登记日期</td>
+									<td>作品名称</td>
+									<td>作品类别</td>
+									<td>著作权人</td>
+								</tr>
+							</thead>
+							<tbody id="similarPieceTB">
+
+
+								<tr class="trpat_1 similarExpLink1 similaryPat">
+									<td>1</td>
+									<td>CN304017109S</td>
+
+									<td class="filterDay1">2016.03.28</td>
+
+
+
+									<td><a
+										href="http://www.zldsj.com/txnPatentDetail.do?select-key:PID=PIDCNS02017012500000000304017111R0RHAIC010047&amp;select-key:PNO=CN304017109S"
+										target="_blank" title="巧克力（焦糖比利时）">巧克力（焦糖比利时）</a></td>
+									<td class="PATAPCLink"><a
+										href="http://www.zldsj.com/txnPatentImgTextList.do?select-key%3AexpressCN=%28%20%E7%94%B3%E8%AF%B7%E4%BA%BA%20%3D%20%27%E5%8C%97%E4%BA%AC%E5%A5%BD%E5%88%A9%E6%9D%A5%E4%BC%81%E4%B8%9A%E6%8A%95%E8%B5%84%E7%AE%A1%E7%90%86%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">北京好利来企业投资管理有限公司</a></td>
+									<td class="PATIPCQLink" style="padding: 0 10px 0 10px;"></td>
+								</tr>
+
+
+							</tbody>
+						</table>
+					</div>
+					<div class="clearBoth"></div>
+
+				</div>
+			</div>
+			<!-- part3 end -->
+			<!-- part end -->
+		</div>
+
+
+		<script type="text/javascript">
+			var highlighted_word = "null"
+		</script>
+
+		<!--main END-->
+		<div id="footerNew"
+			style="float: left; margin-top: 35px; text-align: center; width: 100%;">
+
+		</div>
+
+		<script type="text/javascript" src="js/fixedPosition.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/detailCommon.js"></script>
+		<script type="text/javascript" src="js/tradeDetail.js"></script>
+</body>
+</html>

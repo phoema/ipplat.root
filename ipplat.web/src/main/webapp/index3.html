@@ -1,0 +1,928 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>四川省公共服务信息平台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" rel="stylesheet" href="sucai/styles.css" />
+<link href="sucai/iframe.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="public/js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('.img').css({
+			'height' : ($(window).height() + "px")
+		});
+		$('.container').css({
+			'height' : ($(window).height() * 0.35 + "px")
+		});
+	});
+</script>
+<link href="http://scpub.izhiliao.com.cn/favicon.ico" type="image/x-icon"
+	rel="icon" />
+<link href="http://scpub.izhiliao.com.cn/favicon.ico" type="image/x-icon"
+	rel="shortcut icon" />
+<link href="public/css/bootstrap.css" rel="stylesheet" />
+<link href="public/css/common.css" rel="stylesheet" />
+<link href="public/beacon/beacon_main.css" rel="stylesheet"
+	media="screen" />
+<script type="text/javascript" src="detail/js/common.js"></script>
+<script type="text/javascript" src="public/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="public/beacon/beacon_jquery_common.js"></script>
+<script type="text/javascript" src="public/beacon/beacon_jquery_main.js"></script>
+<link type="text/css" rel="stylesheet" href="public/css/header1.css" />
+
+<link href="public/css/index.css" rel="stylesheet" />
+<script type="text/javascript" src="js/echart/echarts.js"></script>
+</head>
+<body style="background: url(sucai/headbg.jpg) no-repeat  center top  ">
+	<div class="banner">
+		<a href="index.html"><img src="sucai/logo-03.png"></img></a>
+	</div>
+	<header> <!-- navbar -->
+	<div class="index_nav">
+		<div class="index_nav1 indexh">
+
+			<ul id="nav1">
+				<li><a href="index.html" class="selected">首页</a></li>
+				<li>
+					<div class="menu">
+						<div class="xx_1 column" id="xx_1" runat="server">
+							<div class="ty_title_box_z">
+								<div class="ty_title_z">
+									<i></i> 常用查询
+								</div>
+							</div>
+							<div class="ty_body_z">
+								<table>
+									<tr>
+										<td><a href="list/patent.html"><div class="check">专利</div></a></td>
+										<td><a href="list/trademark.html"><div class="check">商标</div></a></td>
+									</tr>
+									<tr>
+										<td><a href="list/crsoft.html"><div class="check">版权</div></a></td>
+										<td><a href="javascript:void(0);"><div class="check">标准</div></a></td>
+									</tr>
+									<tr>
+										<td><a href="javascript:void(0);"><div class="check">知识产权判例</div></a></td>
+										<td><a href="javascript:void(0);"><div class="check">集成电路</div></a></td>
+									</tr>
+									<tr>
+										<td><a href="javascript:void(0);"><div class="check">植物新品种</div></a></td>
+										<td><a href="javascript:void(0);"><div class="check">地理标志</div></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="xx_2 column" id="xx_2" runat="server">
+							<div class="ty_title_z">
+								<i></i> 其他
+							</div>
+							<div class="mc">
+								<div class="menut">
+									<a
+										href="http://www.pss-system.gov.cn/sipopublicsearch/portal/uiIndex.shtml"
+										target="_blank">
+										<div class="menutl">
+											<img src="sucai/analyz.png">
+										</div>
+										<div class="menutr">新一代地方专利信息服务中心检索及分析系统</div>
+									</a>
+								</div>
+								<div class="menut">
+									<a href="javascript:void(0);">
+										<div class="menutl">
+											<img src="sucai/onlinean.png">
+										</div>
+										<div class="menutr">在线专利信息分析系统</div>
+									</a>
+								</div>
+								<div class="menut">
+									<a href="http://221.237.165.4:8081/pmap/map/pat/frame"
+										target="_blank">
+										<div class="menutl">
+											<img src="sucai/hotm.png">
+										</div>
+										<div class="menutr">专利热点地图</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="searchindex.html">在线查找</a>
+					</li>
+				<li>
+					<div class="menu">
+						<div class="ty_title_box_z">
+							<div class="ty_title_z">
+								<i></i> 办事服务
+							</div>
+						</div>
+						<div class="ty_body_z">
+							<div class="Service">
+								<a href="http://cponline.sipo.gov.cn/" target="_blank"> <img
+									src="sucai/Service12.png">
+										<div class="Servicer">专利在线申请</div></a>
+							</div>
+							<div class="Service">
+								<a href="http://cponline.sipo.gov.cn/" target="_blank"> <img
+									src="sucai/Service4.png">
+										<div class="Servicer">专利网上缴费</div></a>
+							</div>
+							<div class="Service">
+								<a href="javascript:void(0);"> <img src="sucai/Service7.png">
+										<div class="Servicer">专利费减备案</div></a>
+							</div>
+							<div class="Service">
+								<a href="http://fee.sipo.gov.cn/" target="_blank"> <img
+									src="sucai/Service5.png">
+										<div class="Servicer">专利缴费信息填报系统</div></a>
+							</div>
+							<div class="Service">
+								<a href="http://cpservice.sipo.gov.cn/index.jsp" target="_blank">
+									<img src="sucai/Service11.png">
+										<div class="Servicer">专利事务服务系统</div>
+								</a>
+							</div>
+							<div class="Service">
+								<a href="javascript:void(0);"> <img src="sucai/Service9.png">
+										<div class="Servicer">专利权质押登记事前审查</div></a>
+							</div>
+							<div class="Service">
+								<a href="javascript:void(0);"> <img src="sucai/Service1.png">
+										<div class="Servicer" style=" padding-top:4px; line-height:20px">专利实施许可合同备案事前审查</div></a>
+							</div>
+							<div class="Service">
+								<a href="javascript:void(0);"> <img src="sucai/Service8.png">
+										<div class="Servicer">专利奖申报系统</div></a>
+							</div>
+							<div class="Service">
+								<a href="http://www.scipo.gov.cn:501/" target="_blank"><img
+									src="sucai/Service13.png"><div class="Servicer">省级专利资助管理系统</div></a>
+							</div>
+							<div class="Service">
+								<a href="http://221.237.165.4:200/project/" target="_blank">
+									<img src="sucai/Service2.png">
+										<div class="Servicer">专项资金项目管理系统</div>
+								</a>
+							</div>
+							<div class="Service">
+								<a href="http://221.237.165.4:200/modelmanage/" target="_blank">
+									<img src="sucai/Service10.png">
+										<div class="Servicer">试点示范管理平台</div>
+								</a>
+							</div>
+							<div class="Service">
+								<a href="http://www.sipo.gov.cn/bgxz/" target="_blank"> <img
+									src="sucai/Service6.png">
+										<div class="Servicer">表格下载</div></a>
+							</div>
+						</div>
+					</div> <a href="javascript:void(0);" class="menu1">办事服务</a>
+				</li>
+				<li>
+					<div class="menu">
+						<div class="ty_title_box_z">
+							<div class="ty_title_z">
+								<i></i> 企业空间
+							</div>
+						</div>
+						<div class="ty_body_z" style="margin-left: 4%">
+							<div class="space space1">
+								<a href="javascript:void(0);">
+									<div class="spaceh1">企业自建库</div>
+								</a>
+							</div>
+							<div class="space space2">
+								<a href="javascript:void(0);">
+									<div class="spaceh1">信息推送</div>
+								</a>
+							</div>
+							<div class="space space3">
+								<a href="javascript:void(0);">
+									<div class="spaceh1">托管业务管理系统</div>
+								</a>
+							</div>
+							<div class="space space4">
+								<a href="javascript:void(0);">
+									<div class="spaceh1">自主知识产权管理系统</div>
+								</a>
+							</div>
+						</div>
+					</div> <a href="javascript:void(0);" class="menu1">企业空间</a>
+				</li>
+				<li>
+					<div class="menu">
+						<div class="ty_title_box_z">
+							<div class="ty_title_z">
+								<i></i> 智库信息
+							</div>
+						</div>
+						<div class="ty_body_z" style="margin-left: 4%">
+							<a href="zkxx/orglist.html">
+								<div class="zhiku">四川省知识产权服务机构名录库</div>
+							</a> <a href="zkxx/agentlist.html">
+								<div class="zhiku">四川省执业专利代理人名录库</div>
+							</a> <a href="javascript:void(0);">
+								<div class="zhiku">四川省知识产权专家人才库</div>
+							</a>
+						</div>
+					</div> <a href="javascript:void(0);" class="menu1">智库信息</a>
+				</li>
+				<li>
+					<div class="menu">
+						<div class="ty_title_box_z">
+							<div class="ty_title_z">
+								<i></i> 产业服务
+							</div>
+						</div>
+						<div class="ty_body_z" style="margin-left: 4%">
+							<a href="http://211.149.187.208/ggfwpt/zxzlxx/" target="_blank">
+								<div class="cysever">特色专题库</div>
+							</a> <a href="http://211.149.187.208/zlxxfw/zlxxlycgdt/"
+								target="_blank">
+								<div class="cysever">产业报告</div>
+							</a>
+						</div>
+					</div> <a href="javascript:void(0);" class="menu1">产业服务</a>
+				</li>
+				<li>
+					<div class="menu">
+						<div class="ty_title_box_z">
+							<div class="ty_title_z">
+								<i></i> 维权保护
+							</div>
+						</div>
+						<div class="ty_body_z">
+							<div class="serviceh">
+								<a href="http://www.scipo.gov.cn/jlhd/zxzx/" target="_blank">
+									<div class="power">
+										<img src="sucai/power1.png">
+									</div>
+									<div class="Servicer">投诉举报</div>
+								</a>
+							</div>
+							<div class="serviceh">
+								<a href="http://www.scipo.gov.cn/gpjg/yzzx/" target="_blank">
+									<div class="power">
+										<img src="sucai/power5.png">
+									</div>
+									<div class="Servicer">维权援助</div>
+								</a>
+							</div>
+							<div class="serviceh">
+								<a href="info/infolist2.html?ty=4">
+									<div class="power">
+										<img src="sucai/power2.png">
+									</div>
+									<div class="Servicer">典型判例</div>
+								</a>
+							</div>
+							<div class="serviceh">
+								<a href="javascript:void(0);">
+									<div class="power">
+										<img src="sucai/power4.png">
+									</div>
+									<div class="Servicer">预警雷达</div>
+								</a>
+							</div>
+							<div class="serviceh">
+								<a href="javascript:void(0);">
+									<div class="power">
+										<img src="sucai/power3.png">
+									</div>
+									<div class="Servicer">海外维权</div>
+								</a>
+							</div>
+						</div>
+					</div> <a href="javascript:void(0);" class="menu1">维权保护</a>
+				</li>
+				<li><a href="info/infolist.html?ty=1" class="menu1">综合信息</a></li>
+				<li>
+					<div class="menu">
+						<div class="ty_title_box_z">
+							<div class="ty_title_z">
+								<i></i> 教育培训
+							</div>
+						</div>
+						<div class="ty_body_z">
+							<div class="serviceh serviceh1">
+								<a href="http://www.ciptc.org.cn/public/index?v=0&r=0"
+									target="_blank">
+									<div class="power">
+										<img src="sucai/edu3.png">
+									</div>
+									<div class="Servicer">远程教育</div>
+								</a>
+							</div>
+							<div class="serviceh serviceh1">
+								<a href="http://sipo.gensee.com/training/site/login"
+									target="_blank">
+									<div class="power">
+										<img src="sucai/edu5.png">
+									</div>
+									<div class="Servicer">公益讲座</div>
+								</a>
+							</div>
+							<div class="serviceh serviceh1">
+								<a href="http://www.sipo.gov.cn/wxfw/zlwxxxggfw/gyjz/gyjzkj/"
+									target="_blank">
+									<div class="power">
+										<img src="sucai/edu1.png">
+									</div>
+									<div class="Servicer">培训课堂</div>
+								</a>
+							</div>
+							<div class="serviceh serviceh1">
+								<a
+									href="https://weidian.com/?userid=892425114&from=singlemessage&isappinstalled=0"
+									target="_blank">
+									<div class="power">
+										<img src="sucai/edu4.png">
+									</div>
+									<div class="Servicer">智慧书堂</div>
+								</a>
+							</div>
+						</div>
+					</div> <a href="javascript:void(0);" class="menu1">教育培训</a>
+				</li>
+				<li>
+					<div class="menu">
+						<div class="ty_title_box_z">
+							<div class="ty_title_z">
+								<i></i> 运营服务
+							</div>
+						</div>
+						<div class="ty_body_z">
+							<div class="serviceh serviceh2">
+								<a href="http://www.scptd.com.cn/Showroom.aspx" target="_blank">
+									<div class="power">
+										<img src="sucai/jiaoyi.png">
+									</div>
+									<div class="Servicer">专利技术展示交易</div>
+								</a>
+							</div>
+							<div class="serviceh serviceh2">
+								<a href="javascript:void(0);">
+									<div class="power">
+										<img src="sucai/mall.png">
+									</div>
+									<div class="Servicer">知识产权产品商城</div>
+								</a>
+							</div>
+							<div class="serviceh serviceh2 ">
+								<a href="http://www.scptd.com.cn/Showroom.aspx" target="_blank">
+									<div class="power">
+										<img src="sucai/tuoguan.png">
+									</div>
+									<div class="Servicer">知识产权托管系统</div>
+								</a>
+							</div>
+						</div>
+					</div> <a href="javascript:void(0);" class="menu1">运营服务</a>
+				</li>
+				<li><a href="javascript:void(0);" class="menu1">市州服务</a></li>
+				<li><a href="javascript:void(0);" class="menu1">咨询服务</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- end navbar --> </header>
+	<div class="index_b">
+		<div class="news_img" id="topnews">
+			<div class="news_img1">
+				<img src="public/img/noimg.png" />
+			</div>
+			<div class="img_txt">
+				<div class="img_txt1"></div>
+				<ul class="slidesjs-pagination">
+				</ul>
+			</div>
+		</div>
+		<div class="index_box2 index_tab_pub" id="newsdiv">
+			<div class="index_tit01 index_menu_pub">
+				<ul name="newstab">
+					<li class="selectab" id="newstab_0" onmouseover="shownews(0);"><span><a
+							href="info/infolist.html?ty=1" target="_self">工作动态</a></span></li>
+					<li class="" id="newstab_1" onmouseover="shownews(1);"><span><a
+							href="info/infolist.html?ty=2" target="_self">政策法规</a></span></li>
+					<li class="" id="newstab_2" onmouseover="shownews(2);"><span><a
+							href="info/infolist.html?ty=3" target="_self">服务指南</a></span></li>
+				</ul>
+			</div>
+
+			<div class="index_tab_pubcon indexborder">
+
+				<div class="index_sub_pubcon" style="display: block;">
+					<div class="index_tab1">
+						<div class="clear"></div>
+						<div class="tab_content">
+							<div class="subcon">
+								<div class="index_inner">
+									<ul class="index_list01" id="newsul_0">
+									</ul>
+									<ul class="index_list01" id="newsul_1" style='display: none;'>
+
+
+									</ul>
+									<ul class="index_list01" id="newsul_2" style='display: none;'>
+
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/tab-->
+
+				</div>
+			</div>
+
+		</div>
+		<div class="index_box3">
+			<div class="index_tit01 index_menu_pub">
+				<ul>
+					<li class="selectab"><span><a
+							href="javascript:void(0);">知识产权统计分析</a></span></li>
+
+				</ul>
+			</div>
+			<div class="index_box3_b indexborder">
+				<ul class="analy">
+					<li><div class="limenu">
+							<a href="javascript:void(0);"><img src="sucai/cx.png"></img><span>创新主体分析</span></a>
+						</div>
+						<div class="ana_img" style="display: block;">
+							<img src="sucai/cx1.png" class="cx1">
+						</div></li>
+					<li><div class="limenu">
+							<a href="javascript:void(0);"><img src="sucai/jk.png"></img><span
+								style="line-height: 36px;">区域监控</span></a>
+						</div>
+						<div class="ana_img">
+							<img src="sucai/jk1.png" class="jk1">
+						</div></li>
+					<li><div class="limenu">
+							<a href="javascript:void(0);"><img src="sucai/ph.png"></img><span
+								style="line-height: 36px;">IP排行榜</span></a>
+						</div>
+						<div class="ana_img">
+							<img src="sucai/ph1.png" style="width: 180px" class="ph1">
+						</div></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="index_b" style="background: #fff">
+		<div class="index_tit01 index_menu_pub">
+			<ul>
+				<li class="selectab"><span><a href="searchindex.html"
+						target="_self">知识产权大数据中心</a></span></li>
+
+			</ul>
+		</div>
+		<div class="indexborder">
+			<div class="search" style="padding: 20px 0 0; overflow: auto">
+				<div style="float: left; line-height: 40px; font-size: 15px;">常用查询&nbsp;&nbsp;
+				</div>
+				<input id="txt_express" autocomplete="off" placeholder="请输入关键词进行检索"
+					class="inputtext1" maxlength="256" type="text"> <input
+					id="btn-search" name="" value="检索" class="inputbutton1"
+					type="button">
+			</div>
+			<div class="searchclass" style="padding-left:134px">
+				<div class="searchclassh">
+					<a href="list/patent.html"> 专利</a><a href="list/trademark.html">
+						商标</a><a href="list/crsoft.html"> 版权</a><a href="javascript:void(0);">
+						标准</a><a href="javascript:void(0);"> 知识产权判例</a><a
+						href="javascript:void(0);"> 集成电路</a><a href="javascript:void(0);">
+						植物新品种</a><a href="javascript:void(0);"> 地理标志 </a>
+				</div>
+			</div>
+			<div class="search_index" style="width: 90%; margin: 0 auto">
+				<div class="search_indexh">
+					<a
+						href="http://www.pss-system.gov.cn/sipopublicsearch/portal/uiIndex.shtml"
+						target="_blank"><div class="search_index1"></div>
+						<div class="text">新一代地方专利信息服务中心检索及分析系统</div></a>
+				</div>
+				<div class="search_indexh">
+					<a href="javascript:void(0);"><div class="search_index2"></div>
+						<div class="text" style="line-height: 40px;">在线专利信息分析系统</div></a>
+				</div>
+				<div class="search_indexh">
+					<a href="http://221.237.165.4:8081/pmap/map/pat/frame"
+						target="_blank"><div class="search_index3"></div>
+						<div class="text" style="line-height: 40px;">专利热点地图</div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="index_b" style="background: #fff">
+		<div class="index_tit01 index_menu_pub">
+			<ul>
+				<li class="selectab"><span><a href="javascript:void(0);">知识产权事务服务</a></span></li>
+
+			</ul>
+		</div>
+		<div class="index_seve indexborder">
+			<div class="ty_body_z">
+				<div class="Service">
+					<a href="http://cponline.sipo.gov.cn/" target="_blank"> <img
+						src="sucai/Service12.png">
+							<div class="Servicer1">专利在线申请</div></a>
+				</div>
+				<div class="Service">
+					<a href="http://cponline.sipo.gov.cn/" target="_blank"> <img
+						src="sucai/Service4.png">
+							<div class="Servicer1">专利网上缴费</div></a>
+				</div>
+				<div class="Service">
+					<a href="javascript:void(0);"> <img src="sucai/Service7.png">
+							<div class="Servicer1">专利费减备案</div></a>
+				</div>
+				<div class="Service">
+					<a href="http://fee.sipo.gov.cn/" target="_blank"> <img
+						src="sucai/Service5.png">
+							<div class="Servicer">专利缴费信息填报系统</div></a>
+				</div>
+				<div class="Service">
+					<a href="http://cpservice.sipo.gov.cn/index.jsp" target="_blank">
+						<img src="sucai/Service11.png">
+							<div class="Servicer">专利事务服务系统</div>
+					</a>
+				</div>
+				<div class="Service">
+					<a href="javascript:void(0);"> <img src="sucai/Service9.png">
+							<div class="Servicer">专利权质押登记事前审查</div></a>
+				</div>
+				<div class="Service">
+					<a href="javascript:void(0);"> <img src="sucai/Service1.png">
+							<div class="Servicer"
+								style="padding: 5px 5px 0 5px;width:100px">专利实施许可合同备案事前审查</div></a>
+				</div>
+				<div class="Service">
+					<a href="javascript:void(0);"> <img src="sucai/Service8.png">
+							<div class="Servicer">专利奖申报系统</div></a>
+				</div>
+				<div class="Service">
+					<a href="http://www.scipo.gov.cn:501/" target="_blank"><img
+						src="sucai/Service13.png"><div class="Servicer">省级专利资助管理系统</div></a>
+				</div>
+				<div class="Service">
+					<a href="http://221.237.165.4:200/project/" target="_blank"> <img
+						src="sucai/Service2.png">
+							<div class="Servicer">专项资金项目管理系统</div></a>
+				</div>
+				<div class="Service">
+					<a href="http://221.237.165.4:200/modelmanage/" target="_blank">
+						<img src="sucai/Service10.png">
+							<div class="Servicer">试点示范管理平台</div>
+					</a>
+				</div>
+				<div class="Service">
+					<a href="http://www.sipo.gov.cn/bgxz/" target="_blank"> <img
+						src="sucai/Service6.png">
+							<div class="Servicer1">表格下载</div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index_b">
+		<div class="index_b11">
+			<div class="index_tit01 index_menu_pub">
+				<ul>
+					<li class="selectab"><span><a
+							href="javascript:void(0);">产业服务</a></span></li>
+
+				</ul>
+			</div>
+			<div class="indexborder">
+				<div class="index_seve">
+					<div class="cyfw_tit" style="cursor: pointer;"
+						onclick="window.open('http://211.149.187.208/ggfwpt/zxzlxx/');">特色专题库</div>
+					<div class="ty_body_z">
+						<div class="Servicei">
+							<a href="http://211.149.187.208/ggfwpt/zxzlxx/" target="_blank">
+								<img src="sucai/cyfw_03.png">
+									<div class="Servicer">农业</div>
+							</a>
+						</div>
+						<div class="Servicei">
+							<a href="http://211.149.187.208/ggfwpt/zxzlxx/" target="_blank">
+								<img src="sucai/cyfw_05.png">
+									<div class="Servicer">新一代信息技术</div>
+							</a>
+						</div>
+						<div class="Servicei">
+							<a href="http://211.149.187.208/ggfwpt/zxzlxx/" target="_blank"> <img
+								src="sucai/cyfw_09.png">
+									<div class="Servicer">重型装备</div></a>
+						</div>
+						<div class="Servicei">
+							<a href="http://211.149.187.208/ggfwpt/zxzlxx/" target="_blank">
+								<img src="sucai/cyfw_10.png">
+									<div class="Servicer">中国IT行业</div>
+							</a>
+						</div>
+						<div class="Servicei">
+							<a href="http://211.149.187.208/ggfwpt/zxzlxx/" target="_blank"> <img
+								src="sucai/cyfw_12.png">
+									<div class="Servicer">生物医药</div></a>
+						</div>
+						<div class="Servicei">
+							<a href="http://211.149.187.208/ggfwpt/zxzlxx/" target="_blank">
+								<img src="sucai/sb.png">
+									<div class="Servicer">新材料</div>
+							</a>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="index_seve">
+					<div class="cyfw_tit">产业报告</div>
+					<div class="index_inner">
+						<ul class="index_list01 cybg">
+							<li><a
+								href="http://211.149.187.208/zlxxfw/zlxxlycgdt/201604/t20160407_970.html"
+								target="_blank">战略性新兴产业专利分析报告—高端装备制造产业</a></li>
+							<li><a
+								href="http://211.149.187.208/zlxxfw/zlxxlycgdt/201604/t20160407_971.html"
+								target="_blank">战略性新兴产业专利分析报告—节能环保产业</a></li>
+							<li><a
+								href="http://211.149.187.208/zlxxfw/zlxxlycgdt/201604/t20160408_999.html"
+								target="_blank">战略性新兴产业专利分析报告—生物产业</a></li>
+							<li><a
+								href="http://211.149.187.208/zlxxfw/zlxxlycgdt/201604/t20160411_1005.html"
+								target="_blank">战略性新兴产业专利分析报告—新能源产业</a></li>
+							<li><a
+								href="http://211.149.187.208/zlxxfw/zlxxlycgdt/201604/t20160411_1006.html"
+								target="_blank">战略性新兴产业专利分析报告—新材料产业</a></li>
+							<li><a
+								href="http://211.149.187.208/zlxxfw/zlxxlycgdt/201604/t20160411_1007.html"
+								target="_blank">战略性新兴产业专利分析报告—新能源汽车产业</a></li>
+							<li><a
+								href="http://211.149.187.208/zlxxfw/zlxxlycgdt/201604/t20160411_1008.html"
+								target="_blank">战略性新兴产业专利分析报告—新一代信息技术产业</a></li>
+
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="index_box3" style="height: auto">
+			<div class="index_box31">
+				<div class="index_tit01 index_menu_pub">
+					<ul>
+						<li class="selectab"><span><a
+								href="javascript:void(0);">企业空间</a></span></li>
+
+					</ul>
+				</div>
+				<div class="indexborder">
+					<div class="space space1">
+						<a href="javascript:void(0);">
+							<div class="spaceh1">企业自建库</div>
+						</a>
+					</div>
+					<div class="space space2">
+						<a href="javascript:void(0);">
+							<div class="spaceh1">信息推送</div>
+						</a>
+					</div>
+					<div class="space space3">
+						<a href="javascript:void(0);">
+							<div class="spaceh1">托管业务管理系统</div>
+						</a>
+					</div>
+					<div class="space space4">
+						<a href="javascript:void(0);">
+							<div class="spaceh1">自主知识产权管理系统</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="index_box31">
+				<div class="index_tit01 index_menu_pub">
+					<ul>
+						<li class="selectab"><span><a
+								href="javascript:void(0);">智库信息</a></span></li>
+
+					</ul>
+				</div>
+				<div class="indexborder" style="padding: 1px 10px">
+					<div class="zkxx">
+						<a href="zkxx/orglist.html">四川省知识产权服务机构名录库</a>
+					</div>
+					<div class="zkxx">
+						<a href="zkxx/agentlist.html">四川省执业专利代理人名录库</a>
+					</div>
+					<div class="zkxx">
+						<a href="javascript:void(0);">四川省知识产权专家人才库</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index_b">
+		<div class="index_b11">
+			<div class="index_tit01 index_menu_pub">
+				<ul>
+					<li class="selectab"><span><a
+							href="javascript:void(0);">市州服务</a></span></li>
+
+				</ul>
+			</div>
+			<div class="indexborder" id="mapcity" style="height: 500px;"></div>
+		</div>
+		<div class="index_box3" style="height: auto">
+			<div class="index_box31">
+				<div class="index_tit01 index_menu_pub">
+					<ul>
+						<li class="selectab"><span><a
+								href="javascript:void(0);">维权保护</a></span></li>
+
+					</ul>
+				</div>
+				<div class="indexborder" style="padding-left: 10px">
+					<div class="serviceh">
+						<a href="http://www.scipo.gov.cn/jlhd/zxzx/" target="_blank">
+							<div class="power">
+								<img src="sucai/power1.png">
+							</div>
+							<div class="Servicer">投诉举报</div>
+						</a>
+					</div>
+					<div class="serviceh">
+						<a href="http://www.scipo.gov.cn/gpjg/yzzx/" target="_blank">
+							<div class="power">
+								<img src="sucai/power5.png">
+							</div>
+							<div class="Servicer">维权援助</div>
+						</a>
+					</div>
+					<div class="serviceh1">
+						<a href="info/infolist2.html?ty=4">
+							<div class="power">
+								<img src="sucai/power2.png">
+							</div>
+							<div class="Servicer">典型判例</div>
+						</a>
+					</div>
+					<div class="serviceh1">
+						<a href="javascript:void(0);">
+							<div class="power">
+								<img src="sucai/power4.png">
+							</div>
+							<div class="Servicer">预警雷达</div>
+						</a>
+					</div>
+					<div class="serviceh1">
+						<a href="javascript:void(0);">
+							<div class="power">
+								<img src="sucai/power3.png">
+							</div>
+							<div class="Servicer">海外维权</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="index_box31">
+				<div class="index_tit01 index_menu_pub">
+					<ul>
+						<li class="selectab"><span><a
+								href="javascript:void(0);">运营服务</a></span></li>
+
+					</ul>
+				</div>
+				<div class="indexborder">
+					<ul class="yunying">
+						<li class="select"><a href="javascript:void(0);">专利技术展示交易</a></li>
+						<li><a href="javascript:void(0);">知识产权托管系统</a></li>
+						<li><a href="http://www.scptd.com.cn/Showroom.aspx">知识产权产品商城</a></li>
+					</ul>
+					<div class="index_inner"
+						style="padding-top: 0; width: 90%; padding-left: 5%; height:164px">
+						<ul class="index_list01" id="commendpatent">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index_b">
+		<div class="index_b11">
+			<div class="index_tit01 index_menu_pub">
+				<ul>
+					<li class="selectab"><span><a
+							href="javascript:void(0);">教育培训</a></span></li>
+
+				</ul>
+			</div>
+			<div class="indexborder">
+				<div class="index_seve">
+					<div class="ty_body_z">
+						<div class="serviceh serviceh1">
+							<a href="http://www.ciptc.org.cn/public/index?v=0&r=0"
+								target="_blank">
+								<div class="power">
+									<img src="sucai/edu3.png">
+								</div>
+								<div class="Servicer">远程教育</div>
+							</a>
+						</div>
+						<div class="serviceh serviceh1">
+							<a href="http://sipo.gensee.com/training/site/login"
+								target="_blank">
+								<div class="power">
+									<img src="sucai/edu5.png">
+								</div>
+								<div class="Servicer">公益讲座</div>
+							</a>
+						</div>
+						<div class="serviceh serviceh1">
+							<a href="http://www.sipo.gov.cn/wxfw/zlwxxxggfw/gyjz/gyjzkj/"
+								target="_blank">
+								<div class="power">
+									<img src="sucai/edu1.png">
+								</div>
+								<div class="Servicer">培训课堂</div>
+							</a>
+						</div>
+						<div class="serviceh serviceh1">
+							<a
+								href="https://weidian.com/?userid=892425114&from=singlemessage&isappinstalled=0"
+								target="_blank">
+								<div class="power">
+									<img src="sucai/edu4.png">
+								</div>
+								<div class="Servicer">智慧书堂</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="index_box3" style="height: auto">
+			<div class="index_box31">
+				<div class="index_tit01 index_menu_pub">
+					<ul>
+						<li class="selectab"><span><a
+								href="javascript:void(0);">咨询服务</a></span></li>
+
+					</ul>
+				</div>
+				<div class="indexborder">
+					<div class="zixuntxt">
+						提供专利申请、检索分析、预警分析、专利导航、分析评议、竞争对手专利调查、贯标、知识产权战略规划和试点示范咨询服务。</div>
+					<div class="index_zx">
+						<a href="javascript:void(0);">我要咨询</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index_b yl">
+		<div class="yl_t">友情链接</div>
+		<ul class="yl_m">
+			<li><a target="_blank" href="http://www.sipo.gov.cn/">国家知识知识产权局</a></li>
+			<li><a target="_blank" href="http://home.ciptc.org.cn/">中国知识产权远程教育</a></li>
+			<li><a target="_blank" href="http://www.scipo.gov.cn/">四川省知识产权局</a></li>
+			<li><a target="_blank" href="http://www.ipph.cn/">知识产权出版社有限责任公司</a></li></ul>
+			<ul class="yl_m">
+			<li><a target="_blank" href="http://www.cdip.gov.cn/">成都市</a></li>
+			<li><a target="_blank" href="http://www.zg.gov.cn/web/skjj">自贡市</a></li>
+			<li><a target="_blank" href="http://218.89.108.58/kjjdoc/zscqj/">攀枝花</a></li>
+			<li><a target="_blank" href="http://www.lzst.gov.cn/">泸州市</a></li>
+			<li><a target="_blank" href="http://www.dyst.gov.cn/">德阳市</a></li>
+			<li><a target="_blank" href="http://zscqj.my.gov.cn/">绵阳市</a></li>
+			<li><a target="_blank" href="http://www.gyst.gov.cn/">广元市</a></li>
+			<li><a target="_blank" href="http://www.snst.gov.cn/">遂宁市</a></li>
+			<li><a target="_blank" href="http://www.njkjj.gov.cn/">内江市</a></li>
+			<li><a target="_blank" href="http://www.lsst.gov.cn/">乐山市</a></li>
+			<li><a target="_blank" href="http://www.ncnet.ac.cn/">南充市</a></li>
+			<li><a target="_blank" href="http://www.ybkj.gov.cn/">宜宾市</a></li>
+			<li><a target="_blank" href="http://www.gakj.gov.cn/">广安市</a></li>
+			<li><a target="_blank" href="http://www.dzkjw.gov.cn/">达州市</a></li>
+			<li><a target="_blank" href="http://www.bzkj.gov.cn/">巴中市</a></li>
+			<li><a target="_blank" href="http://www.yakjw.gov.cn/">雅安市</a></li>
+			<li><a target="_blank" href="http://www.zykjw.gov.cn/index.asp">资阳市</a></li>
+			<li><a target="_blank" href="http://www.jiuzhaikeji.gov.cn/">阿坝市</a></li>
+			<li><a target="_blank" href="http://www.gzzkjj.gov.cn/">甘孜州</a></li>
+			<li><a target="_blank" href="http://www.lszst.gov.cn/">凉山州</a></li>
+
+		</ul>
+	</div>
+	<footer>
+	<div id="footerNew" class="bottom"
+		style="border: 0; margin-top: 40px; position: static">
+		&nbsp;&nbsp;&nbsp;北京中知智慧科技有限公司版权所有 Copyright 2015 All Rights Reserved
+	</div>
+	</footer>
+
+	<script type="text/javascript" src="public/js/index.js"></script>
+</body>
+</html>

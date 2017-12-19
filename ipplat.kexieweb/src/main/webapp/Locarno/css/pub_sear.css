@@ -1,0 +1,313 @@
+* {
+    margin: 0px;
+    padding: 0px;
+	list-style-type:none;
+	font-size:12px;
+	text-decoration:none;
+	font-family:Microsoft YaHei,微软雅黑,STHeiti,WenQuanYi Micro Hei,SimSun,sans-serif;
+}
+body{ background:#fff}
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nav-tabs {
+    margin-bottom:10px;
+    overflow: hidden;
+    padding-bottom: 1px;
+    list-style: none;
+    background-color: #fff;
+}
+.tab-model {
+    margin-top: 30px;
+    border-bottom: 1px solid #e3e3e3;
+    background: #f6f6f6;
+}
+.company-tab {
+    background: #fcfcfc;
+	width:1140px;
+	margin:20px auto 0;
+	overflow:auto;
+	padding:0;
+	box-shadow:0 2px 10px #aaa;
+	position:relative;
+	z-index:0
+}
+.database_top{
+border-bottom: 1px solid #e3e3e3;
+background: #f6f6f6;
+overflow: hidden;
+padding-bottom: 1px;
+list-style: none;
+padding:10px 0}
+.database_top dt {
+    float: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	color:#999;
+	font-size:12px;
+	font-weight:bold;
+	line-height:30px;
+	width:125px;
+}
+.database_top dl {
+	float:left;
+	width:1070px
+}
+.database_top dd {
+	float:left;
+	width:920px
+}
+.database_top dd ul > li {
+	float:left;
+    padding-left:10px;
+    padding-right:10px;
+	line-height:30px;
+	color:#0066ff;
+}
+.database{
+	clear:both;
+	overflow:auto;
+	padding-bottom:10px}
+body {
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #32353d;
+}
+.tab-model > li {
+    margin-bottom: 0;
+	float:left
+}
+.nav > li {
+    display: block;
+	font-size:14px;
+    display: block;
+    padding: 12px 25px;
+    border-radius: 0;
+	line-height:20px;
+    text-align: center;
+    margin-right: 0;
+}.tab-model > li.active a, .tab-model > li.active a:active, .tab-model > li.active a:focus, .tab-model > li.active a:hover {
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+    border-color: #eee;
+}.tab-model > li strong {
+    font-weight:normal;
+    rgb: (23,159,234);
+	font-size:14px;
+}.filter-model {
+    margin-bottom: -1px;
+    overflow: hidden;
+}.comp-filter {
+    padding: 15px 0;
+    margin-bottom: 0;
+    border-bottom: 1px dashed #ddd;
+    margin: 0 20px;
+	overflow:auto
+}.comp-filter dt {
+    font-weight: 400;
+    min-width: 132px;
+	padding-left:8px;
+	float:left
+}
+.dl-horizontal dt {
+    float: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}.comp-filter dd {
+    -webkit-transition: all .8s;
+    transition: all .8s;
+}
+.dl-horizontal dd {
+	float:left;
+	width:900px;
+	padding-left:15px;
+}.list-inline, .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}.comp-filter dd li {
+	padding:0 20px 0 10px;
+	white-space:nowrap
+}
+.list-inline > li {
+	float:left;
+    padding-left: 5px;
+    padding-right: 5px;
+}.comp-filter a.active {
+    color: #fff;
+    background-color: #5e75db;
+}.comp-filter a {
+    padding: 0 6px;
+    line-height: 20px;
+    border-radius: 4px;
+    margin: 3px 0;
+    display: inline-block;
+    color: #353535;
+}
+/*search_table start*/
+.regbox {
+	clear:both;
+	overflow:auto;
+    background: #f5f5f5 none repeat scroll 0 0;
+    box-shadow: 0 4px 10px #aaa;
+    min-height: 500px;
+    padding: 20px 40px;
+    width:1060px;
+	margin:0 auto 20px;
+}
+.regbox .tit {
+    border-bottom: 1px solid #e6e6e6;
+    clear: both;
+    color: #b7883e;
+    font: 22px "microsoft yahei";
+    height: 40px;
+    width: 1060px;
+}
+.regbox .tit span {
+    color: #ccc;
+    display: inline;
+    font: lighter 18px/24px Verdana,Geneva,sans-serif;
+    padding-left: 5px;
+    text-align: left;
+}
+.btn1 {
+    background: rgba(0, 0, 0, 0) url("../images/buttonbg1.png") no-repeat scroll 0 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 35px;
+    margin-left: 70px;
+    width: 82px;
+}.regbox table {
+    width:856px;
+    overflow:hidden;
+    margin:30px auto 0 30px;
+    border-collapse:collapse;border-spacing:0;
+    cellpadding:0;
+    cellspacing:0;
+    
+}.regbox td {
+    height: 40px;
+    margin:0;
+    padding:0;
+    table-layout:fixed
+}.regbox td span{
+	color:#ff0000
+}
+.regbox td input {
+    border: 1px solid #e6e6e6;
+    box-shadow: 1px 1px #ccc inset;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    margin: 3px 0 0;
+    padding: 2px 4px;
+}
+.btall {
+    clear: both;
+    float: left;
+    height: 40px;
+    padding: 40px 0 20px 430px;
+}
+.btall input {
+    border: medium none;
+    float: left;
+    margin-left: 20px;
+}
+.btn1 {
+    background: rgba(0, 0, 0, 0) url("../images/buttonbg1.png") no-repeat scroll 0 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 35px;
+    margin-left: 70px;}
+   
+/*search_table start*/
+
+/*逻辑表达式 start*/
+
+.marginTop20 {
+    margin-top: 20px;
+}
+.tabEditTextList1 {
+    width: 100%;
+    margin: 0px;
+    border-collapse: collapse;
+	background-color: #8198ba;
+}.floatLeft {
+    float: left;
+}.tabEditTextList1 td {
+    height: 35px;
+    line-height: 35px;
+    border-right: 1px solid #d3d3d3;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 1px solid #d3d3d3;
+}.cursorPointer {
+    cursor: pointer;
+}
+.tabEditTextList1 {
+    border-collapse: collapse;
+}
+.marginTop20 table{
+	width:94%;
+	margin:0 3%;}
+.positionRelative {
+    position: relative;
+}.editFieldList {
+    padding:0 1%;
+    margin: 0px;
+    padding-top: 10px;
+    width:91.8%;
+	margin:0 3%;
+}.height100 {
+    height: 100px;
+}
+.cl{
+	clear:both;
+	width:70%;
+	padding:40px 15% 0;
+	overflow:auto}
+.button{
+	float:left;
+	margin-right:20px;
+	background:#f90;
+	padding:5px 20px;
+	border:none;
+	border-radius:5px;
+	cursor:pointer}
+.button:hover{
+	background:#f49200}
+.button a{
+	color:#fff;
+	font-weight:bold;
+	font-size:14px;
+	line-height:20px}
+.buttonh a{
+	color:#fff;
+	font-size:14px;
+	line-height:20px}
+.buttonh{
+	float:left;
+	margin-right:20px;
+	background:#178fe6;
+	padding:3px 10px;
+	border:none;
+	margin-top:3px;
+	border-radius:3px;
+	cursor:pointer}
+.button:hover{
+	background:#f49200}
+.buttonh:hover{
+	background:#1085d9}
+/*逻辑表达式 end*/

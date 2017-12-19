@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html ng-app="patentApp" class="ng-scope">
+<head>
+<style type="text/css">
+@charset "UTF-8";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak,
+	.x-ng-cloak, .ng-hide {
+	display: none !important;
+}
+
+ng\:form {
+	display: block;
+}
+
+.ng-animate-block-transitions {
+	transition: 0s all !important;
+	-webkit-transition: 0s all !important;
+}
+
+.ng-hide-add-active, .ng-hide-remove {
+	display: block !important;
+}
+</style>
+<title>后台管理-四川省公共服务信息平台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="renderer" content="webkit">
+<!--[if lt IE 9]>
+<script src="/module/resources/bootstrap2.3.2/js/html5shiv.js"></script>
+<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="edge">
+<link href="../public/css/public.css" rel="stylesheet" media="screen">
+<link href="css/userlist.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="../public/js/jquery.js"></script>
+<script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../public/js/layer/layer.min.js"></script>
+<script src="../public/js/header.js"></script>
+<link type="text/css" rel="stylesheet" href="../public/css/header1.css">
+<link href="http://scpub.izhiliao.com.cn/favicon.ico" type="image/x-icon"
+	rel="icon">
+<link href="http://scpub.izhiliao.com.cn/favicon.ico" type="image/x-icon"
+	rel="shortcut icon">
+
+
+
+
+<script type="text/javascript" charset="utf-8"
+	src="/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8"
+	src="/ueditor/ueditor.all.min.js"></script>
+
+<script type="text/javascript"
+	src="js/eventimg_swfupload.js?r=20140627050607"></script>
+<script type="text/javascript" src="js/swfupload.js?r=20140627050607"></script>
+
+<!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+<!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+<script type="text/javascript" charset="utf-8"
+	src="/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+<script type="text/javascript">
+	/*var ue;
+	$(document).ready(
+			function() {
+				ue = UE.getEditor('editor', {
+					toolbars : [ [ 'fullscreen', 'source', '|', 'undo', 'redo',
+							'|', 'bold', 'italic', 'underline', 'fontborder',
+							'strikethrough', 'superscript', 'subscript',
+							'removeformat', 'formatmatch', 'autotypeset',
+							'blockquote', 'pasteplain', '|', 'forecolor',
+							'backcolor', 'insertorderedlist',
+							'insertunorderedlist', 'selectall', 'cleardoc',
+							'|', 'rowspacingtop', 'rowspacingbottom',
+							'lineheight', '|', 'customstyle', 'paragraph',
+							'fontsize', '|', 'directionalityltr',
+							'directionalityrtl', 'indent', '|', 'justifyleft',
+							'justifycenter', 'justifyright', 'justifyjustify',
+							'|', 'touppercase', 'tolowercase', '|', 'link',
+							'unlink', 'anchor', '|', 'imagenone', 'imageleft',
+							'imageright', 'imagecenter', '|', 'simpleupload',
+							'insertimage', 'emotion', 'scrawl', 'insertvideo',
+							'music', 'attachment', 'map', 'gmap',
+							'insertframe', 'insertcode', 'webapp', 'pagebreak',
+							'template', 'background', '|', 'horizontal',
+							'date', 'time', 'spechars', 'snapscreen',
+							'wordimage', '|', 'inserttable', 'deletetable',
+							'insertparagraphbeforetable', 'insertrow',
+							'deleterow', 'insertcol', 'deletecol',
+							'mergecells', 'mergeright', 'mergedown',
+							'splittocells', 'splittorows', 'splittocols',
+							'charts', '|', 'print', 'preview', 'searchreplace',
+							'help', 'drafts' ] ],
+					wordCount : false,
+					elementPathEnabled : false,
+					autoHeightEnabled : false,
+					autoFloatEnabled : true
+				});
+
+			});*/
+</script>
+<script type="text/javascript" src="js/infoedit.js"></script>
+
+
+
+</head>
+<body class="bodyClass">
+	<div class="nav" id="headerNav"></div>
+	<div class="backbody">
+		<div class="leftinfo">
+			<div class="lefttop">
+				<span></span>内容管理
+			</div>
+			<dl class="leftmenu">
+				<dd>
+					<div class="title" name="1_1">
+						<span></span>综合信息管理
+					</div>
+					<ul class="menuson" style="display: none;">
+						<li class=" " name="1_1_1"><cite></cite><a
+							href="infomanagelist.html?ty=info">列表管理</a><i></i></li>
+						<li class=" " name="1_1_2"><cite></cite><a
+							href="infoedit.html?ty=info">新增综合信息</a><i></i></li>
+					</ul>
+				</dd>
+				<dd>
+					<div class="title" name="2_1">
+						<span></span>经典案例管理
+					</div>
+					<ul class="menuson" style="display: none;">
+						<li class=" " name="2_1_1"><cite></cite><a
+							href="infomanagelist.html?ty=info2">列表管理</a><i></i></li>
+						<li class=" " name="2_1_2"><cite></cite><a
+							href="infoedit.html?ty=info2">新增经典案例</a><i></i></li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div class="rightinfo">
+
+			<div class="place">
+				<span>位置：</span>
+				<ul class="placeul">
+					<li><a href="/">首页&gt;</a></li>
+					<li name="menu1"></li>
+					<li name="menu2"></li>
+					<li name="menu3"></li>
+				</ul>
+			</div>
+			<div class="formtitle">
+				<span>内容详情</span>
+
+			</div>
+			<ul class="forminfo">
+				<li><label> 文章标题</label><input id="etitle" type="text"
+					class="dfinput" /><i>标题不能超过30个字符</i></li>
+
+				<li><label> 类型栏目</label><span>类型</span> <select
+					style="width: 120px;" class="dfselect" id="selgroup"
+					onchange="onchangetype();">
+						<option value="">----请选择----</option>
+						<option value="info">资讯</option>
+						<option value="news">新闻</option>
+						<option value="adver">广告</option>
+				</select><span> 栏目</span> <select style="width: 120px;" class="dfselect"
+					id="seltype">
+						<option value="">----请选择----</option>
+						<option value="1">行业资讯</option>
+						<option value="2">知了观点</option>
+						<option value="3">知了访谈</option>
+						<option value="4">知了专题</option>
+						<option value="5">培训信息</option>
+						<option value="6">分析报告</option>
+				</select><i>必填项</i></li>
+
+
+				<li><label> 置顶/推荐</label><span>置顶</span> <select
+					style="width: 120px;" class="dfselect" id="selistop">
+						<option value="1">是</option>
+						<option value="0">否</option>
+				</select> <span>推荐</span> <select style="width: 120px;" class="dfselect"
+					id="selrecommend">
+
+						<option value="1">是</option>
+						<option value="0">否</option>
+				</select></li>
+				<li><label> 优先级</label><input id="eprior" style="width: 80px;"
+					type="text" class="dfinput" value="0" /><i>(1-9999)值越大优先级越高，默认均为0</i>
+				</li>
+				<li><label> 作者</label><input id="eauthor" type="text"
+					class="dfinput" value="" /><i>多个作者用,隔开</i></li>
+				<li><label> 来源名称</label><input id="esource" type="text"
+					class="dfinput" value="" /></li>
+				<li><label> 网址链接</label><input id="elink" type="text"
+					class="dfinput" value="" /><i>以“http://”开头</i></li>
+				<li><label> 关键词</label><input id="ekeywords" type="text"
+					class="dfinput" /><i>多个关键字用,隔开</i></li>
+				<li><label> 封面图片</label>
+					<div style="float: left">
+						<div id="swfupload">
+							<span id="spanButtonPlaceholder"></span>
+							<div>
+								<img id="fmimg" src="/css/images/noimg.jpg"
+									style="border: #ccc 1px solid; width: 230px; height: 150px; padding: 4px" />
+							</div>
+						</div>
+					</div></li>
+				<li><label style="float: left;"> 附件列表</label>
+					<div style="float: left;">
+
+						<div id="swfuploadfile">
+							<span id="spanButtonPlaceholderfile"></span>
+							<p id="queueStatusfile"></p>
+							<div>
+								<ul style="margin: 10px; margin-left: 85px" class="add-file"
+									id="logListfile">
+								</ul>
+							</div>
+						</div>
+
+
+
+
+					</div></li>
+				<li><label> 摘要</label> <textarea id="eabstract" cols="" rows=""
+						class="textinput"></textarea><i style="padding-top: 120px">摘要不能超过90个字符</i></li>
+				<li><label> 内容</label> <script id="editor" type="text/plain"
+						style="float: left; width: 824px; height: 300px;"></script></li>
+				<li style="padding-top: 20px"><label> &nbsp;</label>&nbsp; <input
+					name="" type="button" class="btn" id="savebystatebtn" value="" />&nbsp;
+					<input id="savenostatebtn" name="" type="button" class="btn"
+					value="保存信息" />&nbsp;<input id="canclebtn" name="" type="button"
+					class="btn" value="取消" />&nbsp;<input id="previewbtn"
+					style="display: none" type="button" class="btn" value="预览" /></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footerNew" style="text-align: center; margin: 0 auto 0px 0;">
+
+	</div>
+</body>
+</html>

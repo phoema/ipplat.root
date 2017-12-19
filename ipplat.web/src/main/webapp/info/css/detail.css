@@ -1,0 +1,118 @@
+.main_t {
+	background-color: #ffffff;
+	width: 89.89%; 
+	overflow: auto;
+	clear: both;
+	margin: 0 auto;
+	min-width: 1000px;
+	margin-top: 20px;
+	min-height:600px;
+}
+
+.Article_tit {
+	text-align: center;
+	font-size: 30px;
+	line-height: 44px;
+	margin-top: 45px;
+	padding: 0px 40px;
+}
+
+.Art_a {
+	text-align: center;
+	margin-top: 15px;
+	font-size: 14px;
+	position: relative;
+}
+.Art_l .link{
+	color:#0088cc
+}
+.Art_l span, .Art_l a {
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #888;
+	width: 98%;
+text-decoration:none;
+}
+
+.clear {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+}
+
+.Article_con {
+	padding-top: 15px;
+	line-height: 28px;
+	border-top: 1px solid #F0F4F8;
+	margin-top: 30px;
+	font-size: 14px;
+	text-align: left;
+	color: #666;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.anli {
+	padding-left: 50px;
+	width: 750px;
+	padding-top: 50px;
+}
+
+.anli .span {
+	float: left;
+}
+
+.anli span {
+	color: #999;
+	font-size: 12px;
+	line-height: 22px;
+	float: left;
+	font-family: "simsun";
+}
+/*¸½¼þ*/
+.mutu {
+	margin: 0px auto 30px 50px;
+}
+
+.appendix {
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	text-align: left;
+}
+
+.mutu .mutu-news {
+	width: 454px;
+	float: left;
+}
+
+.pic-group, .pic-text, .list12 ul, .list14 ul, .area {
+	width: 100%;
+	margin: 0px auto;
+}
+
+.mutu .mutu-news .list14 {
+	width: 465px;
+	margin: 0px auto 0px 0px;
+}
+
+.mutu .mutu-news .list14 li {
+	padding: 0px 0px 0px 11px;
+}
+
+.mutu .mutu-news .list14 li a {
+	text-align: left;
+	width: Auto;
+}
+
+.mutu .mutu-news .list14 li a {
+	color: #059;
+	font-size: 14px;
+	width: 380px;
+	line-height: 30px;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

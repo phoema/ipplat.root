@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html ng-app="patentApp" class="ng-scope">
+<head>
+<style type="text/css">
+@charset "UTF-8";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak,
+	.x-ng-cloak, .ng-hide {
+	display: none !important;
+}
+
+ng\:form {
+	display: block;
+}
+
+.ng-animate-block-transitions {
+	transition: 0s all !important;
+	-webkit-transition: 0s all !important;
+}
+
+.ng-hide-add-active, .ng-hide-remove {
+	display: block !important;
+}
+</style>
+<title>工业设计运营孵化平台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="renderer" content="webkit">
+<!--[if lt IE 9]>
+<script src="/module/resources/bootstrap2.3.2/js/html5shiv.js"></script>
+<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="edge">
+<link href="../public/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="../public/css/public.css" rel="stylesheet" media="screen">
+<link href="../public/css/layout.css" rel="stylesheet" media="screen">
+<link href="../public/css/common.css" rel="stylesheet" media="screen">
+<link href="css/patentDetail.css" rel="stylesheet" media="screen">
+<link href="../public/css/debug.css" rel="stylesheet" media="screen">
+<link href="css/time.css" rel="stylesheet" media="screen">
+<link href="../public/beacon/beacon_main.css" rel="stylesheet"
+	media="screen">
+
+<script type="text/javascript" src="../public/js/jquery.js"></script>
+<script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="../public/beacon/beacon_jquery_common.js"></script>
+<script type="text/javascript"
+	src="../public/beacon/beacon_jquery_main.js"></script>
+
+<link href="http://design.publicdi.com/favicon.ico" type="image/x-icon"
+	rel="icon" />
+<link href="http://design.publicdi.com/favicon.ico" type="image/x-icon"
+	rel="shortcut icon" />
+<script type="text/javascript">
+	var rootPath = '';
+</script>
+<script src="../public/js/header.js"></script>
+<link href="../idea/pub.css" rel="stylesheet" type="text/css">
+</head>
+<body class="bodyClass">
+	<header>
+		<!-- navbar -->
+		
+	<div class="header">
+		<div class="common-header J_commonHeaderWrapper"
+			data-stat-module="dingbudaohang">
+			<div class="container">
+				<div class="nav">
+					<ul id="headermenu" class="J_navList">
+						<a class="logo" href="../list/patent.html"> <img
+							src="../idea/images/logo.jpg">
+						</a>
+						<li name="01" class="active"><a href="../list/patent.html"
+							class="menudown">专利检索</a>
+							<div class="service-wrap pop-up">
+								<div class="jiant"></div>
+								<div class="menu">
+									<a name="02_1" href="../list/patent.html"
+										class="mobile-hide">表格检索</a> <a name="02_2"
+										href="../Locarno/patent3.html" class="mobile-hide">分类检索</a>
+								</div>
+							</div></li>
+						<li name="02" hc="0"><a href="../idea/idea.html" class="">创意项目</a></li>
+					</ul>
+				</div>
+				<div class="login-hd">
+					<a href="javascript:void(0);"> <i class="icon-user"><img
+							src="../idea/images/login.png" width="16" height="16"></i>登录
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!-- end navbar -->
+	</header>
+	<div></div>
+	<!--main-->
+
+	<div
+		style="width: 89.89%; margin: 0 auto; margin-top: 20px; background-color: #fff; border: 1px solid rgb(225, 225, 225);"
+		class="minWidth1000px" id="theme">
+
+
+		<div id="detailTop" style="position: relative; margin-bottom: 100px;">
+			<div id="patentTitle"
+				class="width100p textAlignCenter fontSize20 fontWeightBold "
+				style="margin-top: 20px; line-height: 50px; font-size: 18px;">
+			</div>
+			<div id="titletip" class="h25Center margin0Auto"
+				style="width: 500px; text-align: center; margin-top: 5px;"></div>
+
+
+		</div>
+
+		<div id="verTp"
+			class="patentHeadFixed w89Point89P backWhite minWidth1000px"
+			style="position: absolute; top: 230px; z-index: 100;">
+
+
+			<div class="Width100P">
+				<ul class="titleUl Width100P textAlignCenter">
+					<li id="wnxianSelect" class="selectedli"
+						style="border-left: 0px; width: 49.9%;"><span
+						class="docUnselectd displayInline"></span>文献详情</li>
+					<li id="flunSelect" class="unselectedli patentLegalStatus"
+						style="width: 49.9%;"><span
+						class="lawUnselectd displayInline "></span>法律状态</li>
+				</ul>
+			</div>
+
+			<script type="text/jscript">
+				
+				
+				
+				 
+	//头部浮层
+	$().ready(function() {
+    	$(".patentHeadFixed").capacityFixed();
+	});
+
+			
+			
+			
+			</script>
+
+			<div id="wnxianhook" class="marginTop10 displayInline"
+				style="width: 100%">
+				<ul id="cut1"
+					class="keywordUl displayInline Width100P marginBottom10 detailKeywordUl">
+					<!--     <li   v="anchor1">著录信息</li> 
+            <li   v="anchor3">摘要</li> 
+            <li   v="anchor5" >权利要求书</li>
+            <li   v="anchor6">说明书</li> 
+           
+            <div id="doPdf">PDF说明书</div> -->
+				</ul>
+
+				<!--    <ul id="cut2" style="display:none" class="keywordUl displayInline Width100P marginBottom10 detailKeywordUl">
+            <li v="anchor1">著录信息</li>  
+            <li v="anchor2_1" >简要说明</li> 
+            <li v="anchor2_2" >外观附图</li> 
+           </ul>
+          -->
+			</div>
+			<!--  
+         <div id="relatehook" class="marginTop10 displayInline borderBottom" style="display:none;width: 100%">
+          <ul class="keywordUl patentDatakeywordUl displayInline marginBottom10 " style="width: 100%;">
+            <li v="anchor8" class="similaryPat3" style="color: rgb(102, 102, 102);">相似专利</li> 
+            <li v="anchor9" class="similaryTra3" style="color: rgb(102, 102, 102);">相关商标</li>
+            <li v="anchor10" class="similarySta3" style="color: rgb(102, 102, 102);">相关软著</li>
+            <li v="anchor11" class="similarySta3" style="color: rgb(102, 102, 102);">相关作品</li>
+          </ul>
+        </div>
+        -->
+
+		</div>
+		<!-- part start -->
+		<div>
+			<div id="part1">
+				<!-- part1 start -->
+				<div class="detailTopNav Width100P bgFFF displayInline marginTop20"
+					style="display: none; padding: 10px 0px 10px 0px;">
+					<table class="floatLeft" style="width: 100%;">
+						<tbody>
+							<tr>
+
+								<td><div class="detailTopItem">
+										<span class="rthrthregh displayInline yahei">相似专利</span>
+										<div id="similarCount"
+											class="numPatentData displayInline  yahei cursorPointer">
+											<span id="patCount" class="dataNum">2160</span> 件
+										</div>
+										<div class="dvfndfvnv classificationVertical displayInline"></div>
+									</div>
+									<div class="detailTopItem">
+										<span class="rthrthregh displayInline  yahei">相关商标</span>
+										<div class="numPatentData displayInline  yahei cursorPointer">
+											<span id="traCount" class="dataNum">17</span>条
+										</div>
+										<div class="dvfndfvnv classificationVertical displayInline"></div>
+									</div>
+									<div class="detailTopItem">
+										<span class="rthrthregh displayInline  yahei">相关软著</span>
+										<div class="numPatentData displayInline  yahei cursorPointer"
+											style="font-size: 12px;">
+											<span id="iseCount" class="dataNum">14</span>篇
+										</div>
+										<div class="dvfndfvnv classificationVertical displayInline"></div>
+									</div>
+									<div class="detailTopItem">
+										<span class="rthrthregh displayInline  yahei">相关作品</span>
+										<div class="numPatentData displayInline  yahei cursorPointer">
+											<span id="stdCount" class="dataNum">0</span>件
+										</div>
+									</div></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="displayInline bgFFF Width100P positionRelative"
+					style="margin-top: 40px;">
+					<div>
+						<div style="display: none;"
+							class="classificationIcon cursorPointer floatLeft displayInline"></div>
+						<div class="classificationVertical displayInline"></div>
+						<span id="anchor1"
+							class="anchorEle displayInline catalogue classificationText">著录信息</span>
+						<b class="labelSign displayNone"
+							style="font-size: 10px; color: #FF0000; cursor: pointer; margin-left: 5px;">注</b>
+						<input value="0" type="hidden">
+					</div>
+					<div>
+						<table class="doctable marginTop30 marginRight15"
+							style="width: 98%; margin-bottom: 20px;" cellspacing="0"
+							cellpadding="0">
+							<tbody>
+								<tr>
+									<td rowspan="18" style="width: 6%; border: none"></td>
+									<td class="shuoming">申请号</td>
+									<td class="neirong" id="sqh"></td>
+									<td class="shuoming">公布号</td>
+									<td class="neirong" id="gbh"></td>
+								</tr>
+								<tr>
+									<td class="shuoming">申请日</td>
+									<td class="neirong filterDay" id="sqr"></td>
+									<td class="shuoming">公布日</td>
+									<td class="neirong filterDay" id="gbr"></td>
+								</tr>
+								<tr>
+									<td class="shuoming">申请人</td>
+									<td id="sqren" class="neirong APCLink" style="color: #3498db;">
+										<a href="http:9" target="_blank"></a>
+
+									</td>
+									<td class="shuoming">专利权人</td>
+									<td class="neirong" id="patentren"></td>
+								</tr>
+								<tr>
+									<td class="shuoming">申请人地址</td>
+									<td class="neirong" id="patentaddr"></td>
+									<td class="shuoming">区域代码</td>
+									<td class="neirong" id="areacode"></td>
+								</tr>
+								<tr>
+									<td class="shuoming">发明人</td>
+									<td class="neirong"><a href="ht7%20%29" target="_blank"
+										id="famingren"></a></td>
+									<td class="shuoming">IPC</td>
+									<td id="ipc" class="neirong IPCQLink" style="color: #3498db;">
+									</td>
+								</tr>
+
+
+								<tr>
+									<td class="shuoming">优先权</td>
+									<td id="prior" class="neirong PRNSLINK"
+										style="font-family: Arial, sans-serif; word-wrap: break-word; white-space: pre-wrap; line-height: normal; word-break: normal; width: 600px;"
+										v=""></td>
+									<td class="shuoming">分案原申请</td>
+									<td class="neirong CIELink" id="fayshenqing"></td>
+								</tr>
+								<tr>
+									<td class="shuoming">代理机构</td>
+									<td id="agency" class="neirong AGCLink" style="color: #3498db;">
+									</td>
+									<td class="shuoming">代理人</td>
+									<td id="agent" class="neirong AGLink" style="color: #3498db;">
+
+									</td>
+								</tr>
+								<tr>
+									<td class="shuoming">国际申请</td>
+									<td id="internationapply" class="neirong PCTAOLink"
+										style="font-family: Arial, sans-serif; word-wrap: break-word; white-space: pre-wrap; line-height: normal; word-break: normal; width: 600px;">
+									</td>
+									<td class="shuoming">国际公布</td>
+									<td id="internationalpub" class="neirong PCTPOLink"
+										style="font-family: Arial, sans-serif; word-wrap: break-word; white-space: pre-wrap; line-height: normal; word-break: normal; width: 600px;">
+									</td>
+								</tr>
+								<tr>
+									<td class="shuoming">进入国家日期</td>
+									<td id="enterdate" class="neirong filterDayDian"></td>
+									<td class="shuoming">本国分类</td>
+									<td id="catelog" class="neirong"></td>
+								</tr>
+								<tr id="ljn" style="display: none">
+									<td class="shuoming">洛迦诺</td>
+									<td id="ljns" class="neirong IPCQLink" style="color: #3498db;">
+									</td>
+									<td class="shuoming"></td>
+									<td class="neirong"></td>
+								</tr>
+
+
+
+
+							</tbody>
+						</table>
+
+					</div>
+
+
+
+					<!-- innerpart2 start -->
+					<div id="innerpart2" style="display: none">
+
+						<div>
+							<div
+								class="classificationIcon cursorPointer floatLeft displayInline"
+								style="display: none; margin-top: 7px;"></div>
+							<div class="classificationVertical displayInline"></div>
+							<p id="anchor2_1"
+								class="anchorEle displayInline classificationText catalogue"
+								style="text-indent: 0px;">
+								简要说明<b class="labelSign displayNone"
+									style="font-size: 10px; color: #FF0000; cursor: pointer; margin-left: 5px;">注</b>
+								<input value="1" type="hidden">
+							</p>
+							<div
+								style="float: right; margin-right: 100px; margin-top: -10px; display: none;">
+								<div class="displayInline yin"></div>
+								<div class="displayInline fan"></div>
+								<div class="displayInline gai"></div>
+							</div>
+						</div>
+						<div id="__abs3html" class="extfonta"
+							style="padding: 20px; clear: both; border: 0px; width: 95%; line-height: 30px; font-size: 14px;">
+
+
+						</div>
+
+						<div class="marginTop20" style="clear: both; padding-top: 15px;">
+							<div style="display: none;"
+								class="classificationIcon cursorPointer floatLeft displayInline"></div>
+							<div class="classificationVertical displayInline"></div>
+							<!--专利附图-->
+							<span id="anchor2_2"
+								class="anchorEle displayInline classificationText catalogue ">外观附图</span>
+						</div>
+						<div class="marginTop20 displayInline sliderbar" id="_imgListWrap"
+							style="width: 100%; border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc;">
+							<div class="weiduduan clearfix">
+
+								<table style="width: 100%" cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td style="width: 30%"><button title="上一张" type="button"
+													id="previous" class="buttonNobgBd"
+													style="background: url(images/ic3_2.png) no-repeat; width: 42px; height: 42px; margin-left: 30px">
+												</button></td>
+											<td><div class="zoombox" style="margin: 0 auto">
+													<a id="_zoompiclink" target="_blank"
+														href="http://image.zldsj.com/H/PID/CNS0/2015/1125/00000000303463/0FCU0S942T0177FB/PIC/000001.JPG">
+														<div class="zoompic">
+
+															<table style="padding: 0px; margin: 0px;" width="422"
+																height="394">
+																<tbody>
+																	<tr>
+																		<td valign="middle" align="center"><img
+																			id="_zoompic" src="waiguan_files/000001.JPG"
+																			style="height: 382px; display: block; width: auto;"></td>
+																	</tr>
+																</tbody>
+															</table>
+
+														</div>
+													</a>
+												</div></td>
+											<td style="width: 30%;" align="right"><button
+													title="下一张" type="button" id="next" class="buttonNobgBd"
+													style="background: url(images/ic4_2.png); width: 42px; height: 42px; margin-right: 30px">
+												</button></td>
+										</tr>
+									</tbody>
+								</table>
+								<hr style="border-bottom: 1px solid rgb(225, 225, 225)"
+									class="marginTop20">
+								<div class="sliderbox">
+									<div id="btn-left" class="arrow-btn"></div>
+									<div class="slider" id="thumbnail" style="margin-left: 0">
+										<ul class="imagelist" id="_imagelist" style="width: 2240px;">
+										</ul>
+									</div>
+									<div id="btn-right" class="arrow-btn"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- innerpart2 end -->
+					<!-- innerpart1 start -->
+					<div id="innerpart1">
+						<div>
+							<div
+								class="classificationIcon cursorPointer floatLeft displayInline"
+								style="display: none; margin-top: 7px;"></div>
+							<div class="classificationVertical displayInline"></div>
+							<p id="anchor3"
+								class="anchorEle displayInline classificationText catalogue"
+								style="text-indent: 0px;">
+								摘要<b class="labelSign displayNone"
+									style="font-size: 10px; color: #FF0000; cursor: pointer; margin-left: 5px;">注</b>
+								<input value="1" type="hidden">
+							</p>
+							<div
+								style="float: right; margin-right: 100px; margin-top: -10px; display: none;">
+								<div class="displayInline yin"></div>
+								<div class="displayInline fan"></div>
+								<div class="displayInline gai"></div>
+							</div>
+						</div>
+						<div id="__abshtml" class=" extfonta"
+							style="padding: 20px; clear: both; border: 0px; width: 95%;">正在加载......</div>
+						<div class="marginTop20 displayInline sliderbar"
+							style="width: 100%;"></div>
+						<div style="display: none" class="marginTop20 ">
+							<div style="display: none;"
+								class="classificationIcon cursorPointer floatLeft displayInline"></div>
+							<div class="classificationVertical displayInline"></div>
+							<span id="anchor5"
+								class="anchorEle displayInline classificationText catalogue">权利要求书</span><b
+								class="labelSign displayNone"
+								style="font-size: 10px; color: #FF0000; cursor: pointer; margin-left: 5px;">注</b>
+							<input value="2" type="hidden">
+						</div>
+						<div id="__clahtml"
+							style="display: none; padding: 20px; clear: both; border: 0px; width: 95%;"
+							class=" extfonta">正在加载......</div>
+
+						<div class="marginTop20 "
+							style="display: none; height: 20px; margin-top: 8px;">
+							<div style="display: none;"
+								class="classificationIcon cursorPointer floatLeft displayInline"></div>
+							<div class="classificationVertical displayInline"></div>
+							<span id="anchor6"
+								class="anchorEle displayInline classificationText catalogue">说明书</span><b
+								class="labelSign displayNone"
+								style="font-size: 10px; color: #FF0000; cursor: pointer; margin-left: 5px;">注</b>
+							<input value="3" type="hidden">
+						</div>
+						<div id="__deshtml"
+							style="display: none; padding: 20px; clear: both; border: 0px; width: 95%;"
+							class=" extfonta">正在加载......</div>
+					</div>
+					<!-- innerpart1 end -->
+				</div>
+			</div>
+			<!-- part1 end -->
+
+			<!-- part2 start -->
+			<div id="part2" style="display: none">
+				<div class="displayInline"
+					style="width: 100%; padding-top: 10px; padding-bottom: 10px; background-color: #FFFFFF;">
+					<ul class="course_nr2">
+						<table class="tableBig" style="width: 95%" cellspacing="0">
+							<tbody id="flzt">
+								<tr style="height: 40px">
+									<td><div class="lefttop"></div></td>
+									<td style="width: 15.65%" align="center"><span
+										class="title marginLeft15 tdPadding fontWeightBoldLegalStatus ">公告日</span>
+									</td>
+									<td style="width: 20.65%" align="center"><span
+										class="title tdPadding fontWeightBoldLegalStatus">法律状态</span></td>
+									<td align="center"><span
+										class="title tdPadding fontWeightBoldLegalStatus">法律状态信息</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</ul>
+				</div>
+			</div>
+			<!-- part2 end -->
+			<!-- part3 start -->
+			<div id="part3m" style="display: none">加载中,请稍后...</div>
+			<div id="part3" style="display: none">
+				<div class="Width100P bgFFF displayInline">
+					<div
+						class="cursorPointer detailTopNav Width100P marginTop40 patentdataTitle similaryPat1">
+						<div id="anchor8"
+							class="classificationIcon floatLeft displayInline"
+							style="display: none; margin-top: 6px;"></div>
+						<div class="classificationVertical displayInline"></div>
+						<span class="anchorEle displayInline classificationText">相似专利</span>
+						<div id="similarExpLink" class="displayInline leftArrow cursor"
+							style="display: none; padding-left: 10px; overflow: hidden;"></div>
+					</div>
+					<div class="marginTop20 similaryPat2">
+						<table class="patentFamily marginLeft10 marginRight10"
+							id="table_pat" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr class="patentFamilyTitle">
+									<td>序号</td>
+									<td>公布号</td>
+									<td>申请日</td>
+									<td>名称</td>
+									<td>申请人</td>
+									<td>IPC</td>
+									<!-- <td>相似度</td> -->
+								</tr>
+							</thead>
+							<tbody id="table_patTB">
+							</tbody>
+						</table>
+					</div>
+
+					<div class="marginTop20 patentdataTitle similaryTra1">
+						<div style="display: none;"
+							class="classificationIcon floatLeft displayInline"></div>
+						<div class="classificationVertical displayInline"></div>
+						<span id="anchor9"
+							class="anchorEle displayInline classificationText">相关商标</span>
+						<div id="similarTraLink" class="displayInline leftArrow cursor"
+							style="display: none; padding-left: 10px;"></div>
+					</div>
+					<div class="  marginTop20 similaryTra2"
+						style="padding-bottom: 20px;">
+						<table class="patentFamily marginLeft10 marginRight10"
+							id="table_tra" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<td>序号</td>
+									<td>注册号</td>
+									<td>注册日</td>
+									<td>商标名称</td>
+									<td>尼斯分类</td>
+									<td>图形</td>
+									<td>申请人名称</td>
+								</tr>
+							</thead>
+							<tbody id="table_traTB">
+							</tbody>
+						</table>
+					</div>
+
+					<div class="marginTop20 patentdataTitle similarySta1">
+						<div class="classificationIcon floatLeft displayInline"
+							style="display: none; margin-top: 1px;"></div>
+						<div class="classificationVertical displayInline"></div>
+						<span id="anchor10"
+							class="anchorEle displayInline classificationText">相关软著</span>
+						<div id="similarStdLink" class="displayInline leftArrow cursor"
+							style="display: none; padding-left: 10px;">104 件</div>
+					</div>
+					<div class="  marginTop20 similarySta2"
+						style="padding-bottom: 20px;">
+						<table class="patentFamily marginLeft10 marginRight10"
+							id="table_std" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr class="patentFamilyTitle">
+									<td>序号</td>
+									<td>登记号</td>
+									<td>软件全称</td>
+									<td>分类号</td>
+									<td>软件简称</td>
+									<td>著作权人</td>
+									<td>登记日期</td>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+
+
+					<div class="marginTop20 patentdataTitle similarySta1">
+						<div class="classificationIcon floatLeft displayInline"
+							style="display: none; margin-top: 1px;"></div>
+						<div class="classificationVertical displayInline"></div>
+						<span id="anchor11"
+							class="anchorEle displayInline classificationText">相关作品</span>
+						<div id="similarZPLink" class="displayInline leftArrow cursor"
+							style="display: none; padding-left: 10px;"></div>
+					</div>
+					<div class="  marginTop20 similarySta2"
+						style="padding-bottom: 20px;">
+						<table class="patentFamily marginLeft10 marginRight10"
+							id="table_work" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr class="patentFamilyTitle">
+									<td>序号</td>
+									<td>登记号</td>
+									<td>登记日期</td>
+									<td>作品名称</td>
+									<td>作品类别</td>
+									<td>著作权人</td>
+									<td>这列去掉</td>
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr class="trstd_1 similarySta">
+									<td>1</td>
+									<td>CN</td>
+									<td class="">GB/T 4857.23-2003;GB/T 4857.23-2012</td>
+									<td class="filterDay1">2003.07.14</td>
+									<td><a target="_blank"
+										href="http://www.zldsj.com/txnStandardDetail.do?select-key:ID=SIDCN2003078F6D6BB535F4E3D38F60FCA0ULU8Q012D1F&amp;select-key:STN=1075096">包装
+											运输包装件 随机振动试验方法</a></td>
+									<td class="STDSDCOLink"><a
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E4%B8%AD%E5%9B%BD%E5%8C%85%E8%A3%85%E7%A7%91%E7%A0%94%E6%B5%8B%E8%AF%95%E4%B8%AD%E5%BF%83%27%20%29"
+										target="_blank">中国包装科研测试中心</a><a style="margin-left: 5px;"
+										href="http://www.zldsj.com/txnStandardList.do?select-key%3AexpressCN=%28%20%E8%B5%B7%E8%8D%89%E5%8D%95%E4%BD%8D%20%3D%20%27%E5%8D%8E%E4%B8%BA%E6%8A%80%E6%9C%AF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%27%20%29"
+										target="_blank">华为技术有限公司</a></td>
+									<td>被代替</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- part3 end -->
+
+		</div>
+		<!-- part end -->
+	</div>
+
+
+
+
+	<!--弹出层-->
+	<div
+		class="shielding_layer WidthHeight100P positionAbsolute absoluteLeftTop displayNone"
+		style="z-index: 101;">
+		<div class="displayTable WidthHeight100P">
+			<div class="displayTableCell ver_alignMid">
+				<!--高亮-->
+
+				<script type="text/javascript">
+					var highlighted_word = "null"
+				</script>
+
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="bottom">
+		<div class="c bot_link" style="padding-top: 10px">
+			版权所有：北京中知智慧科技有限公司&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+			Copyright 2017 izhiliao.com.cn All Rights
+			Reserved.&nbsp;&nbsp;&nbsp;&nbsp;
+			京ICP备13009620号-4&nbsp;&nbsp;&nbsp;&nbsp; 京ICP证150567号</div>
+	</div>
+	<script type="text/javascript" src="js/fixedPosition.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/detailCommon.js"></script>
+	<script type="text/javascript" src="js/patentDetail.js"></script>
+</body>
+</html>

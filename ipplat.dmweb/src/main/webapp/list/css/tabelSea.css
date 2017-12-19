@@ -1,0 +1,1115 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+}
+.floatLeft {
+	float: left;
+}
+.displayInline {
+	display: inline-block;
+}
+.tableOn .displayInline img { margin-bottom: 10px;}
+.tableOn {
+	background-color: #ffffff;
+	border-top: 2px solid  #6A8CD3;
+	font-weight: bold;
+}
+.tableTop {
+	width:100%;
+	height:42px;
+	display: inline-block;
+	background-color: #F9F9F9;
+	text-align: center;
+}
+.tableTop li {
+	width: 19%;
+	height:41px;
+	border-left: 1px solid #d3d3d3;
+	cursor: pointer;
+	float: left;
+	display: inline-block;
+}
+.tabSeaHis {
+	border-collapse: collapse;
+}
+.tabSeaHis td {
+	height: 40px;/*border: none;*/
+}
+.tabSeaHisoederRight {
+	border-right:1px solid rgb(233,235,235);
+}
+.tabSeaHisCheck {
+	background-color: rgb(235,235,235);
+}
+
+.tabNumOdd, .tabNum1 {
+	background-color: #FFFFFF;
+}
+.tabNumEven, .tabNum0 {
+	background-color: rgb(242,248,251);
+}
+.chinaUtlityPatent {
+	width: 129px;
+	height: 32px;
+}
+.patentLib {
+	width: 129px;
+	height: 32px;
+	float: left;
+	margin-right:5px;
+	margin-bottom:10px;
+}
+.LibrarySearchTable td{ padding: 5px 0px 5px 0px; }
+/*.tabAddCommon tr*/
+/*{*/
+    /*height: 28px;*/
+/*}*/
+.tabAddCommon td img { margin-left:10px;}
+.tableChoose {
+	border-collapse: collapse;
+	background-color: #FFFFFF;
+}
+.tableChooseBlue {
+	background-color: rgb(239,245,248);
+}
+.tableChoose tr td {
+	height: 32px;
+	border: 1px solid #d3d3d3;
+	/*border-top: none;*/
+    line-height: 32px;
+	padding-left: 3px;
+}
+.fieldTableChoose tr td {
+	border: 0px;
+}
+.paddingLeftN {
+	padding-left: 0px;
+}
+.w30H31 {
+	width: 30px;
+	height: 31px;
+}
+.tabelIPC {
+	width: 100%;
+	border-collapse:collapse;
+}
+.tabelIPC tr {
+	width: 100%;
+	height: 35px;
+	background-color: #ededed;
+}
+.tabelIPC tr td {
+	border: 1px solid #d3d3d3;
+	height: 35px;
+}
+.tableIPCcheck {
+	width: 20px;
+	height: 20px;
+	margin-top: 4px;
+}
+.tabelIPC2 {
+	margin-left: 27px;
+}
+.tabelIPC3 {
+	margin-left: 103px;
+}
+.countryCode2 {
+	margin-left: 40px;
+}
+.FirmUl {
+	width: 100%;
+	background-color: #ededed;
+}
+.FirmUl li {
+	width: 120px;
+	height: 15px;
+	float: left;
+	margin-top:7px;
+	text-align: center;
+	border-right: 1px solid #d3d3d3;
+}
+.filedList {
+	width: 100%;
+	height: 35px;
+	background-color: #ffffff;
+}
+.filedList li {
+	width: 10.89%;
+	float: left;
+	text-align: center;
+	border-right: 1px solid #d3d3d3;
+	cursor: pointer;
+}
+#fieldList {
+	height: 35px;
+	line-height: 35px
+}
+.tabFiledList {
+	width: 100%;
+	border-collapse:collapse;
+}
+.tabFiledList td {
+	width: 140px;
+	height: 30px;
+	padding-left: 5px;
+	border: 1px solid #98AEC2;
+}
+.tabFiledList td div {
+	width:100%;
+	height: 30px;
+	padding-top: 10px;
+}
+#tabOpenDay tr td {
+	padding-top: 10px;
+}
+.mainFieldSpan {
+	display:inline-block;
+	overflow:hidden;
+	height:35px;
+	width:100px;
+}
+/*#tabOpenDay select*/
+/*{*/
+    /*background-image: url(../../img/patent/table/btn5.png);*/
+/*}*/
+.tabSaeInput {
+	width:80%;
+	height:32px;
+}
+.tabSeaNumTip {
+	color: #3498DB;
+	margin-bottom: 5px;
+}
+.checkBoxBg {
+	background: url(../../img/patent/patent_searchPage/check1_1.png) no-repeat;
+}
+.checkBoxClickBg {
+	background: url(../../img/patent/patent_searchPage/check1_3.png) no-repeat;
+}
+.radioNormal {
+	background: url(../../img/patent/patent_searchPage/ic0_1.png) no-repeat;
+}
+.radioChecked {
+	background: url(../../img/patent/patent_searchPage/ic0_2.png) no-repeat;
+}
+.radioStyle {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+}
+.radioLabel {
+	font-size: 14px; line-height:22px;
+}
+label.radioLabel { margin: 0px; padding:0px; margin-left: 8px; }
+.inputRequestNum {
+	width:98%;
+	/*height:35px;*/
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.inputBgNormal {
+	/*background-image: url(../../img/patent/table/input.png);
+    border: 1px solid rgb(195,195,195);
+	background-color: #FFFFFF;*/
+}
+.inputBgPress {
+	/*background-image: url(../../img/patent/table/input_p.png);*/
+    border: 1px solid rgb(55,162,234);
+	border-left: none;
+	background-color: #FFFFFF;
+}
+/*.inputLeftNomal*/
+/*{*/
+    /*margin-left: -3px;*/
+/*}*/
+/*.inputLeft_p*/
+/*{*/
+    /*margin-left: -4.5px;*/
+/*}*/
+.inputRequestNumDiv {
+	position: relative;
+	width: 100%
+}
+.inputLeftNomal {
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 4px;
+	height: 37px;
+	background-image: url(../../img/patent/table/inputLeftDiv.png);
+}
+.inputLeft_p {
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 4px;
+	height: 37px;
+	background-image: url(../../img/patent/table/inputLeftDiv_p.png);
+}
+#tabOpenDay{
+	max-width:92%
+}
+td.countrySelect {
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px solid rgb(52,152,219); border-spacing: 0px; border-radius: 0px; border-collapse: separate;
+}
+#_UtlityPatentTable tr {border-collapse: separate;  border-spacing: 0px; border-radius: 0px;}
+.seaHistoryOperate0 {
+	width:20px;
+	height:20px;
+	border: none;
+	background: url(../../img/patent/table/ic6_2.png) no-repeat center;
+	outline: none;
+}
+
+.seaHistoryOperate1 {
+	width:20px;
+	height:20px;
+	border: none;
+	background: url(../../img/patent/table/ic6_2_1.png) no-repeat center;
+	outline: none;
+}
+.seaHistoryOperate2 {
+	width:20px;
+	height:20px;
+	border: none;
+	outline: none;
+	background: url(../../img/patent/table/ic7_2.png) no-repeat center;
+}
+.seaHistoryOperateDelete {
+	width:20px;
+	height:20px;
+	border: none;
+	background: url(../../img/patent/table/ic8_2.png) no-repeat center;
+	outline: none;
+}
+.RequestNum {
+	width: 146px;
+	height: 35px;
+	line-height: 35px;
+	background-image: url(../../img/patent/table/btn5.png);
+}
+.RequestNum span {
+	margin-left: 10px;
+}
+.RequestNum img {
+	margin-right: 10px;
+	margin-top: 15px;
+}
+
+.commonPatentLibDiv { 
+	min-width: 120px;
+	height: 32px;
+	margin-left: 10px; float: left; overflow: hidden; margin-bottom:10px;
+}
+.commonPatentLibDiv img {
+	float: right; margin-top:2px;
+}
+.btnWhite { background-size:cover;}
+.tabEditTextList1 {
+	width: 100%;
+	margin:0px;
+	border-collapse: collapse;
+	background-color: rgb(244,245,245);
+}
+.tabEditTextList1 li {
+	height: 35px;
+	line-height: 35px;
+	padding: 0px 6px 0px 6px;
+	border-right: 1px solid #d3d3d3;
+	bottom: 5px;
+	text-align: center;
+	float: left;
+}
+.tabEditTextList2 {
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	background-color: rgb(244,245,245);
+	border-collapse: collapse;
+}
+.tabEditTextList2 li {
+	height: 35px;
+	text-align: center;
+	display: inline-block;/*padding: 0px 8px 0px 8px;*/
+}
+
+.fieldListBgClick {
+	background-image: url(../../img/patent/table/fieldListBg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.titleCheckShow {
+	margin-top: 20px;
+	width:350px;
+	margin-left: 35px;
+	font-size: 14px;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	overflow:hidden;
+}
+.height53 {
+	height: 53px;
+}
+.height100 {
+	height: 100px;
+}
+
+.appendExpress {
+	width: 146px;
+	height: 31px;
+	/*margin-right: 2.85em;*/
+    float: right;
+	background: url(../../img/patent/table/sheng.png) no-repeat;
+	border: none;
+}
+.reSetExpress {
+	width: 80px;
+	height: 31px;
+	/*margin-right: 2.85em;*/
+    float: right;
+    margin-right:16px; 
+	border: none;
+} 
+.generateExpress1 {
+	width: 250px;
+	height: 31px;
+	/*margin-right: 2.85em;*/
+    float: center;
+	background: url(../../img/patent/table/header.png) no-repeat;
+	border: none;
+}
+#AddCommonFinish {
+	height: 58px; 
+	margin-right: 0px
+}
+
+.addPatentNormal {
+	width: 30px;
+	height: 30px;
+	border: none;
+	background: url(../../img/patent/table/add_1.png) no-repeat;
+}
+.addPatent_p {
+	width: 30px;
+	height: 30px;
+	border: none;
+	outline: none;
+	background: url(../../img/patent/table/add_1_p.png) no-repeat;
+}
+.clear {
+	position: absolute;
+	right: 0px;
+	bottom: -5px
+}
+.clearEditFieldList {
+	position: absolute;
+	right: 1px;
+	bottom: 1px;
+}
+.copyBtn {
+	width: 77px;
+	height: 25px;
+	border-radius: 2px;
+	margin-left: 12px;
+	margin-top:7px;
+	border:1px solid rgb(210,208,208);
+	background-image: url("../../img/patent/table/ic1_1.png");
+	background-repeat: no-repeat;
+	background-color: rgb(246,247,247);
+	background-position:6px 5px;
+}
+.addProjectTreeNew {
+	width: 77px;
+	height: 25px;
+	border-radius: 2px;
+	margin-left: 16px;
+	margin-top:10px;
+	border:1px solid rgb(210,208,208);
+	background:transparent url(../../img/projectManagement/ic8.png) no-repeat 5px center;
+	background-color: rgb(247,250,250);
+	background-position:6px 5px;
+}
+.addToEditBtn {
+	width: 118px;
+	height: 25px;
+	margin-left: 10px;
+	margin-top:7px;
+	border:1px solid rgb(210,208,208);
+	background-image: url("../../img/patent/table/ic6_2.png");
+	background-color: rgb(246,247,247);
+	background-repeat: no-repeat;
+	background-position:6px 5px;
+}
+/*.addProjectBtn{*/
+    /*width: 97px;*/
+    /*height: 25px;*/
+    /*margin-left: 10px;*/
+    /*margin-top:7px;*/
+    /*border:1px solid  rgb(210,208,208);*/
+    /*background-image: url("../../img/patent/table/ic7_2.png");*/
+    /*background-color: rgb(246,247,247);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position:6px 5px;*/
+/*}*/
+
+.deleteSelectAll
+{
+    width: 95px;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+}
+.deleteSelectAll:hover
+{
+    border: 1px solid #1484e6;
+}
+.searchLibraryBtn {
+	width: 144px;
+	height: 36px;
+	border:1px solid rgb(210,208,208);
+	margin-left: 8px;
+	margin-top: 7px;
+	border-radius: 2px;
+	text-align: left;
+	padding-left: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	background-color: white;
+	box-shadow:0 0 1px 1px rgb(231,231,231);
+}
+
+.successImg {
+	width: 71px;
+	height: 71px;
+	background-image: url("../../img/patent/table/success.png");
+}
+.failureImg {
+	width: 71px;
+	height: 71px;
+	background-image: url("../../img/patent/table/failure.png");
+}
+.wPercentLargeBeforExpand {
+	width:5.5%;
+	cursor: pointer;
+}
+.borderRightD3 {
+	border-right: 1px solid #d3d3d3;
+}
+.borderLeftD3 {
+	border-left: 1px solid #d3d3d3;
+}
+.afterExpandArrow {
+	background:url(../../img/public/arrowLeft.png) no-repeat center;
+}
+.expandBtn {
+	width:20px;
+	height:20px;
+	border: none;
+	outline: none;
+	background: url(../../img/patent/table/arrow1.png) no-repeat center;
+}
+
+.tabCommonCombitions { margin-top:20px;
+}
+.tabCommonCombitions td {
+	border: none;
+}
+.inputRequestArrow {
+	background: url(../../img/patent/searOverview/arrowdown.png) no-repeat center;
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+}
+.codeSetButton {
+	width: 15px;
+}
+.inputRequestplus {
+	background: url(../../img/patent/table/plus.png) no-repeat center;
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+}
+.fieldMorePageBgGray {
+	/*background-color: #d3d3d3;*/
+    color: #999999;
+}
+.keyRadio {
+	vertical-align: -10%;
+}
+/*.tableChooseSelect*/
+/*{*/
+/*border: 1px solid rgb(52,152,219);*/
+/*color: rgb(8,125,204);*/
+/*background-color: #FFFFFF;*/
+/*}*/
+/*.tableChooseNormal*/
+/*{*/
+/*border: 1px solid #d3d3d3;*/
+/*}*/
+.tabSeaHisCkb {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin-left: 10px;
+}
+.expandEditTextList {
+	border: 1px solid #d3d3d3;
+	border-bottom: none;
+	/*margin-bottom: -2px;*/
+    border-radius: 0px 0px 0px 2px;
+	border-collapse: collapse;
+	margin: 0px;
+}
+.expandEditTextList td {
+	border-right: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+}
+input.generateExpress {
+	width: 146px;
+	height: 31px;
+	border: none;
+}
+input.bgShengDis {
+	/** background: url(../../img/patent/table/shengDis.png) no-repeat; **/
+	 background: url(../../img/patent/table/sheng.png) no-repeat;
+}
+.decInfo {
+	background: none;
+	border: none;
+	width: 21px;
+	height: 22px;
+	/*background: url(../../img/patent/table/decInfo.png) no-repeat;*/
+    background: url(../../img/patent/table/tableInfo.png) no-repeat;
+	outline: none;
+	cursor: pointer;
+	margin-left: 1px;
+	vertical-align: middle;
+	margin-top: 6px;/*border: 1px solid red;*/
+}
+.decInfoSmall {
+	background: none;
+	border: none;
+	/*width: 26px;*/
+    /*height: 26px;*/
+    width: 24px;
+	height: 24px;
+	/*background: url(../../img/patent/table/decSmall.png) no-repeat;*/
+    background: url(../../img/patent/table/tableInfo.png) no-repeat;
+	outline: none;
+	cursor: pointer;
+	/*margin-left: 10px;*/
+    margin-left: 1px;
+	margin-top: 6px;
+}
+.deleteSmall {
+	background: none;
+	border: none;
+	width: 26px;
+	height: 26px;
+	/*background: url(../../img/patent/table/deleteSmall.png) no-repeat;*/
+    background: url(../../img/patent/table/tableDel.png) no-repeat;
+	outline: none;
+	cursor: pointer;
+	margin-left: 5px;
+	margin-top: 6px;
+}
+.btn_bg {
+	width: 82px;
+	height: 37px;/*background: url(../../img/patent/table/btn_bg_1.png) no-repeat;*/
+}
+.homePageFloatWnd1 {
+	width: 341px;
+	height: 309px;
+	background-color: #ffffff;
+	margin: 0px auto;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.floatWndTitle1 {
+	height: 25px;
+	line-height: 25px;
+	background-color: #3498DB;
+	padding-left: 5px;
+	color: white;
+}
+.closeBtn {
+	cursor: pointer;
+	background:url("../../img/patent/table/close_1.png") no-repeat;
+	border: none;
+	width: 20px;
+	height: 20px;
+}
+#helpTxt p {
+	margin: 5px 5px 3px 8px;
+	line-height:22px; text-indent:2em;
+}
+#helpTxt ul {
+}
+#helpTxt li {
+	margin: 5px 5px 5px 8px;
+	line-height:22px; text-indent:2em;
+}
+img.inputClear {
+	padding: 0px;
+	line-height: 0px;
+}
+table.quickSelect {
+	margin-left: 50px;
+}
+.title {
+	color: #8a8a8a;
+	text-align: right;
+}
+/*.condition .heng {
+	color: #8a8a8a;
+	margin: 0px 0px 0px 15px;
+	padding-left:10px;
+}
+.condition li {
+	list-style: none;
+	float: left;
+	text-align: center;
+	margin-left: 5px;
+}
+.condition .conditionUnSelect {
+	color: #3498DB;
+	margin-left: 5px;
+	cursor: pointer;
+	padding: 0 15px 0 15px;
+}
+.conditionInput {
+	text-align: center;
+	width: 50px;
+}
+.conditionInput input {
+	width: 64px;
+	height: 20px;
+}
+.conditionSelected {
+	color: #000000 !important;
+	text-align: center;
+	padding: 0 15px 0 15px;
+}*/
+.fontWeight{
+	font-weight: bold;
+}
+.chinaUtlityPatent {
+	float: left;
+	margin-right:5px;
+	margin-bottom:10px;
+}
+#_fastSelectArea input {
+	padding:0px 5px 0px 5px;
+	margin:0px;
+	font-size:12px;
+}
+#_fastSelectArea table tr {
+	margin: 5px 0px 5px 0px;
+	height:25px;
+}
+
+.filedListTdHover {
+	background-color:rgb(36,144,216);
+	color: #ffffff;
+}
+.filedListTdClick {
+	background-color:rgb(36,144,216);
+	color: #ffffff;
+}
+.fieldMorePagesTdNormal {
+	border: 1px solid #d3d3d3;/*border-top: none;*/
+}
+.fieldMorePagesTdSel {
+	background-color:#5882cb;
+	color:#FFFFFF;/*border-top: none;*/
+}
+
+.marginLR20px
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.typeSelect
+{
+    width: 120px;
+    height: 32px;
+    line-height: 30px;
+    color: rgb(59,149,242);
+    background-color: rgb(255,255,255);
+    border-top: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+	border-right:none;
+}
+.typeSelect:last-child{ border-left:1px solid #d3d3d3;}
+
+.typeNormal
+{
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(252,251,251);
+    border: 1px solid #d3d3d3;
+}
+
+.typeNormal:first-child{ border-left:1px solid #d3d3d3;}
+.typeNormal:last-child{ border-right:1px solid #d3d3d3;}
+
+.contrastNormal
+{
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(252,251,251);
+    border: 1px solid #d3d3d3;
+}
+.contrastSelect
+{
+    width: 120px;
+    height: 31px;
+    line-height: 30px;
+    color: rgb(59,149,242);
+    background-color: rgb(255,255,255);
+    border-top: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+}
+
+.selectWordTitle
+{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.checkBoxStyle{
+    display: block;
+    height: 16px;
+    width: 16px;
+   margin-left: 10px;
+}
+
+.synonymDiv table tr td{ padding: 10px;}
+.CrosslanguageDiv table tr td{ padding: 10px;}
+.conditionsItem
+{
+    float: left;
+    border-radius: 10px;
+    height: 25px;
+    background-color: rgba(252,252,252,1);
+    color:rgb(152,153,153);
+    width: 80px;
+    text-align: center;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    line-height: 25px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.Conditions
+{
+    line-height: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right:20px;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    overflow: auto;
+}
+.addToWord
+{
+    width: 120px;
+    height: 42px;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color:#5882cb;
+    font-size: 16px;
+}
+
+.addToWord2 {
+    background: #5882cb none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 42px;
+    outline: medium none;
+    width: 120px;
+}
+.addToSearch
+{
+    width: 120px;
+    height: 42px;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    /*background-color: rgb(51,169,226);*/
+    background-color:#5882cb;
+    font-size: 16px;
+}
+.addToSearch1
+{
+    width: 120px;
+    height: 42px;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    /*background-color: rgb(51,169,226);*/
+    background-color:#5882cb;
+    font-size: 16px;
+}
+.cancleWord
+{
+    width: 120px;
+    height: 42px;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    /*background-color: rgb(51,169,226);*/
+    background-color:#5882cb;
+    font-size: 16px;
+}
+.contrastPageLRSty
+{
+    width: 435px;
+}
+.divSmallItemStyle
+{
+    width: 106px;
+    height: 30px;
+    float: left;
+    cursor: pointer;
+}
+.divSmallNormal
+{
+    background-color: rgb(252,251,251);
+    border: 1px solid #d3d3d3;
+    border-bottom: none;
+	border-right:none;
+    height: 31px;
+    line-height: 30px;
+    text-align: center;
+}
+.divSmallNormal:first-child{ border-left:1px solid #d3d3d3; border-right:none;}
+.divSmallNormal:last-child{ border-right:1px solid #d3d3d3;}
+.divSmallSelect
+{
+    background-color: rgba(255,255,255,1);
+    color: rgb(59,149,242);
+    border: 1px solid #d3d3d3;
+    border-bottom: none !important;
+	border-right:none;
+    z-index: 10;
+    height: 31px;
+    line-height: 30px;
+    text-align: center;
+}
+.divSmallSelect:last-child{ border-right:1px solid #d3d3d3;}
+.lrItem
+{
+    width: 430px;
+    height: 250px;
+    border: 1px solid #d3d3d3;
+    background-color: #ffffff;
+    /*overflow: auto;*/
+}
+
+.btnBlueComp
+{
+    width: 120px;
+    height: 42px;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    /*background-color: rgb(51,169,226);*/
+    background-color:#5882cb;
+    font-size: 16px;
+}
+.addProvinceToSearch
+{
+    width: 120px;
+    height: 42px;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    /*background-color: rgb(51,169,226);*/
+    background-color:#5882cb;
+    font-size: 16px;
+}
+.addProvinceToSearch1
+{
+    width: 120px;
+    height: 42px;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    /*background-color: rgb(51,169,226);*/
+    background-color:#5882cb;
+    font-size: 16px;
+}
+.btnSmallWhite { overflow: hidden; }
+.conditionsItempan
+{
+    float: left;
+    border-radius: 10px;
+    height: 25px;
+    background-color: rgba(252,252,252,1);
+    color:rgb(152,153,153);
+    width: 130px;
+    text-align: center;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    line-height: 25px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+
+/*2015-4-17*/
+.tabChinaUtlityPatent{ width:100%; position:relative; background:#fff; box-shadow:0 0 10px 5px #e1e6ec; border-bottom:#e6e6e6 1px solid}
+.bgContentBg1 table{ width:92%;margin:20px 4%}
+.tabChinaUtlityPatent .BtnLargeBlue{ position:absolute; right:37px; top:10px;} 
+
+.tabCommonCombitions{ width:auto;}
+.tabCommonCombitions #AddToCommon{ position:absolute; right:17px; top:30px;}
+.tabCommonCombitions #reSet{ position:absolute; right:160px; top:30px;}   
+
+input.patentLibNameInput { width: 80px; height: 20px; padding:0px; margin: 0px; }
+.fastSelectW { width:42px; }
+.fastSelectF { font-size:10px;}
+.patentLibDivSelect { border: 1px solid #3498DB;}
+/*15-4-21*/
+.countryTable {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+.countryTable tr
+{
+    height: 40px;
+}
+.otherCountryItem
+{
+    width: 100%;
+    border: 1px solid #d3d3d3;
+    background-color: #ffffff;
+    /*overflow: auto;*/
+}
+.leibie
+{
+    width: 500px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.leibie li
+{
+    float: left;
+    list-style: none;
+    width: 70px;
+    cursor: pointer;
+}
+.leibieSelected
+{
+    font-weight: bold;
+    color: #000;
+    cursor: none;
+}
+.leibieUnSelected
+{
+    color: rgb(59,149,242);
+    font-weight: normal;
+}
+#_fastSelectArea .fontWeight { width:120px; table-layout:fixed; white-space:nowrap; overflow:hidden; word-break:break-all; }
+.bgContentBg1 {
+    background-color: #f1f1f1;
+    box-shadow:0 0 10px 5px #e1e6ec;
+    margin-bottom:90px
+}
+.bgContentBg
+{
+    background-color: #f9f9f9;
+}
+.BtnexpandMore
+{
+    width:146px;
+    height: 32px;
+    line-height: 32px;
+    background-image: url(../../img/patent/table/btnexpandMore.png);
+    overflow: hidden;
+}
+.BtnexpandMore span {
+    color: #959796;
+}
+.boxShadow
+{
+    box-shadow: 0 15px 10px 3px #e1e6ec;
+}
+.tabEditTextList1
+{
+    width: 100%;
+    margin:0px;
+    border-collapse: collapse;
+    /*background-color: rgb(244,245,245);*/
+    background-color: #8198ba;
+}
+.tabEditTextList1  td
+{
+    height: 35px;
+    line-height: 35px;
+    border-right: 1px solid #d3d3d3;
+    text-align: center;
+    /*float: left;*/
+    color: #ffffff;
+    border-bottom: 1px solid #d3d3d3;
+}
+#ipc_smallcpcTreeDemo a div,
+#ipc_smallucTreeDemo a div,
+#ipc_smallfiTreeDemo a div,
+#ipc_smallgmTreeDemo a div,
+#cpc_smallIpcTreeDemo a div,
+#uc_smallIpcTreeDemo a div,
+#fi_smallcpcTreeDemo a div,
+#fi_smallftermTreeDemo a div,
+#ft_smallFiTreeDemo a div
+{
+	cursor: pointer;
+}
+
+/*锟斤拷锟斤拷选锟斤拷锟斤拷锟斤拷式*/
+#_tabChinaUtlityPatent span{border-left: 3px solid #5882cb; padding-left:8px; font-size:16px}
+#_tabChinaUtlityPatent .displayInline span{ border:none; font-size:12px; padding:0 10px 0 0}
+.quicktit{ color:#333; margin-top:3px; margin-left:39px; margin-bottom:4px; font-size:14px; font-weight:bold; font-family:Microsoft YaHei;}
+.shoufang{ margin-top:2px; color:#bfbbbb; font-size:13px; font-family:Microsoft YaHei;}
+.fastSelectArea table{padding:0px; font-size:13px; font-family:Microsoft YaHei}
+.condition .heng{ color:#8a8a8a; margin:0px 0px 0px 15px; padding-left:10px;}
+.condition li{ list-style:none; float:left; text-align:center; margin-left:5px; margin-bottom:5px; margin-top:0}
+.condition .conditionUnSelect{ margin-left:5px; cursor:pointer; padding:2px 8px;}
+.conditionSelected{ color:#fff!important; background-color:#5882cb; padding:2px 8px;}
+.conditionSelected1{ color:#fff!important; background-color:#5882cb; padding:2px 8px;}
+
+.patlist{ width:15px; height:20px;}
+.patlist td{}
+.patlist td span{ float:left; position:relative;}
+.patlist td span b{ display:block; width:12px; height:10px; position:absolute; right:-18px; cursor:pointer; background:url(../../img/patent/etropatmin.png) no-repeat;}
+.patlist td span b.bup{ top:-11px; background-position:-1px 1px;}
+.patlist td span b.bdown{ top:1px; background-position:-1px -12px;}
+
+.extrcheseaimgnon{ width:auto; padding:50px 0; text-align:center; position:relative;}
+.extrcheseaimgnon h2{ width:auto; line-height:40px; font-weight:normal; font-size:26px;}
+.extrcheseaimgnon h3{ width:auto; line-height:30px; font-weight:normal; font-size:18px; color:#999;}
+
+

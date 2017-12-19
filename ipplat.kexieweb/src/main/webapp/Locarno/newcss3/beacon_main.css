@@ -1,0 +1,28 @@
+/**validation的错误提示**/
+label.error {
+	border-spacing: 0px 0px;
+	color: rgb(185, 74, 72);
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 4px;
+}
+.loading-indicator {
+	height: 80px;
+	width: 80px;
+	background: url( 'loading.gif' );
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.loading-indicator-overlay {
+	background-color: #FFFFFF;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+/**弹出alert和confirm**/
+h3#myModalLabel { font-size:14px; }
+div.modal-body{ font-size:14px; }
+.modal-header { background-color: #8198BA; color:#FFFFFF;}
+.modal-header button.close { color:#FFFFFF;  text-shadow:none; opacity: 1;}
+.modal-body { text-align: center;  }
+.modal-footer { background-color:#FFFFFF;}

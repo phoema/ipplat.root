@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html ng-app="patentApp" class="ng-scope">
+<head>
+<style type="text/css">
+@charset "UTF-8";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak,
+	.x-ng-cloak, .ng-hide {
+	display: none !important;
+}
+
+ng\:form {
+	display: block;
+}
+
+.ng-animate-block-transitions {
+	transition: 0s all !important;
+	-webkit-transition: 0s all !important;
+}
+
+.ng-hide-add-active, .ng-hide-remove {
+	display: block !important;
+}
+</style>
+<title>知识产权检索-专利检索-诚知网-做专业的技术专利和科技服务交易平台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="renderer" content="webkit">
+<!--[if lt IE 9]>
+<script src="/module/resources/bootstrap2.3.2/js/html5shiv.js"></script>
+<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="edge">
+<link href="../public/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="../public/css/public.css" rel="stylesheet" media="screen">
+
+<link href="../public/css/pub_zz.css" rel="stylesheet" media="screen">
+<link href="../public/css/pub_sear.css" rel="stylesheet" media="screen">
+<link href="../public/css/layout.css" rel="stylesheet" media="screen">
+<link href="../public/css/imgText.css" rel="stylesheet" media="screen">
+<link href="css/list.css" rel="stylesheet" media="screen">
+<link href="../public/css/debug.css" rel="stylesheet" media="screen">
+<link href="../public/beacon/beacon_main.css" rel="stylesheet"
+	media="screen">
+
+<script type="text/javascript" src="../public/js/jquery.js"></script>
+<script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="../public/beacon/beacon_jquery_common.js"></script>
+<script type="text/javascript"
+	src="../public/beacon/beacon_jquery_main.js"></script>
+
+<script src="js/page.js"></script>
+<script src="js/code.js"></script>
+<script src="js/common.js"></script>
+<script src="js/resultlist.js"></script>
+<script src="js/listcommon.js"></script>
+<script src="../public/js/header.js"></script>
+<link href="css/common.css" rel="stylesheet" media="screen">
+<link href="http://hn.publicdi.com/favicon.ico" type="image/x-icon"
+	rel="icon">
+<link href="http://hn.publicdi.com/favicon.ico" type="image/x-icon"
+	rel="shortcut icon">
+</head>
+<body class="bodyClass">
+
+	<div class="nav" id="headerNav"></div>
+	<div class="location">
+		<b style="font-size: 14px; font-weight: normal; font-family: '微软雅黑';">
+			<a href="http://www.czeip.com/">首页</a>
+		</b><b
+			style="color: #0185da; font-size: 12px; font-weight: bold; font-family: '宋体';">&gt;</b><span>
+
+			知识产权检索 </span>
+	</div>
+	<!--main-->
+	<form name="querylist" id="querylist" method="post"
+		action="/txnPatentImgTextListRecord.ajax"
+		class="form-inline ng-pristine ng-valid">
+		<input style="display: none;" id="_querylist_reset" type="reset">
+
+		<div id="mGrid_patentGrid" ng-controller="mGrid_patentGrid_controller"
+			class="ng-scope">
+
+
+
+			<div
+				class="minWidth1000px borderD3 marginTop20LRAuto w89Point89P h80px bgFFF ">
+				<div style="height: 32px; margin-top: 25px;">
+					<table class="Width90P" cellspacing="0">
+						<tbody>
+							<tr>
+								<td style="width: 145px"><div
+										class="Width100P positionRelative">
+										<div
+											class="keyWord_Div clearfix cursorPointer Width100P marginLeft15">
+											<div class="fl keyWord fontSize12 paddingLeft6" id="keyWord"
+												style="background-image: url(images/btn_arrow_down.png);">名称</div>
+										</div>
+										<div id="keyWord_ul" class="keyWord_ul marginLeft15"
+											style="display: none;">
+											<ul class="fontSize12" style="clear: both">
+												<li value="申请号">申请号</li>
+												<li value="申请日">申请日</li>
+												<li value="公布号">公布号</li>
+												<li value="公布日">公布日</li>
+												<li value="名称">名称</li>
+												<li id="defaultKeyWord" value="摘要,说明">摘要和说明</li>
+												<li value="申请人">申请人</li>
+												<li value="发明人">发明人</li>
+												<li value="代理机构">代理机构</li>
+												<li value="代理人">代理人</li>
+
+											</ul>
+										</div>
+									</div></td>
+								<td style="position: relative;"><input maxlength="100"
+									id="_expressCN2" autocomplete="off" data-provide="typeahead"
+									class="searchInputFocus h30px outLineN" style="width: 100%;"
+									type="text"> <img class="inputClear2 displayNone"
+									style="position: absolute; top: 10px; right: 10px;"
+									src="../public/imgs/inputClear.png"> <!--form里面只有一个input type＝text，那么无论有没有submit按钮，在input中回车都会提交表单，防止回车提交表单，再加一个input-->
+									<input style="display: none;" type="text"> <input
+									name="select-key:buttonItem" value=""
+									id="select-key_buttonItem" type="hidden"> <input
+									name="select-key:expressCN2Val" value=""
+									id="select-key_expressCN2Val" type="hidden"> <input
+									name="select-key:expressCN2" value=""
+									id="select-key_expressCN2" type="hidden"> <input
+									name="select-key:_keyWord" value="名称,摘要"
+									id="select-key__keyWord" type="hidden"> <input
+									name="select-key:_keyWordStr" value="名称"
+									id="select-key__keyWordStr" type="hidden"> <input
+									name="select-key:languageSelect" value=""
+									id="select-key__languageSelect" type="hidden"></td>
+								<td class="w90px" style="padding-left: 15px;"><button
+										type="button" onclick="do2Search('AND');"
+										class="buttonNobgBd colWhite w90px H32"
+										style="background: url(images/btn3_1.png)">重新检索</button></td>
+
+
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div
+				class="w89Point89P displayBlock minWidth1000px marginTop20LRAuto">
+				<!--左边-->
+				<div class="floatLeft w19P bgFFF">
+					<div class="borderD3Radius2 h48Center">
+						<img class="ver_alignMid" src="../public/imgs/filter.png"
+							style="margin-left: 25%;"> <span
+							class="fontSize14 fontWeightBold ver_alignMid"
+							style="margin-left: 10%">筛&nbsp;&nbsp;选</span>
+					</div>
+					<div class="borderD3" style="border-top: none">
+
+
+						<div
+							class="patentType Width100P h34Center searOverviewLeftStyle1 borderBottom">
+							<span class="marginLeft5P">专利类型</span>
+							<div class="selectArrowSelect floatRight"></div>
+						</div>
+
+						<div id="PDT" v="PDB" vstr="专利类型"
+							class="PDBContent searOverviewLeftContentS1 borderBottom">
+
+						</div>
+
+
+
+						<div
+							class="patentType Width100P h34Center searOverviewLeftStyle1 borderBottom">
+							<span class="marginLeft5P">当前权利状态</span>
+							<div class="selectArrowSelect floatRight"></div>
+						</div>
+
+						<div ID="LSSCN" v="LSSCN" vstr="当前权利状态"
+							class="LSBCNContent searOverviewLeftContentS1 borderBottom">
+
+						</div>
+
+
+						<div class="selectContentMore disPlayNone">
+							<div
+								class="patentType Width100P h34Center searOverviewLeftStyle1 borderBottom">
+								<span class="marginLeft5P">IPC小类</span>
+								<div class="selectArrowSelect floatRight"></div>
+							</div>
+
+							<div id="IPCSC" v="IPCSC" vstr="IPC小类"
+								class="IPCSCContent searOverviewLeftContentS1 borderBottom">
+
+							</div>
+						</div>
+
+						<div class="selectContentMore disPlayNone">
+							<div
+								class="patentType Width100P h34Center searOverviewLeftStyle1 borderBottom">
+								<span class="marginLeft5P">申请年</span>
+								<div class="selectArrowSelect floatRight"></div>
+							</div>
+
+							<div id="AY" v="AY" vstr="申请年"
+								class="AYContent searOverviewLeftContentS1 borderBottom">
+
+							</div>
+						</div>
+
+						<div class="selectContentMore disPlayNone">
+							<div
+								class="patentType Width100P h34Center searOverviewLeftStyle1 borderBottom">
+								<span class="marginLeft5P">申请人</span>
+								<div class="selectArrowSelect floatRight"></div>
+							</div>
+
+							<div id="APO" v="APOS" vstr="申请人"
+								class="ASOContent searOverviewLeftContentS1 borderBottom">
+
+							</div>
+						</div>
+
+						<div class="selectContentMore disPlayNone">
+							<div
+								class="patentType Width100P h34Center searOverviewLeftStyle1 borderBottom">
+								<span class="marginLeft5P">发明人</span>
+								<div class="selectArrowSelect floatRight"></div>
+							</div>
+
+							<div id="INO" v="INOS" vstr="发明人"
+								class="INOContent searOverviewLeftContentS1 borderBottom">
+
+							</div>
+						</div>
+
+						<div onclick='leftmore(this)' id="leftmore"
+							class="selectMore Width100P h34Center  searOverviewLeftStyle1 leftBlockSpacingTop"
+							style="background-color: #9FB3D6;">
+							<img class="floatLeft moreImgStyle"
+								src="../public/imgs/hisDown.png"> <span class="floatLeft"
+								style="margin-left: 2%"> 更 多</span>
+						</div>
+
+						<div onclick='leftup(this)' id="leftup" style="display: none"
+							class="selectMore Width100P h34Center  searOverviewLeftStyle1 leftBlockSpacingTop"
+							style="background-color: #9FB3D6;">
+							<img class="floatLeft moreImgStyle"
+								src="../public/imgs/hisUp.png"> <span class="floatLeft"
+								style="margin-left: 2%"> 收 起</span>
+						</div>
+
+
+					</div>
+
+				</div>
+				<!--右边-->
+				<div class="floatLeft" style="width: 81%">
+					<div class="Width100P positionRelative">
+						<div class="positionAbsolute"
+							style="left: 0; width: 6px; height: 47px; background: url(/module/di/img/patent/searOverview/leftRightArrow.png); background-size: 6px 100%">
+						</div>
+						<div class="marginLeft6 rightTopContent" id="categorySelectButton">
+						</div>
+					</div>
+					<div class="marginLeft10">
+						<div class="positionRelative"
+							style="height: 85px; background-color: rgb(239, 245, 248); border: 1px solid #d3d3d3;">
+							<div class="positionAbsolute"
+								style="right: 0px; top: -1px; width: 300px; height: 40px; background: url(/module/di/img/patent/searOverview/topbrokenLineBg.png)">
+								<div class="floatRight" id="_patentListType"
+									style="width: 220px; margin-top: 8px;">
+									<div
+										class="overView overViewNormal rightBtnImgText floatRight cursorPointer"
+										title="概细览"></div>
+									<div
+										class="surface surfaceNormal rightBtnImgText floatRight cursorPointer"
+										title="外观"></div>
+									<div
+										class="table tableNormal rightBtnImgText floatRight cursorPointer"
+										title="表格"></div>
+									<div
+										class="imageTest onSelectTabType imgTextSelect rightBtnImgText floatRight cursorPointer"
+										title="图文"></div>
+								</div>
+							</div>
+							<div class="displayInline h4040Center" style="min-width: 750px">
+								<span class="checkBoxStyle checkBoxBg ver_alignMid marginLeft10"
+									id="selectall"></span>
+
+
+								<script type="text/javascript">
+									
+								</script>
+
+								<span class="colTime">排序:</span>
+								<div class="displayInline">
+									<div id="order" v="-"
+										class="displayInline ver_alignMid height25 cursorPointer"
+										style="width: 17px; background: transparent url(images/btn7_1.png) repeat scroll 0% 0%;"></div>
+									<div class="displayInline ver_alignMid"
+										style="position: relative; margin-left: -4px">
+										<div
+											class="patentStrength_Div clearfix cursorPointer floatLeft">
+											<div v="RELEVANCE"
+												class="fl overViewSelect fontSize12 paddingLeft6"
+												id="patentStrength"
+												style="background-position: 90px 10px; width: 100px; border-left: 0px none; background-image: url(images/arrowBlueDown.png);">
+												默认排序</div>
+										</div>
+										<div id="patentStrength_ul"
+											class="overViewSelect_ul ulDivStyle" style="display: none;">
+											<ul id="uul" class="fontSize12">
+												<li value="RELEVANCE" onclick="sort('RELEVANCE',1);">默认排序</li>
+												<li value="PD" onclick="sort('PD',1);">公布日</li>
+												<li value="AD" onclick="sort('AD',1);">申请日</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<!-- 
+ <div class="displayInline ver_alignMid positionRelative " style="margin-left: 2%">
+	<div class="combined_Div clearfix cursorPointer floatLeft w75px">
+        <div class="fl lineButton fontSize12 " style="padding-left: 8px;" onclick="topic1()")>自定义分析</div>
+      </div> 
+    </div>
+ 
+ <div class="displayInline ver_alignMid positionRelative " style="margin-left: 2%">
+	<div class="combined_Div clearfix cursorPointer floatLeft w75px">
+        <div class="fl lineButton fontSize12 " style="padding-left: 12px;" onclick="topic2()">关联分析</div>
+      </div> 
+    </div>
+    
+    
+    <div class="displayInline ver_alignMid positionRelative " style="margin-left: 2%">
+	<div class="combined_Div clearfix cursorPointer floatLeft w75px">
+        <div class="fl lineButton fontSize12 " style="padding-left: 12px;" onclick="topic3()">聚类分析</div>
+      </div> 
+    </div>
+  -->
+
+							</div>
+
+
+
+							<div class="colTime" style="height: 35px; color: #282828;">
+								<div class="fontSize14 rightContentTip">
+									<span>搜索到&nbsp;</span><span id="contentTipNumList"
+										class="rightContentTipNum ng-binding" style="display: inline;"></span><span>&nbsp;件</span>&nbsp;<span>专利文献
+									</span> <span id="top300" class="marginLeft15" style="display: none">显示前300件</span>
+									<div id="span-relation" class="displayInline"
+										style="display: none; background-color: #294a94; padding-right: 15px; color: #fff; font-weight: bold; margin-left: 10px; font-size: 15px;">
+										<!-- <span class="marginLeft10">|</span> -->
+										<span class="marginLeft15">大数据关联：商标(</span><span
+											class="rightContentTipNum TRARelationLink"
+											id="relationTRANUM" style="display: inline;">0</span><span>)</span><span
+											class="marginLeft15">软著(</span><span
+											class="rightContentTipNum STDRelationLink"
+											id="relationSOFTNUM" style="display: inline;">0</span><span>)</span>
+										<span class="marginLeft15">作品(</span><span
+											class="rightContentTipNum rightnumTip" id="relationWORKNUM"
+											style="display: inline;">0</span><span>)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="theme" class="floatleft borderD3"
+							style="padding-bottom: 10px;"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+
+	</form>
+	<!--main END-->
+	<div id="footerNew"
+		style="float: left; margin-top: 35px; text-align: center; width: 100%;">
+
+	</div>
+
+	<!--弹出框内容-->
+	<!--代码集扩展词表类弹出层-->
+
+	<div
+		class="shielding_layer zIndex_layer WidthHeight100P positionAbsolute absoluteLeftTop displayNone">
+		<div class="displayTable WidthHeight100P">
+			<div class="displayTableCell ver_alignMid">
+				<!-- 代码集浮层 -->
+
+				<!--查看大图-->
+				<div id="showBigImage" class="disPlayNone homePageFloatWnd"
+					style="width: 700px; height: 470px">
+					<div class="floatWndTitle">
+						<span class="colWhite fontSize16 marginLeft14">查看大图</span>
+						<button type="button"
+							class="closeBigImage floatRight closeButton marginTop15 marginRight15 cursorPointer"></button>
+					</div>
+					<div class="displayInline marginTop10 "
+						style="height: 400px; border-bottom: 1px solid #C5C5C5; text-align: center; width: 100%; border-top: none">
+						<img style="max-height: 98%; max-width: 98%;" src="" id="bigimg">
+					</div>
+					<div class="displayInline marginTop10"
+						style="width: 100%; text-align: center; font-weight: bold; font-size: 13px; color: #009ADF">
+						<p class="marginLeft14" id="imgAlertTitle">查看大图</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--右侧导航栏-->
+	<input type="hidden" name="select-key_express" value=""
+		id="select-key_express" />
+	<input type="hidden" name="select-key_pdb" value="" id="select-key_pdb" />
+
+</body>
+</html>

@@ -1,0 +1,1322 @@
+#div_float_show
+{
+    background-color: #808080;
+    display: none;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+
+
+.xialah {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    float: left;
+    left: 320px;
+    position: absolute;
+    top: 56px;
+    width: 165px;
+}
+.xialah .li {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: medium none #f1f1f1;
+    border-top: medium none #e6e6e6;
+    clear: both;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: center;
+    width: 145px;
+}
+.xialah .li:hover {
+    color: #3d6dcc;
+    text-decoration: underline;
+}
+.xialah .li_on {
+    background: #f2f4fd none repeat scroll 0 0;
+    clear: both;
+    color: #666;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: left;
+    width: 145px;
+}
+#div_show_titles a {
+    color: #333;
+    text-decoration: none;
+}
+#div_show_titles a:hover, a:active {
+    color: #33c;
+    text-decoration: underline;
+}
+.xlshow_titles {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0 auto;
+    width: 587px;
+}
+.xlshow_titles .up {
+    background: #f4f4f4 none repeat scroll 0 0;
+    cursor: pointer;
+    font: 14px/25px arial;
+    height: 25px;
+    padding: 0 6px;
+}
+.xlshow_titles .off {
+    font: 14px/25px arial;
+    height: 25px;
+    padding: 0 6px;
+}
+.top {
+    clear: both;
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+}
+.lunbo_bt {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+    z-index: 9999;
+}
+.toph {
+    clear: both;
+    height: 426px;
+    min-width: 1200px;
+    overflow: visible;
+    position: relative;
+    top: 0;
+    z-index: 999;
+}
+.top_bg {
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    overflow: auto;
+    position: relative;
+    width: 1200px;
+    z-index: 9999999;
+}
+.toph1 {
+    background: rgba(0, 0, 0, 0) url("images/head_11.png") no-repeat scroll center center;
+    clear: both;
+    height: 420px;
+    overflow: auto;
+    position: relative;
+    top: -384px;
+    width: 100%;
+    z-index: 0;
+}
+.top_fl {
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    overflow: auto;
+    position: relative;
+    top: -418px;
+    width: 1200px;
+    z-index: 999;
+}
+.topfl {
+    background: rgba(0, 0, 0, 0) url("images/s_bg.png") repeat scroll 0 0;
+    float: left;
+    height: 320px;
+    margin-top: 30px;
+    padding: 4px 14px 0;
+    width: 300px;
+}
+.topfl_tit {
+    border-bottom: 2px solid #058acf;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 32px;
+    padding-left: 2px;
+    text-align: left;
+    width: 100%;
+}
+.top_cl {
+    clear: both;
+    margin: 0;
+    padding: 20px 0 0;
+    width: 100%;
+}
+.top_cl .span {
+    color: #fff;
+    float: left;
+    line-height: 30px;
+    text-align: right;
+    width: 60px;
+}
+.top_cl .input {
+    background: #dfebf5 none repeat scroll 0 0;
+    border: medium none;
+    color: #666;
+    float: left;
+    height: 26px;
+    margin-top: 2px;
+    width: 220px;
+}
+.top_cl .select_ss {
+    background: #dfebf5 none repeat scroll 0 0;
+    border: 1px solid #dfebf5;
+    float: left;
+    height: 26px;
+    margin-right: 6px;
+    margin-top: 2px;
+    position: relative;
+    width: 80px;
+    z-index: 100;
+}
+.top_cl .select_ss input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #666;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 4px;
+    text-align: center;
+    width: 64px;
+}
+.top_cl #pro span {
+    background: #dfebf5 none repeat scroll 0 0;
+    color: #666;
+    cursor: pointer;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+    width: 66px;
+    z-index: 100;
+}
+.top_cl #city span {
+    background: #dfebf5 none repeat scroll 0 0;
+    border: medium none;
+    color: #666;
+    cursor: pointer;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+    width: 66px;
+    z-index: 100;
+}
+.address_item a {
+    color: #333;
+    display: inline-block;
+    margin: 5px 5px 0;
+    padding: 5px;
+}
+.address_item {
+    background-color: #dfebf5;
+    border: 1px solid #e1e1e1;
+    display: none;
+    min-height: 130px;
+    padding: 10px;
+    position: absolute;
+    top: 29px;
+    width: 300px;
+}
+.select_pic {
+    background: rgba(0, 0, 0, 0) url("images/index_11.png") no-repeat scroll left center;
+    cursor: pointer;
+    float: left;
+    height: 26px;
+    position: relative;
+    width: 12px;
+    z-index: 100;
+}
+.gjjs {
+    float: left;
+    padding-left: 5px;
+}
+.gjjs a {
+    color: #fff;
+    line-height: 26px;
+}
+.xlshow_titles {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    display: none;
+    left: 0;
+    line-height: 30px;
+    margin: 0 auto;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    width: 78px;
+    z-index: 101;
+}
+.xlshow_titles table {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 78px;
+}
+.xlshow_titles .up {
+    background: #f4f4f4 none repeat scroll 0 0;
+    cursor: pointer;
+    font: 12px/25px arial;
+    height: 25px;
+    padding: 0 6px;
+}
+.xlshow_titles .off {
+    background: #dfebf5 none repeat scroll 0 0;
+    font: 12px/25px arial;
+    height: 25px;
+    padding: 0 6px;
+}
+.xlshow_titles_1 {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    display: none;
+    left: 0;
+    line-height: 30px;
+    margin: 0 auto;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    width: 78px;
+    z-index: 1001;
+}
+.xlshow_titles_1 table {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 78px;
+}
+.xlshow_titles_1 .up {
+    background: #f4f4f4 none repeat scroll 0 0;
+    cursor: pointer;
+    font: 12px/25px arial;
+    height: 25px;
+    padding: 0 6px;
+}
+.xlshow_titles_1 .off {
+    background: #fff none repeat scroll 0 0;
+    font: 12px/25px arial;
+    height: 25px;
+    padding: 0 6px;
+}
+.xlshow_titles_1 .off:hover {
+    background: #dfebf5 none repeat scroll 0 0;
+    cursor: pointer;
+    font: 12px/25px arial;
+    height: 25px;
+    padding: 0 6px;
+}
+.hot {
+    clear: both;
+    color: #99d6f2;
+    line-height: 26px;
+    padding: 30px 10px;
+}
+.hot a {
+    color: #fff;
+    line-height: 26px;
+    padding: 0 10px 0 0;
+}
+.sear_bt {
+    background: #08438e none repeat scroll 0 0;
+    border-radius: 4px;
+    clear: both;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 15px auto;
+    text-align: center;
+    width: 180px;
+}
+.topfr1 {
+    float: right;
+    height: 424px;
+    position: relative;
+    width: 840px;
+    z-index: 0;
+}
+.topfr {
+    float: right;
+    height: 424px;
+    position: relative;
+    width: 840px;
+    z-index: 0;
+}
+.top_bgh {
+    background: rgba(0, 0, 0, 0) url("images/indcc.jpg") no-repeat scroll right top;
+    height: 424px;
+    position: relative;
+    width: 840px;
+    z-index: 1;
+}
+.selfw {
+    cursor: pointer;
+    height: 100px;
+    left: 172px;
+    position: absolute;
+    top: 150px;
+    width: 50px;
+    z-index: 2;
+}
+.selfw a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+.selfw1 {
+    cursor: pointer;
+    height: 100px;
+    left: 356px;
+    position: absolute;
+    top: 288px;
+    width: 100px;
+    z-index: 2;
+}
+.selfw1 a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.selfw2 {
+    cursor: pointer;
+    height: 40px;
+    left: 480px;
+    position: absolute;
+    top: 134px;
+    width: 60px;
+    z-index: 2;
+}
+.selfw2 a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+.selfw3 {
+    cursor: pointer;
+    height: 100px;
+    left: 595px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 246px;
+    width: 50px;
+    z-index: 2;
+}
+.selfw3 a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.selfw a:hover, .selfw1 a:hover, .selfw2 a:hover, .selfw3 a:hover {
+    color: #75f841;
+}
+.topfr_lb {
+    bottom: 14px;
+    left: 680px;
+    position: absolute;
+    z-index: 2;
+}
+.topfr_lb_on {
+    background: rgba(0, 0, 0, 0) url("images/lb_03.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    float: left;
+    height: 6px;
+    margin-left: 8px;
+    width: 20px;
+}
+.topfr_lb_off {
+    background: rgba(0, 0, 0, 0) url("images/lb_05.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    float: left;
+    height: 6px;
+    margin-left: 8px;
+    width: 20px;
+}
+.main {
+    background: #f1f1f1 none repeat scroll 0 0;
+    clear: both;
+    position: relative;
+    width: 100%;
+}
+.main1 {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 40px 0 20px;
+    width: 1200px;
+}
+.main2 {
+    margin: 0 auto;
+    overflow: auto;
+    width: 1140px;
+}
+.main3 {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1200px;
+}
+.part {
+    float: left;
+    overflow: auto;
+    width: 400px;
+}
+.parth {
+    border: 1px solid #e6e6e6;
+    float: left;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding: 10px;
+    width: 365px;
+}
+.part_1 {
+    clear: both;
+    color: #2d4e7a;
+    font-size: 28px;
+    line-height: 30px;
+}
+.part_1 a {
+    color: #2d4e7a;
+    font-size: 28px;
+    line-height: 30px;
+}
+.part_1 a:hover {
+    color: #57bf2e;
+    font-size: 28px;
+    line-height: 30px;
+}
+.part_1h {
+    clear: both;
+}
+.part_11 {
+    color: #000;
+    cursor: pointer;
+    float: left;
+    font-size: 24px;
+    line-height: 30px;
+}
+.part_11:hover {
+    color: #3592e2;
+}
+.part_11 a {
+    color: #000;
+    cursor: pointer;
+    float: left;
+    font-size: 24px;
+    line-height: 30px;
+}
+.part_11 a:hover {
+    color: #3592e2;
+}
+.part_12 {
+    color: #3592e2;
+    cursor: pointer;
+    float: left;
+    font-size: 24px;
+    line-height: 30px;
+}
+.part_1h .span {
+    float: left;
+    font-size: 24px;
+    line-height: 30px;
+}
+.part_2 {
+    color: #7b959e;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 6px 0 0;
+}
+.part_3 {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #57bf2e;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 1px;
+    margin-top: 15px;
+    padding: 0;
+    text-align: center;
+    width: 140px;
+}
+.part_3 span {
+    color: #57bf2e;
+    font-size: 18px;
+    line-height: 40px;
+}
+.part_3:hover span {
+    color: #57bf2e;
+    font-weight: bold;
+    line-height: 37px;
+}
+.part a:active {
+    cursor: pointer;
+    text-decoration: none;
+}
+.part_3:hover {
+    border: 3px solid #57bf2e;
+    height: 40px;
+    margin-left: 0;
+    margin-top: 14px;
+    width: 140px;
+}
+.mainh {
+    background: #fff none repeat scroll 0 0;
+    clear: both;
+    position: relative;
+    width: 100%;
+}
+.part_2h ul {
+    clear: both;
+    overflow: auto;
+    padding: 5px 0 0 3px;
+    width: 350px;
+}
+.part_2h li a {
+    background: rgba(0, 0, 0, 0) url("images/dd.png") no-repeat scroll left center;
+    color: #999;
+    float: left;
+    font-size: 14px;
+    line-height: 28px;
+    max-width: 340px;
+    overflow: hidden;
+    padding-left: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 340px;
+}
+.part_2h li a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+.part_2h li .data, .news2 li .data {
+    color: #666;
+    float: right;
+    line-height: 26px;
+    width: 60px;
+}
+.icon a {
+    background: rgba(0, 0, 0, 0) url("images/index_28.png") no-repeat scroll center top;
+    color: #444;
+    float: left;
+    font-size: 14px;
+    margin: 25px 20px 15px 11px;
+    overflow: hidden;
+    padding-top: 60px;
+    text-align: center;
+    width: 80px;
+}
+.icon2 a {
+    background: rgba(0, 0, 0, 0) url("images/icon_09.png") no-repeat scroll center top;
+    color: #444;
+    float: left;
+    font-size: 14px;
+    margin: 25px 20px 15px 12px;
+    overflow: hidden;
+    padding-top: 60px;
+    text-align: center;
+    width: 80px;
+}
+.icon3 a {
+    background: rgba(0, 0, 0, 0) url("images/more.png") no-repeat scroll center top;
+    color: #444;
+    float: left;
+    font-size: 14px;
+    margin: 25px 18px 15px 20px;
+    overflow: hidden;
+    padding-top: 60px;
+    text-align: center;
+    width: 60px;
+}
+.icon4 a {
+    background: rgba(0, 0, 0, 0) url("images/index_15.png") no-repeat scroll center top;
+    color: #444;
+    float: left;
+    font-size: 14px;
+    margin: 5px 0 0;
+    overflow: hidden;
+    padding-top: 60px;
+    text-align: center;
+    width: 100px;
+}
+.icon6 a {
+    background: rgba(0, 0, 0, 0) url("images/index_29.png") no-repeat scroll center top;
+    color: #444;
+    float: left;
+    font-size: 14px;
+    margin: 5px 10px 0;
+    overflow: hidden;
+    padding-top: 60px;
+    text-align: center;
+    width: 100px;
+}
+.icon5 a {
+    background: rgba(0, 0, 0, 0) url("images/index_25.png") no-repeat scroll center top;
+    color: #444;
+    float: left;
+    font-size: 14px;
+    margin: 5px 0 0;
+    overflow: hidden;
+    padding-top: 60px;
+    text-align: center;
+    width: 100px;
+}
+.icon a:hover, .icon2 a:hover, .icon3 a:hover, .icon4 a:hover, .icon5 a:hover {
+    text-decoration: underline;
+}
+.zltoutiao {
+    background: rgb(15, 66, 128) none repeat scroll 0 0;
+    clear: both;
+    min-width: 1200px;
+    overflow: visible;
+    padding: 0 0 20px;
+    position: relative;
+}
+.zltt_titlt {
+    clear: both;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 100px;
+    margin: 0 auto;
+    overflow: auto;
+    text-align: center;
+    width: 1000px;
+}
+.lunbo .left img {
+    position: relative;
+}
+.lunbo .right img {
+    position: relative;
+}
+.lunbo .lunbodiv {
+    position: relative;
+}
+.lunbo {
+    clear: both;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 3px 5px 0;
+    position: relative;
+    width: 1140px;
+}
+.lunbo_dd {
+}
+.lunbo .td {
+    cursor: pointer;
+    display: block;
+    height: 130px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 226px;
+}
+.lunbo .text {
+    background: rgba(0, 0, 0, 0) url("images/text_bg.png") repeat scroll 0 0;
+    bottom: 0;
+    color: #ffffff;
+    font-family: microsoft yahei,����;
+    font-size: 12px;
+    left: 0;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 2px 5px;
+    position: absolute;
+    text-align: left;
+    width: 222px;
+}
+.lunbo .text:hover {
+    padding: 4px 5px;
+}
+.lunbo_change {
+    clear: both;
+    height: 15px;
+    margin: 0 auto 0 -25px;
+    position: absolute;
+    top: 165px;
+    width: 1160px;
+    z-index: 1000;
+}
+.lunbo_change .left {
+    cursor: pointer;
+    float: left;
+}
+.lunbo_change .right {
+    cursor: pointer;
+    float: right;
+}
+.zlad {
+    clear: both;
+    height: 180px;
+    margin: 30px auto 20px;
+    width: 1140px;
+}
+.two_title {
+    clear: both;
+    color: #1f80c5;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 80px;
+    margin: 20px auto;
+    text-align: center;
+    width: 1000px;
+}
+.part_2hn {
+    clear: both;
+    overflow: auto;
+    padding: 10px 0 0;
+}
+.part_2hn ul .ul {
+    clear: both;
+    overflow: auto;
+    padding: 10px 0 0 3px;
+    width: 352px;
+}
+.part_2hn .ul li {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    float: left;
+    max-width: 340px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 340px;
+}
+.part_2hn .ul li a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #999;
+    font-size: 14px;
+    line-height: 28px;
+    max-width: 320px;
+    padding: 0;
+    width: 320px;
+}
+.part_2hn .ul li span {
+    color: #333;
+    float: left;
+    font-size: 14px;
+}
+.part_2hn li a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+.more a {
+    color: #1f80c5;
+    float: right;
+    line-height: 40px;
+    padding-right: 30px;
+}
+.suo_detail_tit a {
+    clear: both;
+    color: #3592e2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.news1 {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e6e6e6;
+    float: left;
+    margin-top: 10px;
+    width: 450px;
+}
+.news2 {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    overflow: auto;
+    width: 760px;
+}
+.news1 .title, .news2 .title {
+    background: rgba(0, 0, 0, 0) url("images/index_20.png") repeat-x scroll center top;
+    clear: both;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.title_text a {
+    color: #000;
+    float: left;
+    font-size: 24px;
+    line-height: 30px;
+}
+.titleh, .titlehh {
+    float: left;
+    padding: 10px 8px 0;
+}
+.title .span {
+    color: #666;
+    float: left;
+    line-height: 20px;
+    padding-top: 8px;
+}
+.titleh a {
+    color: #666;
+    font-family: "����";
+    line-height: 20px;
+}
+.titlehh a {
+    color: #0088cc;
+    font-family: "����";
+    line-height: 20px;
+}
+.titleh a:hover {
+    color: #0088cc;
+}
+.news1 ul {
+    clear: both;
+    overflow: auto;
+    padding: 10px 10px 10px 15px;
+    width: 425px;
+}
+.news1 li a {
+    color: #666;
+    float: left;
+    line-height: 26px;
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 350px;
+}
+.news1 li a:hover {
+    color: rgb(53, 146, 226);
+}
+.news1 li .data, .news2 li .data {
+    color: #666;
+    float: right;
+    line-height: 26px;
+    width: 60px;
+}
+.boxn {
+    overflow: auto;
+    padding: 10px;
+    width: 720px;
+}
+.news2 .left {
+    float: left;
+    height: auto;
+    overflow: auto;
+    width: 720px;
+}
+.tupian {
+    border: 1px solid #e6e6e6;
+    height: 150px;
+    padding: 1px;
+    position: absolute;
+    width: 265px;
+}
+.tupian img {
+    height: 150px;
+    width: 265px;
+}
+.tupian .t_text {
+    background: rgba(0, 0, 0, 0) url("images/text_bg.png") repeat scroll 0 0;
+    bottom: 28px;
+    height: 24px;
+    line-height: 24px;
+    padding: 2px 10px;
+    position: relative;
+    width: 245px;
+    z-index: 100;
+}
+.tupian .t_text .newsa {
+    max-width: 245px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 245px;
+}
+.tupian .t_text .newsa a {
+    color: #fff;
+    line-height: 24px;
+}
+.tupian .t_text .lb {
+    position: absolute;
+    right: 8px;
+    top: 13px;
+    width: 40px;
+    z-index: 101;
+}
+.tupian .t_text .lb .mousehover {
+    background: rgb(254, 97, 28) none repeat scroll 0 0;
+    cursor: pointer;
+    float: left;
+    height: 8px;
+    margin-right: 5px;
+    width: 8px;
+}
+.tupian .t_text .lb .mouseover {
+    background: #fff none repeat scroll 0 0;
+    cursor: pointer;
+    float: left;
+    height: 8px;
+    margin-right: 5px;
+    width: 8px;
+}
+.news2 .ul1 {
+    clear: both;
+    overflow: hidden;
+    padding: 5px 0 0;
+    width: 435px;
+}
+.news2 .ul1 ul {
+    width: 435px;
+}
+.news2 .ul1 ul li {
+    width: 435px;
+}
+.news2 .ulh ul {
+    width: 270px;
+}
+.news2 .ul1 ul .data {
+    float: right;
+    width: 70px;
+}
+.news2 .ulh {
+    float: right;
+    width: 265px;
+}
+.detail {
+    clear: both;
+    width: 265px;
+}
+.news2 li .li {
+    background: rgba(0, 0, 0, 0) url("images/dd.png") no-repeat scroll left center;
+    float: left;
+    line-height: 26px;
+    max-width: 350px;
+    overflow: hidden;
+    padding-left: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 350px;
+}
+.news2 li .li a {
+    color: #666;
+}
+.boxn .table {
+    overflow: hidden;
+    padding: 6px 0 0;
+    position: relative;
+    width: 720px;
+}
+.boxn .tdd {
+    cursor: pointer;
+    float: left;
+    margin: 4px;
+    position: relative;
+    width: 110px;
+}
+.boxn .tdd img {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    box-shadow: 0 0 4px #e6e6e6;
+    height: 140px;
+    padding: 1px;
+    width: 100px;
+}
+.boxn .tdd .img_txt {
+    clear: both;
+    text-align: center;
+    width: 104px;
+}
+.boxn .tdd .img_txt a {
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    width: 104px;
+}
+.boxn .tddh {
+    background: #f8f8f8 none repeat scroll 0 0;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    box-shadow: 0 0 4px #e6e6e6;
+    cursor: pointer;
+    float: left;
+    height: 166px;
+    margin: 4px;
+    position: absolute;
+    width: 214px;
+    z-index: 9999;
+}
+.boxn .tddhfl {
+    cursor: pointer;
+    float: left;
+    width: 104px;
+}
+.boxn .tddh img {
+    height: 138px;
+    padding: 2px;
+    width: 100px;
+}
+.boxn .tddh .img_txt {
+    clear: both;
+    text-align: center;
+    width: 104px;
+}
+.boxn .tddh .img_txt a {
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    width: 104px;
+}
+.boxn .tddhfr {
+    color: #666;
+    float: right;
+    font-family: "����";
+    line-height: 24px;
+    padding: 6px 8px;
+    text-indent: 2em;
+    width: 90px;
+}
+.ad4 {
+    clear: both;
+    margin: 25px auto 0;
+    padding: 0 0 4px;
+    position: relative;
+    width: 1200px;
+    z-index: 0;
+}
+.ad4 .td {
+    cursor: pointer;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    width: 188px;
+}
+.ad4 td {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 2px 3px #ddd;
+    height: 90px;
+    margin: 3px;
+    overflow: hidden;
+    padding: 1px;
+    width: 180px;
+}
+.ad4 td:hover {
+    border: 2px solid #ddd;
+    height: 90px;
+    padding: 0;
+    width: 180px;
+}
+.lunbo_changeh {
+    clear: both;
+    height: 15px;
+    margin: 0 auto 0 20px;
+    position: relative;
+    top: 40px;
+    width: 1170px;
+    z-index: 1000;
+}
+.lunbo_changeh .left {
+    cursor: pointer;
+    float: left;
+}
+.lunbo_changeh .right {
+    cursor: pointer;
+    float: right;
+}
+.part_2h {
+    clear: both;
+    float: left;
+    width: 370px;
+}
+.part_2h ul .ul1 {
+    float: left;
+    overflow: auto;
+    padding: 20px 5px 0;
+    width: 370px;
+}
+.part_2h .ul1 li {
+    float: left;
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 350px;
+}
+.part_2h .ul1 li a {
+    background: rgba(0, 0, 0, 0) url("images/dd.png") no-repeat scroll left center;
+    color: #999;
+    font-size: 14px;
+    line-height: 28px;
+    padding-left: 8px;
+}
+.part_2h li a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+.tupianh {
+    clear: both;
+    float: left;
+    height: 152px;
+    margin: 10px 0 0;
+}
+.tupianh img {
+    border: 1px solid #e6e6e6;
+    height: 150px;
+    padding: 1px;
+    position: relative;
+    width: 265px;
+}
+.tupianh .t_text {
+    background: rgba(0, 0, 0, 0) url("images/text_bg.png") repeat scroll 0 0;
+    bottom: 30px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 2px;
+    padding: 2px 10px;
+    position: relative;
+    width: 244px;
+    z-index: 10;
+}
+.tupianh .t_text .newsa {
+    clear: both;
+    max-width: 245px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 245px;
+}
+.tupianh .t_text .newsa a {
+    color: #fff;
+    line-height: 24px;
+}
+.tupianh .t_text .lb {
+    position: absolute;
+    right: 8px;
+    top: 13px;
+    width: 40px;
+    z-index: 101;
+}
+.pic_cl1 {
+    clear: both;
+    margin: 15px auto 0;
+    overflow: hidden;
+    width: 96%;
+}
+.pic_select_1 {
+    background-color: #f8f8f8;
+    border: 5px solid #999;
+    border-radius: 8px;
+    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    max-height: 600px;
+    width: 230px;
+    z-index: 10000;
+}
+.pic_cl1 table {
+    border-left: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    margin: 20px 2px;
+    width: 99%;
+}
+.pic_cl1 td {
+    background: #f5f5f5 none repeat scroll 0 0;
+    border-bottom: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    color: #666;
+    line-height: 24px;
+    padding: 5px;
+}
+.pic_cl1 .table_tit {
+    color: #000;
+    font-size: 13px;
+}
+.pic_cl1 .table_tit1 {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+.pic_cl1 .tr {
+    cursor: pointer;
+}
+.pic_cl1 .tr:hover td {
+    background: #e9e9e9 none repeat scroll 0 0;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.daochu_cancel {
+    height: 35px;
+}
+.daochu_top {
+    background: #eee none repeat scroll 0 0;
+    border-bottom: 1px solid #e6e6e6;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 34px;
+    overflow: auto;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+.daochu_tit {
+    color: #333;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 34px;
+    text-shadow: 2px 2px 0 #f1f1f1;
+}
+.close {
+    background: rgba(0, 0, 0, 0) url("../img/edit_07.png") no-repeat scroll -3px -124px;
+    cursor: pointer;
+    float: right;
+    height: 24px;
+    margin-right: 10px;
+    margin-top: 2px;
+    width: 24px;
+}
+.daochu_top .close:hover {
+    background: rgba(0, 0, 0, 0) url("../img/edit_07.png") no-repeat scroll -46px -124px;
+}
+.daochu_cancel1h {
+    background: #eee none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #666;
+    cursor: pointer;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 40px;
+    text-align: center;
+    width: 60px;
+}
+.daochu_cancel2h {
+    background: #eee none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #666;
+    cursor: pointer;
+    /*float: left;*/
+    height: 24px;
+    line-height: 24px;
+    margin-left: 120px;
+    text-align: center;
+    width: 60px;
+}
+.highfont {
+    color: #57bf2e;
+    font-family: microsoft yahei;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 2px;
+}

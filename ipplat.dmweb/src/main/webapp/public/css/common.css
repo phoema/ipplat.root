@@ -1,0 +1,1090 @@
+/*--------------闁诲孩绋掗妵鐐电礊鐎ｎ喖鍐€鐎瑰嫭澹嗙涵锟?------------*/
+.colorRed{
+    color:#FF857C;
+}
+.color999{
+    color: #999999;
+}
+.normalWeight{
+    font-weight: normal;
+}
+.boldWeight{
+    font-weight: bold;
+}
+.fontStyle1{
+    font-family:"SimSun";
+    font-size:12px;
+    color:rgb(102,102,102)
+}
+.fontStyle2{
+    font-family:"SimSun";
+    font-size:12px;
+    color:#3498db;
+}
+.fontStyle3{
+    font-family:"SimSun";
+    font-size:12px;
+    color:#323332
+}
+.fontStyle4{
+    font-family:"Arial";
+    font-size:14px;
+    color:#323332
+}
+.fontStyle5{
+    font-family:"Arial";
+    font-size:14px;
+    color:#666666
+}
+.fontStyle6{
+    font-size:16px;
+    color:white
+}
+.fontStyle7{
+    font-family:"Microsoft Yahei";
+    font-size:16px;
+    color:#444444;
+}
+.fontStyle8{
+    font-family:"Microsoft Yahei";
+    font-size:30px;
+    color:#333333;
+}
+.fontStyle9{
+    font-family:"SimSun";
+    font-size:14px;
+    color:#333333
+}
+.fontStyle10{
+    font-family:"Arial";
+    font-size:24px;
+    color:#ffffff
+}
+.fontStyle11{
+    font-family:"Microsoft Yahei";
+    font-size:16px;
+    color:#333333;
+}
+.fontStyle12{
+    font-family:"SimSun";
+    font-size:14px;
+    color:#666666
+}
+.fontStyle13{
+    font-family:"Arial";
+    font-size:14px;
+    color:#3498db;
+    font-weight:bold;
+ }
+.fontStyle14{
+    font-family:"SimSun";
+    font-size:14px;
+    color:white
+}
+.fontStyle15{
+    font-family:"Arial";
+    font-size:14px;
+    color:rgb(102,102,102);
+    font-weight:bold;
+}
+.fontStyle16{
+    font-family:"SimSun";
+    font-size:12px;
+    color:#717171;
+}
+.fontStyle17{
+    font-family:"SimSun";
+    font-size:12px;
+    color:#666666
+}
+.fontStyle18{
+    font-family:"Microsoft Yahei";
+    font-size:18px;
+    color:#333333;
+}
+.fontStyle19{
+     font-family:"SimSun";
+     font-size:12px;
+     color:rgb(105,105,105)
+ }
+.fontStyle20{
+    font-family:"SimSun";
+    font-size:14px;
+    color:#1086d5;
+}
+.fontStyle21{
+    font-family:"SimSun";
+    font-size:14px;
+    color:#363636;
+}
+.fontStyle22{
+    font-family:"Arial";
+    font-size:12px;
+    color:#999999;
+}
+
+/*--------------闁诲孩绋掗妵鐐电礊鐎ｎ喗鈷掗柟缁㈠枟椤擄拷-------------*/
+.letterSpaceHalfEm{
+    letter-spacing: 0.2em;
+}
+.letterSpace1em{
+    letter-spacing: 1em;
+}
+.letterSpace2em{
+    letter-spacing: 2em;
+}
+.letterSpace3em{
+    letter-spacing: 3em;
+}
+.letterSpace4em{
+    letter-spacing: 4em;
+}
+.letterSpacing5
+{
+    letter-spacing: 5px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+/*--------------闂佸湱顭堥ˇ鐢稿箰閹惰棄鍐€鐎瑰嫭澹嗙涵锟?------------*/
+.commonBtn{
+    width: 77px;
+    height: 25px;
+    border: none;
+    background: url(../../img/patent/table/cancel.png) no-repeat;
+    cursor: pointer;
+}
+.commonBtn:hover{
+    background: url(../../img/patent/table/confim.png) no-repeat;
+}
+
+/*婵＄偑鍊曞﹢鍗灻洪悧鍫涗簻闁汇垹鎲″銊ヮ湤閵堝懏璐℃繛鍙夊缁潧鈽夐～顔藉濠㈣泛顑呴惁濠氭⒑閺傘倖瀚?/
+.filterBtn{
+    width: 85px;
+    height: 25px;
+    border: 1px solid #D2D1D1;
+    border-radius: 2px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    color:#2F2F2F;
+}
+.filterBtn:hover{
+    border-color: #009DE0;
+    color: #009DE0;
+    background-color: #F5F8F8;
+}
+.filterBtnChecked{
+    border-color: #009DE0;
+    color: #009DE0;
+    background-color: #F5F8F8;
+}
+/*闂佸湱顣介弲娑㈡儓瀹ュ绠板鑸靛姈鐏忥拷/
+.expendButton{
+    width: 8px;
+    height: 8px;
+    border: none;
+}
+.expendButtonNormal{
+    background: url(../../img/patent/table/right2_1.png) no-repeat;
+}
+.expendButtonChecked{
+    background: url(../../img/patent/table/arrowBlueDown.png) no-repeat;
+}
+/*闂佺绻戞繛濠偽涢幘顔肩濠㈣埖鍔栫亸锟?
+.closeButton{
+    cursor: pointer;
+    background:url("../imgs/close.png") no-repeat;
+    border: none;
+    width: 10px;
+    height: 9px;
+}
+/*濠碘槅鍋撻幏椋庣磼娓氬灝鐏悗鍨矒閺岋箓鏁撻敓锟?
+.searchButton{
+    width:32px;
+    height:32px;
+    background:url(../../img/patent/table/btnSearch.png) no-repeat;
+    border: none;
+}
+/*閻庢鍣幏鐑芥煕韫囨碍鐝悗鍨矒閺岋箓鏁撻敓锟?
+.switchBtn{
+    width:67px;
+    height: 25px;
+    border: none;
+}
+.switchBtnUnChecked{
+    background: url(../../img/projectManagement/btn2_1.png) no-repeat;
+}
+.switchBtnChecked{
+    background: url(../../img/projectManagement/btn2_2.png) no-repeat;
+}
+.switchIcon{
+    width:41px;
+    height: 27px;
+    background: url(../../img/projectManagement/btn1_1.png) no-repeat 0px 1px
+}
+
+/*闂佽棄鍟换鍡樼珶婵傜湏d闂佸湱顭堥ˇ鐢稿箰閿燂拷/
+.andButton
+{
+    width: 35px;
+    height: 34px;
+    background-image: url(../../img/patent/table/btn_s35.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.orButton {
+    width: 35px;
+    height: 34px;
+    background-image: url("../../img/patent/table/btn_or.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.searchBtn2{
+    width: 32px;
+    height: 32px;
+    background: url(../../img/patent/table/btnSearch.png) no-repeat;
+    background-size: 25px 25px;
+    margin-top: 5px;
+}
+.inputProject{
+    width:200px;
+    height:23px;
+    border:1px solid rgb(228,228,228);
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px;
+    padding-left: 13px
+}
+.logicAndOrNot{
+    width:47px;
+    height:116px;
+    z-index: 1;
+    background: url(../../img/patent/table/andOrNot.png);
+}
+.LogicAndButton{
+    width: 35px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    margin-left: 7px;
+    margin-top: 6px
+}
+.LogicAndButton:hover
+{
+    background-image: url(../../img/patent/table/andSelect.png);
+}
+.logicOrNotBtn
+{
+    width: 35px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    margin-left: 7px;
+}
+.logicOrNotBtn:hover
+{
+    background-image: url(../../img/patent/table/andSelect.png);
+}
+
+/*闂佽皫鍐挎嫹閻斿妫岄梺鍦焾椤︾敻骞愰敓锟?
+.btnWhite
+{
+    width: 145px;
+    height: 35px;
+    line-height: 35px;
+    background-image: url(../../img/patent/table/btn6_1.png);
+}
+/*闂佽皫鍐挎嫹閻斿妫岄柣蹇撶箰缁绘垹锟藉鍫熺參闁跨噦鎷?婵炴垶鎼╅崢鐓幟瑰Δ鍐挎嫹閸︻厼浠ч柡浣靛€濆顒勫级鐠侯煉鎷烽敓锟?
+.btnSmallWhite {
+    width: 90px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    background-image: url(../../img/patent/table/btn6_1.png);
+    overflow: hidden;
+}
+
+/*闂佸憡甯炴繛锟解枍鎼淬劌绠板鑸靛姈鐏忥拷/
+.delete
+{
+    width: 32px;
+    height: 31px;
+    background: url(../../img/patent/table/btn2_1.png) no-repeat;
+    outline: none;
+    cursor: pointer;
+}
+/*----------------闁哄鐗婇幐鎼佸矗閸℃娴栭柛鈩冾焽婢瑰锟介鍡樺-------------*/
+/*濠碘槅鍋撻幏椋庣磼娓氬灝鐏辩紒棰濆弮瀹曟濡烽敂缁樻暠*/
+.searchInput{
+    width:240px;
+    height:30px;
+    padding-left:10px;
+    background-color: #ededed;
+    border: 1px solid #d3d3d3;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+/*婵犮垼娉涘ú锕傚极閻愬瓨缍囬柟鎯у暱瀵櫕淇婂Δ瀣*/
+.remarkInput{
+    width:240px;
+    height:30px;
+    padding-left:10px;
+    border: 1px solid #009ADF;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+/*----------------闁荤偞绋忛崝宥夋偋閹间礁鍐€鐎瑰嫭澹嗙涵锟?-----------*/
+.projectManagement table{
+    border: none;
+    border-collapse:collapse;
+    vertical-align:middle;
+}
+.floatTable{
+    border: none;
+    border-collapse:collapse;
+    vertical-align:middle;
+}
+.floatTable .trNormal{
+    background-color:#F3F3F3;
+}
+.floatTable .trHover{
+    background-color:#EBEBEB;
+}
+.floatTable tr td{
+    text-align: left;
+    white-space: nowrap;
+    border: 1px solid #E5E5E5;
+    height: 30px;
+}
+.floatTable tr .tdCheckBox{
+    text-align: center;
+    width: 40px;
+}
+.trChecked{
+    background-color:#EBEBEB;
+}
+/*------------闂佸吋瀵х划灞界暦閻旂儤鍋橀柕濠忓婢癸拷-------------*/
+.menuTable{
+    border: none;
+    border-collapse:collapse;
+    vertical-align:middle;
+    table-layout:fixed;
+}
+.menuTable tr td{
+    white-space: nowrap;
+    height: 40px;
+    vertical-align:middle;
+}
+/*---------闂佸憡鐟ラ崢鏍疾閸洖绀冮柛娑卞弾閸熷洭鎮跺☉鏍у闁绘鎷?---------*/
+.rightContentTable tr td,.markingTable tr td{
+    height: 40px;
+    text-align: left;
+}
+.rightContentTable tr th{
+    text-align: left;
+    height: 40px;
+    vertical-align: middle;
+    background-color:#F5F5F5;
+    border-bottom: 1px solid #D4D2D1;
+}
+
+/*--------------缂傚倸鍊甸弲婵嬪汲閹版澘鐐婇柣鎰靛劔娴ｅ壊鍤曢煫鍥ㄥ搸閿熻棄鍟村浠嬫晸閿燂拷--------------*/
+.sampleTable tr td{
+    height: 164px;
+    min-width: 145px;
+    vertical-align:middle;
+    text-align: left;
+    white-space: nowrap;
+}
+.sampleTable tr th{
+    text-align: left;
+    height: 40px;
+    vertical-align: middle;
+    background-color:#F5F5F5;
+    border-bottom: 1px solid #D4D2D1;
+}
+
+/*----------------婵☆偅婢樼€氼垶顢楅悢鐑樺仒闁靛濡囨竟锟?------------*/
+.warningInfoTable tr td{
+    height: 101px;
+    text-align: left;
+}
+.warningInfoTable tr th,.markingTable tr th{
+    text-align: left;
+    height: 40px;
+    vertical-align: middle;
+    background-color:#F5F5F5;
+    border-bottom: 1px solid #D4D2D1;
+    border-top: 1px solid #D4D2D1;
+}
+
+/*----------------闂佸憡鐗曢幖顐︽偂濞嗘挸鍐€鐎瑰嫭澹嗙涵锟?-----------*/
+.commonWidth{
+    width: 89.89%;
+    margin: 0 auto;
+    border: 1px solid #D2D1D1;
+    border-radius: 2px;
+}
+/*闁诲繒鍋涚换妤呭棘閿熶粙鎮橀悜鍥ㄥ*/
+.shielding_layer{
+    background: url(../../img/floatWnd/shield_bg.png);
+    background-size: 100% 100%;
+}
+/*濠碘槅鍋撻幏椋庣磼娓氬灝鐏╅悘蹇ｅ灦瀹曟椽鏁撻敓锟?
+.searchZone{
+    width:284px;
+    height:32px;
+    margin: 7px auto 10px;
+}
+/*濠电偞鎯岄崰鏍ㄦ叏閳哄啰鐜绘俊銈忔嫹鐟滃府鎷?/
+.floatWnd{
+    width: 960px;
+    height: 500px;
+    background-color: #ffffff;
+    margin: 0px auto;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    /*-moz-border-radius:2px;
+    -webkit-border-radius:2px;*/
+    box-shadow:0 0 10px 10px darkgrey;
+}
+.floatWnd2{
+    background-color: #ffffff;
+    margin: 0px auto;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    /*-moz-border-radius:2px;
+    -webkit-border-radius:2px;*/
+    box-shadow:0 0 10px 10px darkgrey;
+}
+.homePageFloatWnd{
+    width: 341px;
+    height: 309px;
+    background-color: #ffffff;
+    margin: 0px auto;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    /*-moz-border-radius:2px;
+    -webkit-border-radius:2px;*/
+    box-shadow:0 0 10px 10px darkgrey;
+}
+.wndSize1{
+    width: 690px;
+    height: 410px;
+}
+.wndSize2{
+    width: 818px;
+    height: 450px;
+}
+.successWnd , .failureWnd, .addProjectSuccessWnd, .addProjectFailureWnd{
+    width: 373px;
+    height: 99px;
+    background-color: #ffffff;
+    margin: 0px auto;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    /*-moz-border-radius:2px;
+    -webkit-border-radius:2px;*/
+    box-shadow:0 0 4px 4px darkgrey;
+}
+.addProjectArea{
+    width: 454px;
+    height: 445px;
+    background-color: #ffffff;
+    margin: 0px auto;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    /*-moz-border-radius:2px;
+    -webkit-border-radius:2px;*/
+    box-shadow:0 0 4px 4px darkgrey;
+}
+.shareProjectArea{
+    width: 342px;
+    height: 418px;
+    background-color: #ffffff;
+    margin: 0px auto;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    /*-moz-border-radius:2px;
+    -webkit-border-radius:2px;*/
+    box-shadow:0 0 4px 4px darkgrey;
+}
+/*闁汇埄鍨伴幗婊堝极閵堝洨纾奸柛鏇ㄥ亝閸娿倖淇婂Δ瀣*/
+.commonWind{
+    width: 344px;
+    height: 159px;
+    background-color: #ffffff;
+    margin: 0px auto;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    /*-moz-border-radius:2px;
+    -webkit-border-radius:2px;*/
+    box-shadow:0 0 10px 10px darkgrey;
+}
+/*闁荤偞绋忛崝蹇涘箵椤忓嫷鍤曢煫鍥ㄦ崄閸撱劑鏌涢幋鐘插妺妞ゎ枎鎷?/
+.expressionWind{
+    width: 820px;
+    height: 451px;
+    background-color: #ffffff;
+    margin: 0px auto;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    /*-moz-border-radius:2px;
+    -webkit-border-radius:2px;*/
+    box-shadow:0 0 10px 10px darkgrey;
+}
+/*闂佸憡甯炴繛锟解枍鎼粹槅鍤曢柣鐔告緲濮ｅ淇婂Δ瀣*/
+.deleteWnd{
+    width: 341px;
+    height: 168px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #ffffff;
+    margin: 0px auto;
+    box-shadow:0 0 10px 10px darkgrey;
+}
+/*濠电偞鎯岄崰鏍ㄦ叏閳哄啰鐜绘俊銈忔嫹鐟滅増鐩浠嬪炊椤掑姣?/
+.floatWndTitle{
+    height: 41px;
+    line-height: 41px;
+    background-color: #8198BA;
+    padding-left: 5px;
+    color: white;
+}
+/*濠电偞鎯岄崰鏍ㄦ叏閳哄啰鐜绘俊銈忔嫹鐟滅増纭焌ble闂佸搫瀚晶浠嬪Φ濮樿泛绀岄柛婵嗗閸橈拷/
+.floatTableZone{
+    height: 360px;
+    border-bottom: 1px solid #C5C5C5;
+    border-top: 1px solid #C5C5C5;
+}
+
+/*闂佸憡锚濡銇愰崼鏇炵婵°倕瀚ㄩ敓钘夊暞濞煎繘骞橀崘鎻掓辈濠碘剝顨滃Λ妤€霉閹邦噯鎷风憴鍕闁靛洤娲ㄦ禍鎼佹晸閿燂拷/
+.textareaResize
+{
+    height: 24px;
+    line-height: 24px;
+    resize: none;
+}
+
+/*-------------闁哄鐗愰～澶愩€佺€ｎ喖鍐€鐎瑰嫭澹嗙涵锟?-----------*/
+.border-separate{
+    border-left: 1px solid #D2D1D1;
+}
+.border-separateRight{
+    border-right:  1px solid #CEE9E9;
+}
+.separate_line{
+    width: 100%;
+    height:1px;
+    border-top: 1px solid #D2D1D1;
+}
+.separate_line2{
+    width: 1px;
+    height:15px;
+    border-right: 1px solid #D2D1D1;
+}
+.separateBottom{
+    border-bottom: 1px solid #D2D1D1;
+}
+.separateTop{
+    border-top: 1px solid #D2D1D1;
+}
+.separateRight{
+    border-right: 1px solid #D2D1D1;
+}
+.separateLeft{
+    border-left: 1px solid #D2D1D1;
+}
+.borderCE{
+    border:1px solid  #CECECE;
+}
+.borderCE1{
+		border:0xp solid #CECECE;
+}
+.commonBorder{
+    border: 1px solid #D2D1D1;
+}
+.littleSeparate{
+    width: 1px ;
+    height: 10px;
+    color:#D2D1D1;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+/*------------------闂佹悶鍎抽崑鎾绘偉閿燂拷-------------------*/
+.toolIcon{
+    background: url("../../../publish/img/public/set.png");
+}
+.folderIcon{
+    background:transparent  url(../../img/projectManagement/ic9.png) no-repeat 5px;
+}
+
+/*--------------婵炴垶鎸搁ˇ鎶斤綖濡ゅ嫨浜归柨鐕傛嫹------------------*/
+.triangle-bottomRight {
+    width: 0;
+    height: 0;
+    border-bottom: 35px solid blue;
+    border-left: 35px solid transparent;
+}
+
+
+/*閻庢鍠楀ú鏍矗閸炲湨uery checkBox*/
+label.checkbox {
+    padding-left: 24px;
+    cursor:pointer;
+    background:transparent url("../../img/patent/patent_searchPage/check1_1.png") no-repeat 2px;
+    line-height:16px; height:16px;
+    display:inline-block;
+    color:#000000;
+}
+label.checked {
+    background:transparent url("../../img/patent/patent_searchPage/check1_3.png") no-repeat 2px;
+}
+label.disabled{
+    background:transparent url("../../img/patent/patent_searchPage/check_4.png") no-repeat 2px;
+}
+.simpleCheckBox label.checkbox {
+    padding-left: 24px;
+    line-height:19px; height:19px;
+    cursor:pointer;
+    background:transparent url("../../img/projectManagement/simpleCheckBoxNormal.png") no-repeat;
+    display:inline-block;
+}
+.simpleCheckBox label.checked {
+    background:transparent url("../../img/projectManagement/simpleCheckBoxChecked.png") no-repeat;
+}
+.simpleCheckBox label.disabled{
+    background:transparent url("../../img/projectManagement/simpleCheckBoxChecked.png") no-repeat;
+}
+ .FTermSelect{
+    border: 1px solid #087dcc;
+     width:100px;
+     height: 30px;
+     line-height: 30px;
+     background-color: #3498db;
+     color: #dfecf8;
+    background-image: url("../../img/homePage/Play-Control-Button.png");
+    background-repeat: no-repeat;
+    background-position: 88px 13px;
+     border-radius: 2px 0 0 2px;
+}
+.FTermSelect_ul{
+    position:absolute;
+    border-bottom: 1px solid #087dcc;
+    border-left: 1px solid #087dcc;
+    border-right:1px solid #087dcc;
+    width:100px;
+    top:0px;
+    background-color: #fff;
+    margin-top: 32px;
+    display: none;
+    z-index: 9999;
+}
+.select_item{
+    background:#eaeaea;
+}
+.FTermSelect_ul li{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.FTermSelect_ul li:hover{
+    cursor: pointer;
+}
+.showNumSelect
+{
+    border: 1px solid #d3d3d3;
+    width:75px;
+    height: 25px;
+    line-height: 25px;
+    background-color: rgb(246,248,248);
+    background-image: url("../../img/patent/table/arrowBlueDown.png");
+    background-repeat: no-repeat;
+    background-position: 65px 10px;
+    border-radius: 2px 2px 2px 2px;
+}
+.showNumSelect_ul
+{
+    position:absolute;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-right:1px solid #d3d3d3;
+    width:81px;
+    top:0px;
+    background-color: #fff;
+    margin-top: 25px;
+    display: none
+}
+.showNumSelect_ul li
+{
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-left: 6px;
+}
+.showNumSelect_ul li:hover
+{
+    cursor: pointer;
+}
+.overViewSelect
+{
+    border: 1px solid #d3d3d3;
+    width:75px;
+    height: 23px;
+    line-height: 23px;
+    background-color: rgb(246,248,248);
+    background-image: url("../../img/patent/table/arrowBlueDown.png");
+    background-repeat: no-repeat;
+    background-position: 65px 10px;
+    border-radius: 2px 2px 2px 2px;
+}
+.overViewSelect_ul
+{
+    position:absolute;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-right:1px solid #d3d3d3;
+    width:81px;
+    top:0px;
+    background-color: #fff;
+    margin-top: 25px;
+    display: none; z-index:100;
+}
+.overViewSelect_ul li
+{
+    height: 23px;
+    line-height: 23px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-left: 6px;
+}
+.overViewSelect_ul li:hover
+{
+    cursor: pointer;
+}
+.importNumSelect
+{
+    border: 1px solid #d3d3d3;
+    background-color: rgb(246,248,248);
+    background-repeat: no-repeat;
+    background-position: 103px 10px;
+    border-radius: 2px 2px 2px 2px;
+}
+.importNumSelect_ul
+{
+    position:absolute;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-right:1px solid #d3d3d3;
+    width:120px;
+    top:0px;
+    background-color: #fff;
+    margin-top: 25px;
+    display: none;
+    text-align: center;
+}
+.importNumSelect_ul li
+{
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-left: 6px;
+}
+.importNumSelect li:hover
+{
+    cursor: pointer;
+}
+.keyWord
+{
+    border: 1px solid #648BCC;
+    width: 145px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    background-color: #648BCC;
+    background-image: url("../../img/patent/table/btn_arrow_down.png");
+    background-repeat: no-repeat;
+    background-position: 125px 15px;
+    border-radius: 2px 2px 2px 2px;
+}
+.keyWord_ul
+{
+    position:absolute;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-right:1px solid #d3d3d3;
+    width:150px;
+    top:6px;
+    background-color: #fff;
+    margin-top: 25px;
+    display: none;
+    /*text-align: center;*/
+}
+.keyWord_ul li
+{
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-left: 6px;
+}
+.keyWord_ul li:hover
+{
+    cursor: pointer;
+}
+/*闂佸憡鑹鹃張顒€螞瀹€鍕Е闁割偅绻嗙€氾拷/
+.combinePage_ul
+{
+    position:absolute;
+    border-top: 1px solid #d3d3d3;;
+    border-left: 1px solid #d3d3d3;
+    border-right:1px solid #d3d3d3;
+    width:156px;
+    top:10px;
+    left: 1em;
+    background-color: #fff;
+    margin-top: -10px;
+}
+.combinePage_ul li
+{
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #d3d3d3;
+    padding-left: 6px;
+}
+/*闂佸憡鐟ョ粔褰掋€呴銏″殏闁哄啫鍊块崗鍥煛閸屾粍鍤€缂佹唻鎷?/
+.contactWaySelect
+{
+    border: 1px solid #d3d3d3;
+    width:59px;
+    height: 23px;
+    line-height: 23px;
+    background-color: rgb(246,248,248);
+    background-image: url("../../img/patent/table/arrowBlueDown.png");
+    background-repeat: no-repeat;
+    background-position: 50px 10px;
+    border-radius: 2px 2px 2px 2px;
+}
+.contactWaySelect_ul
+{
+    position:absolute;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-right:1px solid #d3d3d3;
+    width:65px;
+    top:0px;
+    background-color: #ffffff;
+    z-index: 22;
+    margin-top: 25px;
+}
+.contactWaySelect_ul li
+{
+    height: 23px;
+    line-height: 23px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-left: 6px;
+}
+.contactWaySelect_ul li:hover
+{
+    cursor: pointer;
+}
+
+/*.hRadio
+{
+    padding-left: 22px; display: inline-block;
+    background: transparent url(radio.png) no-repeat left top;
+    height: 19px; line-height:20px;
+    cursor:pointer;vertical-align:middle;
+}
+
+.hRadio_Checked { background-position: left bottom;}*/
+
+/*---------------婵＄偑鍊楅弫鎼佹偉濠婂懐纾奸柛鏇ㄤ簼椤愪粙鏌″鍛Щ缂佹唻鎷?--------------------*/
+.pagination button ,.goPage{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #D7D6D6;
+    background-color: #F6F8F8;
+    border-radius: 2px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.pagination div {
+    /*width: 70px;*/
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+.pagination1 div{
+	height: 25px;
+    line-height: 25px;
+}
+.pagination .pageText{
+    width: 40px;
+    height: 25px;
+    border: 1px solid #D7D6D6;
+}
+
+/*-------------------濠电姴锕ラ懝鐐叏閳哄懎绾ч柍鈺佸暟婢瑰锟介鍡樺----------------------*/
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar:horizontal {
+    display: block;
+}
+
+ ::-webkit-scrollbar-button {
+    display: block;
+}
+
+/* Turn on single button up on top, and down on bottom */
+ ::-webkit-scrollbar-button:start:decrement,
+ ::-webkit-scrollbar-button:end:increment {
+    display: block;
+}
+.cursor{
+	cursor: pointer;
+	}
+
+/* Turn off the down area up on top, and up area on bottom */
+ ::-webkit-scrollbar-button:vertical:start:increment,
+ ::-webkit-scrollbar-button:vertical:end:decrement {
+    display: none;
+}
+ /*闂佸憡甯楅〃澶愬Υ閸愵亝濯奸柛鎾楀懏鐎┑鐘诧攻閼圭偓鎱ㄩ埡鍛骇闁跨噦鎷?/
+.tableListSet ::-webkit-scrollbar {
+    width: 7px;
+}
+/* Place The scroll down button at the bottom */
+ ::-webkit-scrollbar-button:vertical:increment {
+     display: block;
+     width: 7px;
+     height: 12px;
+     background: url("../../img/patent/table/btn_arrow_down.png") no-repeat;
+     background-position: 1px 3px;
+     background-color: rgb(221,221,221);
+}
+
+/* Place The scroll up button at the up */
+ ::-webkit-scrollbar-button:vertical:decrement {
+    display: block;
+     width: 7px;
+     height: 12px;
+     background: url("../../img/patent/table/btn_arrow_up.png") no-repeat;
+    background-position: 1px 3px;
+    background-color: rgb(221,221,221);
+}
+
+ ::-webkit-scrollbar-track:vertical {
+    display: none;
+}
+
+/* Top area above thumb and below up button */
+ ::-webkit-scrollbar-track-piece:vertical:start {
+    /*background-color: #3a424d;*/
+    border-color:rgb(221,221,221);
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+}
+
+/*Bottom area below thumb and down button*/
+ ::-webkit-scrollbar-track-piece:vertical:end {
+    border-color:  #dddddd;
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    background-color:  rgb(221,221,221);
+}
+
+/* Track below and above */
+ ::-webkit-scrollbar-track-piece {
+    background-color:  rgb(221,221,221);
+}
+
+/* The thumb itself */
+ ::-webkit-scrollbar-thumb:vertical {
+    background-position: 0px center;
+    background-color: rgb(200,200,200);
+     border-radius: 5px;
+}
+
+ ::-webkit-scrollbar-thumb:vertical:hover {
+    background-color: rgb(179,179,179);
+     border-radius: 5px;
+}
+
+ ::-webkit-scrollbar-thumb:vertical:active {
+    background-position: 0px center;
+     background-color: rgb(179,179,179);
+     border-radius: 5px;
+}
+
+/* Corner */
+ ::-webkit-scrollbar-corner {
+    display: none;
+}
+
+/* Resizer */
+ ::-webkit-scrollbar-resizer {
+    display: none;
+}
+.marginLeft30{
+    margin-left: 30px;
+}
+.marginLeft7{
+    margin-left: 7px;
+}
+.marginLeft19{
+    margin-left: 19px;
+}
+.marginLeft5{
+    margin-left: 5px;
+}
+
+.files{	position:absolute; left:202px; top:52px; heigth:26px;cursor:pointer;
+		 filter: Alpha(opacity=0);    
+ 			 -moz-opacity:0;    
+ 			 opacity:0;  
+		}
+#mGrid_gridSqr_paginator_0 ul,#mGrid_gridCoy_paginator_0 ul{
+	float:left;
+}
+.DataSet-Tr-List:hover{
+	  background-color:#bfffff;
+}
+
+.modal{ width:450px; margin-left:-225px;}
+.modal-body{ padding:30px 15px;}
+.modal-body p{ font-size:16px; letter-spacing:1px;}
+.modal-footer{ padding:8px 10px; border-radius: 0px;}
+.modal-header{ padding:10px; /*background: url(../../img/public/etanmin1.png) 4px 8px #8198ba no-repeat;*/}
+.modal-header h3{ line-height:20px; font-size:16px!important;}
+.modal-header button.close{ line-height:10px;}
+.modal-footer .btn{ margin-left:10px!important; border:1px solid #d2d0d0; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; background:#f5f7f7; padding:2px 20px;}
+.modal-footer .btn-danger{ background:#c56ab6!important;}
+.modal-footer .btn-danger:hover,.btn-danger:focus,.btn-danger:active,.btn-danger.active,.btn-danger.disabled{ background:#c718aa!important;}
+.modal-footer .btn{ float:right;}
+
+input[disabled],select[disabled],textarea[disabled]{ cursor:default!important;}

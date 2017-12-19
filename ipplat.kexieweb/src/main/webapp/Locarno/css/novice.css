@@ -1,0 +1,70 @@
+.bodyn{border:#e5e2e2 1px solid;width:1022px; background:#fff; margin:14px auto 15px;}
+/*menu start*/
+
+.menun{ background:url(../images/ip_new_03.png) repeat-x top; height:38px;}
+.menun1{ background:#fff; height:38px; line-height:38px; font:normal 14px/40px "microsoft yahei","宋体"; color:#404040; width:90px; text-align:center;
+ border-left:#e5e2e2 1px solid; margin-left:-1px; border-right:#e5e2e2 1px solid; float:left}
+.menun1h{height:38px; line-height:38px; font:normal 14px/40px "microsoft yahei","宋体"; color:#666;width:90px; text-align:center; float:left}
+
+/*menu end*/
+/*main end*/
+
+.main{ padding:17px; width:988px; overflow:auto; float:left; background:#fff}
+.title{ height:50px; font:normal 28px/40px "microsoft yahei","宋体"; width:988px;border-bottom:#ececec 1px solid; margin-top:10px; clear:both; }
+.titleh{ font:normal 14px/28px "microsoft yahei","宋体"; width:988px; color:#7c7c7c; margin-top:18px; overflow:auto }
+.titleh .left{ font:normal 12px/24px "microsoft yahei","宋体"; width:600px; color:#7c7c7c ; float:left}
+.titleh .right{ background-color:#F09521; background-image: linear-gradient(to bottom, #f7a454, #fd7f0f); background-repeat:repeat-x; border-radius:3px;font:normal 18px "microsoft yahei",
+"宋体"; display:inline-block; color:#fff; float:left ; padding:4px 40px; min-width:90px; text-shadow:1px 1px 2PX rgba(0,0,0,0.1); position:relative; top:80px;  }
+.right1{ background-color:#F09521; background-image: linear-gradient(to bottom, #f7a454, #fd7f0f); background-repeat:repeat-x; border-radius:3px;font:normal 18px "microsoft yahei",
+"宋体"; display:inline-block; color:#fff; float:left ; padding:4px 40px; min-width:90px; text-shadow:1px 1px 2PX rgba(0,0,0,0.1); margin-top:6px; }
+.title1{ height:50px; font:normal 24px/40px "microsoft yahei","宋体"; text-align:center; width:988px;border-bottom:#ececec 1px dashed; padding-top:90px; }
+.title1 .span{ height:50px; float:left; width:560px; padding-right:30px; text-align:right; font:normal 24px/40px "microsoft yahei","宋体";  }
+
+.cl1{ padding:20px 10px; overflow:auto; width:968px;font:normal "microsoft yahei","宋体"; }
+.cl1 .img{ float:left; width:484px;}
+.cl1 .img1{ float:left; width:322px; padding-top:40px;}
+.cl1 .instru{ float:left; width:484px; top:80px;}
+
+.title1h{ float:left; width:900px;font:bold 16px/46px "microsoft yahei","宋体"; color:#333; clear:both; margin-top:12px }
+.title1h span{ color:#fff; float:left; margin-left:-2px; text-align:center; width:26px;margin-top:12px; height:23px; background:rgb(100,160,222);-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px;
+line-height:23px; margin-right:10px}
+.title1hh{ float:left; width:900px;font:bold 14px/36px "microsoft yahei","宋体"; color:#666; clear:both; padding-left:33px}
+.ipanswerh{ float:left; width:956px;font:normal 12px/26px "microsoft yahei","宋体"; padding-left:30px; color:#333;clear:both; }
+.ipanswerh p{ float:left; width:956px;font:normal 14px/26px "宋体"; color:#333;
+text-align: justify; text-justify: inter-ideograph; text-indent: 2em;}
+
+
+.Serial_number{ float:left; background:url(../images/ip_new_20.png) no-repeat top; width:60px; height:70px; line-height:65px;font:normal 28px/55px "microsoft yahei","宋体";
+color:#fff; text-align:center}
+
+.Serial_number{ float:left; background:url(../images/ip_new_20.png) no-repeat top; width:60px; height:70px; line-height:65px;font:normal 28px/55px "microsoft yahei","宋体";
+color:#fff; text-align:center}
+.cl1 .text1{ float:left; width:390px; padding-left:20px;}
+.cl1 .text1 .title{ float:left;font:normal 20px/45px "microsoft yahei","宋体"; width:390px; color:#66666c; margin:0; padding:0; border:none}
+.cl1 .text1 .content{ float:left;font:normal 12px/35px "microsoft yahei","宋体"; width:390px; color:#797979}
+
+
+/*main end*/
+.jindu{ clear:both; padding:10px; width:960px; overflow:auto; float:left;}
+.jindu_1{ float:left; padding:0 20px 0 0; font-family:"microsoft yahei";}
+.jindu_2{ float:left; padding:0 20px 0 0; font-family:"microsoft yahei"}
+.jindu_1 span{ background:url(../images/stepb-1h.png) no-repeat left center; padding:0 7px; margin:0; line-height:30px; float:left; text-align:center; font-size:14px; color:#fff; font-family:"microsoft yahei"}
+.jindu_1 .text{ float:left; color:#377BCB; height:30px; line-height:30px; padding-left:6px; font-family:"microsoft yahei"}
+.jindu_2 span{ background:url(../images/stepb-2bh.png) no-repeat left center; padding:0 7px; margin:0; line-height:30px; float:left; text-align:center; font-size:14px; color:#fff; font-family:"microsoft yahei"}
+.jindu_2 .text{ float:left; color:#666; height:30px; line-height:30px; padding-left:6px; font-family:"microsoft yahei"}
+.jindu_3{ float:left; padding:0 20px 0 0; font-family:"microsoft yahei";}
+.jindu_4{ float:left; padding:0 20px 0 0; font-family:"microsoft yahei"}
+.jindu_3 span{ background:url(../images/stepb-1h.png) no-repeat left center; padding:0 7px; margin:0; line-height:30px; float:left; text-align:center; font-size:14px; color:#fff; font-family:"microsoft yahei"}
+.jindu_3 .text{ float:left; color:#377BCB; height:30px; line-height:30px; padding-left:6px; font-family:"microsoft yahei"}
+.jindu_4 span{ background:url(../images/stepb-2bh.png) no-repeat left center; padding:0 7px; margin:0; line-height:30px; float:left; text-align:center; font-size:14px; color:#fff; font-family:"microsoft yahei"}
+.jindu_4 .text{ float:left; color:#666; height:30px; line-height:30px; padding-left:6px; font-family:"microsoft yahei"}
+.shuoming{ font:normal 14px/28px "microsoft yahei","宋体"; width:948px; color:#7c7c7c; margin-top:18px; overflow:auto; background:rgb(247,247,247); border:#e6e6e6 1px solid;
+padding:20px; height:300px;}
+.shuoming .left{ font:normal 12px/24px "microsoft yahei","宋体"; width:460px; color:#7c7c7c ; float:left}
+.shuoming .right{ background-image: linear-gradient(to bottom, #f7a454, #fd7f0f); background-repeat:repeat-x; border-radius:3px;font:normal 18px "microsoft yahei",
+"宋体"; display:inline-block; color:#fff; float:left ; padding:4px 40px; min-width:90px; text-shadow:1px 1px 2PX rgba(0,0,0,0.1); position:relative; top:80px;  }
+.shuoming .instru{ float:left; width:484px; top:80px;}
+.cl .text1 .title{ float:left;font:normal 20px/45px "microsoft yahei","宋体"; width:860px; color:#66666c; margin:0; padding:0; border:none}
+.cl .text1 .content{ float:left;font:normal 12px/35px "microsoft yahei","宋体"; width:860px; clear:both; color:#797979}
+.cl_2 .text1 .title{ float:left;font:normal 20px/45px "microsoft yahei","宋体"; width:860px; color:#66666c; margin:0; padding:0; border:none}
+.cl_2 .text1 .content{ float:left;font:normal 12px/35px "microsoft yahei","宋体"; width:860px; clear:both; color:#797979}

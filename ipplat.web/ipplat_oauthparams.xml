@@ -1,0 +1,10 @@
+<OAuthParams>
+  <clientId>3b4573deac110002270d833ab6ac52a4</clientId>
+  <accessToken>4be23b5e-f952-4974-90c5-ea08eadea46b</accessToken>
+  <expiresIn>604462</expiresIn>
+  <accessTime>20170918182843</accessTime>
+  <refreshToken>e2e8dca2-d301-4fba-9473-e0672fc16468</refreshToken>
+  <scope>read_cn</scope>
+  <resourceUrl>http://10.10.1.110/</resourceUrl>
+  <idTokenValid>false</idTokenValid>
+</OAuthParams>

@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html ng-app="patentApp" class="ng-scope">
+<head>
+<style type="text/css">
+@charset "UTF-8";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak,
+	.x-ng-cloak, .ng-hide {
+	display: none !important;
+}
+
+ng\:form {
+	display: block;
+}
+
+.ng-animate-block-transitions {
+	transition: 0s all !important;
+	-webkit-transition: 0s all !important;
+}
+
+.ng-hide-add-active, .ng-hide-remove {
+	display: block !important;
+}
+</style>
+<title>专利检索-知识产权检索-诚知网-做专业的技术专利和科技服务交易平台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="renderer" content="webkit">
+<!--[if lt IE 9]>
+<script src="/module/resources/bootstrap2.3.2/js/html5shiv.js"></script>
+<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="edge">
+<link href="../public/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="../public/css/public.css" rel="stylesheet" media="screen">
+<link href="../public/css/pub_zz.css" rel="stylesheet" media="screen">
+<link href="../public/css/pub_sear.css" rel="stylesheet" media="screen">
+<link href="../public/css/common.css" rel="stylesheet" media="screen">
+<link href="../public/css/layout.css" rel="stylesheet" media="screen">
+<link href="css/tabelSea.css" rel="stylesheet" media="screen">
+<link href="../public/css/debug.css" rel="stylesheet" media="screen">
+<link href="../public/beacon/beacon_main.css" rel="stylesheet"
+	media="screen">
+<script type="text/javascript" src="../public/js/jquery.js"></script>
+<script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript"
+	src="../public/beacon/beacon_jquery_common.js"></script>
+<script type="text/javascript"
+	src="../public/beacon/beacon_jquery_main.js"></script>
+<script src="../public/js/header.js"></script>
+<link href="http://hn.publicdi.com/favicon.ico"
+	type="image/x-icon" rel="icon">
+<link href="http://hn.publicdi.com/favicon.ico"
+	type="image/x-icon" rel="shortcut icon">
+
+
+</head>
+<body class="bodyClass" style="background: none">
+
+	<div class="nav" id="headerNav"></div>
+	<div class="location">
+		<b style="font-size: 14px; font-weight: normal; font-family: '微软雅黑';">
+			<a href="http://www.czeip.com/">首页</a>
+		</b><b
+			style="color: #0185da; font-size: 12px; font-weight: bold; font-family: '宋体';">&gt;</b><span>
+
+			知识产权检索 </span>
+	</div>
+	<div class="s_content">
+		<div class="con_left">
+			<div class="span">知识产权检索</div>
+			<div class="con_menuh">专利检索</div>
+			<div class="con_menu" onclick="locationwin( 'trademark.html');"
+				style="cursor: pointer">商标检索</div>
+			<div class="con_menu" onclick="locationwin('crsoft.html');"
+				style="cursor: pointer">版权检索</div>
+		</div>
+		<!--main-->
+
+		<div class="whole">
+
+			<div class="bgContentBg" style="margin: 0 auto; box-shadow: 0 0 10px 5px #e1e6ec;">
+				<form name="patentform" id="patentform" target="_blank"
+					method="post" action="/txnPatentImgTextList.do"
+					class="ng-pristine ng-valid" novalidate="novalidate">
+					<input style="display: none;" id="_patentform_reset" type="reset">
+					<input id="_txnCode" value="PatentTableSea" type="hidden">
+					<!--检索库-->
+
+					<div class="bgContentBg1" style="position: relative;">
+						<div
+							style="background-color: #FEFFFF; position: relative; width: 100%">
+							<table id="_tabChinaUtlityPatent" class="tabChinaUtlityPatent"
+								style="width: 100%; height: 58px; margin: 0;">
+								<tbody>
+									<tr style="height: 100%;">
+										<td style="padding: 10px 0 0 28px; width: 100%"><span>专利库选择</span>
+											<div class="displayInline marginLeft25">
+												<input autocomplete="off" checked="checked" type="checkbox"
+													name="database" value="CNA0"> <span
+													style="margin-left: 2px">中国发明申请</span> <input
+													autocomplete="off" checked="checked" type="checkbox"
+													name="database" value="CNY0"> <span
+													style="margin-left: 2px">中国实用新型</span> <input
+													autocomplete="off" checked="checked" type="checkbox"
+													name="database" value="CNS0"> <span
+													style="margin-left: 2px">中国外观设计</span> <input
+													autocomplete="off" type="checkbox" name="database"
+													value="CNB0"> <span style="margin-left: 2px">中国发明授权</span>
+												<input autocomplete="off" type="checkbox" name="database"
+													value="DBOTHER"> <span style="margin-left: 2px">其他国家和地区</span>
+											</div></td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+
+						<!--快捷检索-->
+						<div class="marginTop10 Width100P"
+							style="line-height: 22px; background: rgb(249, 249, 249)">
+							<div class="quicktit displayInline">快速选择区</div>
+							<div class="marginRight20 floatRight displayInline">
+								<div class="floatLeft shoufang">收起</div>
+								<img class="triangleDown cursorPointer"
+									src="images/triangle_up.png" width="30" height="30">
+
+							</div>
+							<div id="_fastSelectArea" class="fastSelectArea">
+								<table cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td field="申请年" valign="top" align="right">申请年：</td>
+											<td style="width: auto; table-layout: fixed;" valign="top"><ul
+													class="condition">
+													<li value="0"
+														class="fastSelectW conditionSelected1 conli wid50px">不限</li>
+													<li value="y:&gt;2" id="test"
+														class="fastSelectW conditionUnSelect conli wid50px">近2年</li>
+													<li value="y:&gt;5"
+														class="fastSelectW conditionUnSelect conli wid50px">近5年</li>
+													<li value="y:&gt;10"
+														class="fastSelectW conditionUnSelect conli wid50px">近10年</li>
+													<li value="y:&gt;20"
+														class="fastSelectW conditionUnSelect conli wid50px">近20年</li>
+													<li value="input:y:" class="conditionUnSelect conli1"
+														style="width: 50px; background: none;"><input
+														maxlength="10" style="width: 64px; height: 20px;"
+														sign="&gt;" autocomplete="off" placeholder="2013"
+														onkeyup="this.value=this.value.replace(/\D/g,'')"
+														onafterpaste="this.value=this.value.replace(/\D/g,'')"
+														type="text"></li>
+													<li class="heng">—</li>
+													<li value="input:y:" class="conditionUnSelect conli1"
+														style="width: 50px; background: none;"><input
+														maxlength="10" style="width: 64px; height: 20px;"
+														sign="&lt;" autocomplete="off" placeholder="2015"
+														onkeyup="this.value=this.value.replace(/\D/g,'')"
+														onafterpaste="this.value=this.value.replace(/\D/g,'')"
+														type="text"></li>
+													<li
+														style="color: #5882cb; line-height: 22px; margin-left: 20px;">年</li>
+												</ul></td>
+										</tr>
+										<tr>
+											<td field="公布年" valign="top" align="right">公布年：</td>
+											<td valign="top"><ul class="condition">
+													<li id="fastSelectInput2" value="0"
+														class="fastSelectW conditionSelected1 conli wid50px">不限</li>
+													<li value="y:&gt;2"
+														class="fastSelectW conditionUnSelect conli wid50px">近2年</li>
+													<li value="y:&gt;5"
+														class="fastSelectW conditionUnSelect conli wid50px">近5年</li>
+													<li value="y:&gt;10"
+														class="fastSelectW conditionUnSelect conli wid50px">近10年</li>
+													<li value="y:&gt;20"
+														class="fastSelectW conditionUnSelect conli wid50px">近20年</li>
+													<li value="input:y:" class="conditionUnSelect conli1"
+														style="width: 50px; background: none;"><input
+														maxlength="10" style="width: 64px; height: 20px;"
+														sign="&gt;" autocomplete="off" placeholder="2013"
+														onkeyup="this.value=this.value.replace(/\D/g,'')"
+														onafterpaste="this.value=this.value.replace(/\D/g,'')"
+														type="text"></li>
+													<li class="heng">—</li>
+													<li value="input:y:" class="conditionUnSelect conli1"
+														style="width: 50px; background: none;"><input
+														maxlength="10" style="width: 64px; height: 20px;"
+														sign="&lt;" autocomplete="off" placeholder="2015"
+														onkeyup="this.value=this.value.replace(/\D/g,'')"
+														onafterpaste="this.value=this.value.replace(/\D/g,'')"
+														type="text"></li>
+													<li
+														style="color: #5882cb; line-height: 22px; margin-left: 20px;">年</li>
+												</ul></td>
+										</tr>
+										<tr>
+											<td field="当前权利状态" valign="top" align="right">当前权利状态：</td>
+											<td valign="top"><ul class="condition">
+													<li value="0"
+														class="fastSelectW conditionSelected conli1 wid50px">不限</li>
+													<li value="1"
+														class="fastSelectW conditionUnSelect conli1 wid50px">有效</li>
+													<li value="2"
+														class="fastSelectW conditionUnSelect conli1 wid50px">无效</li>
+													<li value="3"
+														class="fastSelectW conditionUnSelect conli1 wid50px">在审</li>
+												</ul></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!--字段检索-->
+						<div class="marginTop10 paddingBottom20"
+							style="width: 100%; background-color: #f3f3f3; position: relative">
+
+							<table id="tabOpenDay"
+								style="width: 100%; margin: 15px 15px 15px 25px;"
+								cellspadding="0" cellspacing="0">
+								<tbody>
+
+									<tr>
+										<td style="width: 160px" align="right">申请号：</td>
+										<td><input placeholder="CN02144686.5" maxlength="100"
+											e="exp" title="申请号" autocomplete="off" style="width: 280px;"
+											type="text"></td>
+										<td style="width: 160px" align="right">申请日：</td>
+										<td><input placeholder="20101010" maxlength="100" e="exp"
+											title="申请日" autocomplete="off" style="width: 280px;"
+											type="text"></td>
+									</tr>
+									<tr>
+										<td style="width: 160px" align="right">公布号：</td>
+										<td><input placeholder="CN1387751" maxlength="100"
+											e="exp" title="公布号" autocomplete="off" style="width: 280px;"
+											type="text"></td>
+										<td style="width: 160px" align="right">公布日：</td>
+										<td><input placeholder="20141122" maxlength="100" e="exp"
+											title="公布日" autocomplete="off" style="width: 280px;"
+											type="text"></td>
+									</tr>
+									<tr>
+										<td style="width: 160px" align="right">名称：</td>
+										<td><input placeholder="计算机" maxlength="100" e="exp"
+											title="名称" autocomplete="off" style="width: 280px;"
+											type="text"></td>
+										<td style="width: 160px" align="right">摘要和说明：</td>
+										<td><input placeholder="计算机" maxlength="100" e="exp"
+											title="摘要和说明" autocomplete="off" style="width: 280px;"
+											type="text"></td>
+									</tr>
+									<!--                 <tr>
+                    <td style="width: 160px" align="right">
+                       权利要求：
+                    </td>
+                    <td>
+                        <input placeholder="计算机" maxlength="100" e="exp" title="权利要求书" autocomplete="off" style="width:280px;" type="text">
+                    </td>
+                    <td style="width: 160px" align="right">
+                      说明书全文：
+                    </td>
+                    <td>
+                        <input placeholder="计算机" maxlength="100" e="exp" title="说明书全文" autocomplete="off" style="width:280px;" type="text">
+                    </td>
+                </tr>
+ -->
+									<tr>
+										<td style="width: 160px" align="right">申请人：</td>
+										<td><input placeholder="华为 " maxlength="100" e="exp"
+											title="申请人" autocomplete="off" style="width: 280px;"
+											type="text"></td>
+										<td style="width: 160px" align="right">申请人地址：</td>
+										<td><input placeholder="北京市海淀区" maxlength="100" e="exp"
+											title="申请人地址" autocomplete="off" style="width: 280px;"
+											type="text"></td>
+									</tr>
+									<tr>
+										<td style="width: 160px" align="right">IPC：</td>
+										<td><input placeholder="G06F15/16" maxlength="100"
+											e="exp" title="IPC" autocomplete="off" style="width: 280px;"
+											type="text"></td>
+										<td style="width: 160px" align="right">洛迦诺：</td>
+										<td><input placeholder="02-04" maxlength="100" e="exp"
+											title="洛迦诺" autocomplete="off" style="width: 280px;"
+											type="text"></td>
+									</tr>
+									<tr>
+										<td style="width: 160px" align="right">代理机构：</td>
+										<td><input placeholder="康信" maxlength="100" e="exp"
+											title="代理机构" autocomplete="off" style="width: 280px;"
+											type="text"></td>
+										<td style="width: 160px" align="right">代理人：</td>
+										<td><input placeholder="尚志峰" maxlength="100" e="exp"
+											title="代理人" autocomplete="off" style="width: 280px;"
+											type="text"></td>
+									</tr>
+									<tr>
+										<td style="width: 160px" align="right">发明人：</td>
+										<td><input placeholder="丁水波" maxlength="100" e="exp"
+											title="发明人" autocomplete="off" style="width: 280px;"
+											type="text"></td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+
+						<!--表达式编辑框-->
+						<div style="width: 100%; display: none"
+							class="positionRelative boxShadow clearBoth">
+
+							<textarea style="border: 1px solid #333333;"
+								class="control-group editFieldList height100 nonResize fontSize12"
+								name="select-key:expressCN" rows="3" id="expressCN"
+								onkeydown="setPosition(this)" onmouseup="setPosition(this)"
+								onfocus="setPosition(this)" placeholder="在这里编辑表达式"></textarea>
+							<input type="hidden" name="select-key:temp" id="expressCNHid">
+							<input type="hidden" id="expressSign" value="0">
+							<!--表达式-->
+							<button type="button" id="doExpress"
+								class="generateExpress buttonNobgBd outLineN colWhite fontWeightBold cursorPointer fontSize14"
+								style="width: 140px; height: 31px; background: url(images/btn4_1.png) no-repeat">表达式</button>
+						</div>
+
+						<!--检索按钮-->
+						<div
+							style="position: fixed; bottom: 0px; z-index: 1; left: 0px; padding: 15px 0px 15px 0px; width: 100%; text-align: right; background-color: #FFFFFF; border-top: 1px #D3D3D3 solid; box-shadow: 0px -2px 10px 1px #D3D3D3;">
+							<button type="button" id="submitExpress"
+								class="buttonNobgBd outLineN colWhite fontWeightBold cursorPointer fontSize14"
+								style="width: 140px; height: 31px;">检&nbsp;&nbsp;&nbsp;&nbsp;索</button>
+							<button type="button" id="emptyExpress"
+								class="buttonNobgBd outLineN colWhite fontWeightBold cursorPointer fontSize14"
+								style="width: 140px; margin-right: 100px; height: 31px">重&nbsp;&nbsp;&nbsp;&nbsp;置</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--main END-->
+	</div>
+	<div id="footerNew"
+		style="display: none; text-align: center; margin: 0 auto 60px 0;">
+
+	</div>
+
+	<script type="text/javascript" src="js/code.js"></script>
+	<script type="text/javascript" src="js/express.js"></script>
+	<script type="text/javascript" src="js/patent.js"></script>
+
+</body>
+</html>

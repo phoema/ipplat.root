@@ -1,0 +1,4 @@
+1、打包不同的war包，注意调整application.properties的key值指向不同的配置文件
+2、新war包升级覆盖旧war包时，注意保留并备份附件和图片文件夹，目前默认在ueditor\jsp\upload
+3、ipplat.process做为代理机构、代理人的基础导入工具，不需发布到网站
+4、打包详细步骤：ipplat.root项目右键Run AS--》Maven Clean--》Maven Build（maven命令为install）

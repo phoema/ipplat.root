@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html ng-app="patentApp" class="ng-scope">
+<head>
+<style type="text/css">
+@charset "UTF-8";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak,
+	.x-ng-cloak, .ng-hide {
+	display: none !important;
+}
+
+ng\:form {
+	display: block;
+}
+
+.ng-animate-block-transitions {
+	transition: 0s all !important;
+	-webkit-transition: 0s all !important;
+}
+
+.ng-hide-add-active, .ng-hide-remove {
+	display: block !important;
+}
+</style>
+<title>后台管理-四川省公共服务信息平台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="renderer" content="webkit">
+<!--[if lt IE 9]>
+<script src="/module/resources/bootstrap2.3.2/js/html5shiv.js"></script>
+<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="edge">
+<link href="../public/css/public.css" rel="stylesheet" media="screen">
+<link href="css/userlist.css" rel="stylesheet" media="screen">
+
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../detail/js/common.js"></script>
+<script type="text/javascript" src="../public/js/layer/layer.min.js"></script>
+<script src="../public/js/header.js"></script>
+<link type="text/css" rel="stylesheet" href="../public/css/header1.css">
+<link href="http://scpub.izhiliao.com.cn/favicon.ico" type="image/x-icon"
+	rel="icon">
+<link href="http://scpub.izhiliao.com.cn/favicon.ico" type="image/x-icon"
+	rel="shortcut icon">
+
+<script type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/infomanagelist.js"></script>
+
+</head>
+
+<body class="bodyClass">
+	<div class="nav" id="headerNav"></div>
+	<div class="backbody">
+		<div class="leftinfo">
+			<div class="lefttop">
+				<span></span>内容管理
+			</div>
+			<dl class="leftmenu">
+				<dd>
+					<div class="title" name="1_1">
+						<span></span>综合信息管理
+					</div>
+					<ul class="menuson" style="display: none;">
+						<li class=" " name="1_1_1"><cite></cite><a
+							href="infomanagelist.html?ty=info">列表管理</a><i></i></li>
+						<li class=" " name="1_1_2"><cite></cite><a
+							href="infoedit.html?ty=info">新增综合信息</a><i></i></li>
+					</ul>
+				</dd>
+				<dd>
+					<div class="title" name="2_1">
+						<span></span>经典案例管理
+					</div>
+					<ul class="menuson" style="display: none;">
+						<li class=" " name="2_1_1"><cite></cite><a
+							href="infomanagelist.html?ty=info2">列表管理</a><i></i></li>
+						<li class=" " name="2_1_2"><cite></cite><a
+							href="infoedit.html?ty=info2">新增经典案例</a><i></i></li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div class="rightinfo">
+			<div class="place">
+				<span>位置：</span>
+				<ul class="placeul">
+					<li><a href="/">首页&gt;</a></li>
+					<li name="menu1"></li>
+					<li name="menu2"></li>
+					<li name="menu3"></li>
+				</ul>
+			</div>
+			<div class="tools">
+				<ul class="toolbar">
+					<li class="click" onclick="addnew();"><span> <img
+							src="css/images/t01.png" />
+					</span>添加</li>
+
+					<li onclick="statictype();" name="info" style="display: none"><span>
+					</span>静态化&nbsp;</li>
+					<li onclick="staticinfolist_index();" name="knowledge"
+						style="display: none"><span> </span>静态化&nbsp;</li>
+					<li onclick="staticinfolist_index();" name="help"
+						style="display: none"><span> </span>静态化&nbsp;</li>
+					<li onclick="staticinfolist_index();" name="academy"
+						style="display: none"><span> </span>静态化&nbsp;</li>
+
+
+				</ul>
+
+			</div>
+			<div class="formtitle">
+				<span>内容管理</span>
+			</div>
+			<div class="pagin select" style="height: 20px">
+				<div style="float: left">
+					<div style="float: left">
+						<span>标题</span> <input id="evetitle" type="text"
+							autocomplete="off" style="width: 118px;"> <span>摘要</span>
+						<input id="eveabstract" type="text" autocomplete="off"
+							style="width: 118px;"> <span>正文</span> <input
+							id="evecontent" type="text" autocomplete="off"
+							style="width: 118px;"> <span>创建时间</span> <select
+							style="width: 120px;" name="timeOpt" onchange="addNDays()">
+							<option value="" selected="selected">----请选择----</option>
+							<option value="">全部</option>
+							<option value="1">今天</option>
+							<option value="-1">昨天</option>
+							<option value="-6">最近7天</option>
+							<option value="-29">最近30天</option>
+							<option value="auto">自定义</option>
+						</select>
+					</div>
+					<div style="float: left; display: none" id="sp">
+						<input type="text" id="from" autocomplete="off"
+							onclick="WdatePicker()" style="width: 118px;" /> <span>到</span>
+						<input onclick="WdatePicker()" type="text" id="to"
+							autocomplete="off" style="width: 118px;" /><span>（YYYY -
+							MM - DD）</span>
+					</div>
+				</div>
+			</div>
+			<div class="pagin select" style="height: 35px">
+				<div style="float: left">
+					<span>状态</span> <select style="width: 120px;" id="selstate">
+						<option value="">----请选择----</option>
+						<option value="">全部</option>
+						<option value="1">审核通过</option>
+						<option value="2">正在发布</option>
+						<option value="3">暂停发布</option>
+					</select> <span>类型</span> <select style="width: 120px;" id="selgroup"
+						onchange="onchangetype();">
+						<option value="">----请选择----</option>
+					</select> <span>栏目</span> <select style="width: 120px;" id="seltype">
+						<option value="">----请选择----</option>
+					</select>
+				</div>
+				<div onclick="searchinfos();" class="search_bt">查找</div>
+			</div>
+			<table id="infolist" class="tablelist table-page">
+				<thead>
+					<tr>
+						<th style="width: 80px;">编号</th>
+						<th style="width: 300px;">标题</th>
+						<th style="width: 120px;">类型</th>
+						<th style="width: 120px;">栏目</th>
+						<th style="width: 120px">创建时间</th>
+						<th style="width: 120px">审核时间</th>
+						<th style="width: 100px;">状态</th>
+						<th style="width: 250px;">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr id="info_INFOb947c351-0477-4d89-9f1a-0238a91f2840">
+						<td>1</td>
+						<td class="td1"><span style="cursor: default">北京发明专利申请量突破10万件</span></td>
+						<td>资讯</td>
+						<td>行业新闻</td>
+						<td title="2017-05-02 09:38:22">2017-05-02</td>
+						<td>&nbsp;</td>
+						<td>暂停发布</td>
+						<td class="base_title2">&nbsp;&nbsp;<a
+							onclick="editinfo('INFOb947c351-0477-4d89-9f1a-0238a91f2840');"
+							style="cursor: pointer;" href="javascript:void(0);">编辑</a>&nbsp;&nbsp;<a
+							name="statebtn" state="1"
+							tid="INFOb947c351-0477-4d89-9f1a-0238a91f2840"
+							style="cursor: pointer;" href="javascript:void(0);">取消暂停</a>&nbsp;&nbsp;<a
+							onclick="deleteinfo('INFOb947c351-0477-4d89-9f1a-0238a91f2840',1);"
+							style="cursor: pointer;" href="javascript:void(0);">删除</a>&nbsp;&nbsp;<a
+							onclick="previewinfo('INFOb947c351-0477-4d89-9f1a-0238a91f2840');"
+							style="cursor: pointer;" href="javascript:void(0);">预览</a>&nbsp;&nbsp;<a
+							name="tostaticbtn"
+							onclick="staticinfodetails('INFOb947c351-0477-4d89-9f1a-0238a91f2840');"
+							style="cursor: pointer;" href="javascript:void(0);">静态化</a></td>
+					</tr>
+					<tr id="info_INFO8466b49a-33da-4a6b-8cd3-c9ef1efacf4b">
+						<td>8</td>
+						<td class="td1"><a
+							href="http://www.cniponline.com/IPOperate/html/infohtml/infodetails/INFO8466b49a-33da-4a6b-8cd3-c9ef1efacf4b.html"
+							target="_blank">总理在山东关切的这件事，出新措施了！</a></td>
+						<td>资讯</td>
+						<td>政策解读</td>
+						<td title="2017-05-03 11:51:19">2017-05-03</td>
+						<td title="2017-05-03 11:51:19">2017-05-03</td>
+						<td>审核通过</td>
+						<td class="base_title2">&nbsp;&nbsp;<a
+							onclick="editinfo('INFO8466b49a-33da-4a6b-8cd3-c9ef1efacf4b');"
+							style="cursor: pointer;" href="javascript:void(0);">编辑</a>&nbsp;&nbsp;<a
+							name="statebtn" state="3"
+							tid="INFO8466b49a-33da-4a6b-8cd3-c9ef1efacf4b"
+							style="cursor: pointer;" href="javascript:void(0);">暂停</a>&nbsp;&nbsp;<a
+							onclick="deleteinfo('INFO8466b49a-33da-4a6b-8cd3-c9ef1efacf4b',1);"
+							style="cursor: pointer;" href="javascript:void(0);">删除</a>&nbsp;&nbsp;<a
+							onclick="previewinfo('INFO8466b49a-33da-4a6b-8cd3-c9ef1efacf4b');"
+							style="cursor: pointer;" href="javascript:void(0);">预览</a>&nbsp;&nbsp;<a
+							name="tostaticbtn"
+							onclick="staticinfodetails('INFO8466b49a-33da-4a6b-8cd3-c9ef1efacf4b');"
+							style="cursor: pointer;" href="javascript:void(0);">静态化</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="pagin" id="pagin">
+				<div class="message">
+					共<i class="blue" name="totalcount">1256</i>条记录，当前显示第&nbsp;<i
+						class="blue" name="pageindex">2</i>&nbsp;页
+				</div>
+				<ul id="infopage" class="paginList">
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<div id="footerNew" style="text-align: center; margin: 0 auto 0px 0;">
+
+	</div>
+</body>
+</html>
