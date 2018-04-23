@@ -75,20 +75,6 @@
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency> -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<!--<version>5.1.35</version>-->
-		</dependency>
-		<dependency>
-            <groupId>com.zaxxer</groupId>
-            <artifactId>HikariCP</artifactId>
-            <version>2.5.1</version>
-         </dependency>
 		<!-- Shiro:权限控制 
 		<dependency>
 		    <groupId>org.apache.shiro</groupId>
@@ -128,8 +114,24 @@
 
   </dependencies>
   <modules>
-    <module>ipplat.api</module>
-    <module>ipplat.hnweb</module>
-    <!-- <module>ipplat.process</module> -->
+  	<!-- 江苏版本打包配置 -->
+    <module>ipplat.common</module>
+    <module>ipplat.diapi</module>
+    <module>ipplat.jsweb</module>
+    <!--<module>ipplat.article</module>-->
+  	<!-- 四川省公共服务信息平台
+  	    <module>ipplat.api</module>
+  	    <module>ipplat.web</module>
+  	 -->
+  	<!-- 东盟版本打包配置
+  	    <module>ipplat.api</module>
+  	    <module>ipplat.dmweb</module>
+  	 -->
+  	<!-- 河南省公共服务信息平台
+  	    <module>ipplat.api</module>
+  	    <module>ipplat.hnweb</module>
+  	 -->
+    <!-- <module>ipplat.process</module> 
+    <module>ipplat.user</module>-->
   </modules>
 </project>

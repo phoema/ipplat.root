@@ -1,0 +1,175 @@
+*{
+    border: medium none;
+    font-family: "microsoft yahei" ,宋体;
+    font-size: 12px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration:none
+}
+nav{
+	 background: #3592e2 none repeat scroll 0 0;
+    clear: both;
+    height: 40px;
+	line-height:24px;
+	color:#fff;
+	text-align:right}
+ul li{
+	float:left;
+	position:relative;
+	z-index:0}
+nav ul{
+	position: relative;}
+nav ul li a, nav ul ul li a{
+  color: #fff;
+    cursor: pointer;
+    float: left;
+    font: 16px/40px "microsoft yahei","微软雅黑";
+    height: 40px;
+	margin-right: 10px;
+    padding: 0 13px;
+    position: relative;
+    text-decoration: none;
+	white-space:nowrap;
+}
+nav ul ul li a{    margin-right: 0;	font-size:13px;}
+nav ul li ul{
+    display: none;
+	position:absolute;
+	top:40px;
+	left:0;
+	background:#0c7edf;
+	z-index:100;
+	width:184px;
+}
+nav ul li:hover ul {
+    display: block;
+    }
+nav ul li:hover .login-2 {
+    display: block;
+    }
+.login-2 {
+    display: none;
+	padding-top:4px
+    }
+nav ul li a:hover, nav ul ul li a:hover{
+	text-shadow: 0px 0px 2px rgba(13,54,90,0.2);}
+nav ul ul li:hover{
+	 background:#0b71ca;
+	overflow:auto;
+	}
+nav ul li a.selected {
+    background:#0c7edf;
+}
+nav ul ul li{ width:92px}
+nav ul ul li.selected {
+    background:#0b71ca;
+}
+nav ul li a:hover{
+	background:#0c7edf;}
+nav ul ul li a:hover{
+	background:none;}
+.headericon-header-user {
+    float: left;
+    height: 24px;
+    margin-top: 2px;
+    width: 24px;
+}
+.login-actions{
+	float:right;
+	width:150px;
+	padding:8px 0;}
+.login-1{
+	float:left;
+	position:relative}
+.login-1f{
+	float:right;}
+.login-1 ul{
+	position:absolute;
+	right:0;
+	top:32px;
+	left:auto;
+	width:auto;
+	background: #fff none repeat scroll 0 0;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;}
+.login-actions span{
+	color:#e1effb;
+	font-size:12px;
+	float:left;
+	padding:0 2px}
+.login-actions a{
+	color:#35e2dc;
+	font-size:12px;
+	padding:0 5px;
+	margin:0;
+	line-height:24px;
+	height:24px;}
+.login-actions a:hover{
+	color:#bef6f4;}
+.user{
+	position:absolute;
+	top:0;
+	color:#e1effb;
+	font-size:12px;
+	padding:0 5px;
+	margin:0;
+	line-height:24px;
+	height:24px;}
+.user li{
+	color: #6c6c6c;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    width: 116px;}
+.user1{
+	line-height:24px;
+	color:#35e2dc;
+	text-align:right;
+	cursor:pointer
+	}
+.more{ font-weight:bold; font-size:13px}
+.jiant {
+    background: url(../images/top.png) no-repeat scroll center top;
+    height: 8px;
+    position: relative;
+	top:-2px;
+    z-index: 101;
+}
+
+.login-2 ul {
+	padding:0 8px 10px}
+.login-2 ul li{
+	float:left;
+	width:auto}
+.login-2 ul li a{
+	line-height:30px;
+	padding:5px 6px;
+	color:#666;
+	border-bottom:1px solid #eee}
+.login-2 ul li a:hover{
+	background:#fff;
+	color:#0066ff}
+footer{
+	background: #f3f3f3 none repeat scroll 0 0;
+    border-top: 1px solid #e6e6e6;
+	clear:both;
+	height:40px;
+	margin-top:20px;
+	color:rgb(153, 153, 153);
+	line-height:40px;
+	text-align:center} 
+/*第二类头部 start*/
+
+.nav1{
+	 background:url(../image/headbg.png) repeat-x;
+     box-sizing: content-box;
+    font-family: "microsoft yahei",SimSun;
+    height: 77px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;}
